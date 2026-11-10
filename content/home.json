@@ -1,0 +1,118 @@
+{
+  "title": "Aerial autonomy, beyond ideal conditions.",
+  "description": "Aerial robotics and multi-drone systems research at ISR-Lisboa, Instituto Superior Técnico. Explore our experimental work in perception, planning, robot design and cooperation.",
+  "hero": {
+    "eyebrow": "ISR-LISBOA · INSTITUTO SUPERIOR TÉCNICO",
+    "lines": [
+      "Aerial autonomy,",
+      "beyond ideal",
+      "conditions."
+    ],
+    "summary": "We develop aerial robots and multi-drone systems for missions where information, energy and connectivity are limited.",
+    "mediaId": "s11-image156",
+    "filmId": "s11-media14"
+  },
+  "introduction": {
+    "heading": "From the robot to the team.",
+    "text": "Our research connects custom aerial platforms with onboard perception, planning and cooperation. We develop the methods and build the robots, bringing algorithms into real experimental settings."
+  },
+  "featured": {
+    "projectSlug": "probabilistic-frontier-prioritization",
+    "eyebrow": "FEATURED RESEARCH · IEEE RA-L 2026",
+    "heading": "Choosing what to explore next.",
+    "summary": "How can a team map an unknown environment without duplicating its work? Probabilistic frontier prioritization keeps exploration choices flexible as the map evolves.",
+    "mediaId": "s11-media32"
+  },
+  "themes": [
+    {
+      "id": "localization",
+      "title": "Localization & cooperative perception",
+      "summary": "Estimating motion and relative position when observations are uncertain or intermittent.",
+      "example": "Reliability-aware LiDAR-inertial odometry weights observations using physical signal and geometric quality cues. Semi-cooperative relative localization shares motion information between UAVs.",
+      "publications": [
+        "niusha2026quality"
+      ]
+    },
+    {
+      "id": "multimodal",
+      "title": "Multimodal aerial robots",
+      "summary": "Combining flight with surface motion and adapting the platform to the task.",
+      "example": "From a rolling–flying robot and BogieCopter to a trimodal vehicle, we study how shared actuators can support different forms of locomotion.",
+      "publications": [
+        "vale2025trimodal",
+        "dias2023bogiecopter",
+        "pimentel2022bimodal"
+      ]
+    },
+    {
+      "id": "deployment",
+      "title": "Aerial deployment & recovery",
+      "summary": "Transporting smaller UAVs closer to a mission and recovering stable flight after release.",
+      "example": "Complementary studies investigate release dynamics, recovery control and onboard stabilization. The tailsitter two-stage recovery study is evaluated in simulation.",
+      "publications": [
+        "nishikawa2026recovery"
+      ]
+    },
+    {
+      "id": "exploration",
+      "title": "Exploration & mapping",
+      "summary": "Building a map while deciding where each UAV should observe next.",
+      "example": "Frontier reasoning, soft clustering and kinodynamically feasible trajectories help robots distribute exploration and reach informative viewpoints.",
+      "publications": [
+        "lewis2025froshe",
+        "mendes2026kinodynamic"
+      ],
+      "project": "probabilistic-frontier-prioritization"
+    },
+    {
+      "id": "communication",
+      "title": "Communication-aware coordination",
+      "summary": "Planning cooperation around the information that moving UAVs can exchange.",
+      "example": "SpArC-NARTs plans coverage under intermittent communication, accounting for sensing, energy and radio performance. The work complements a survey of communication and motion awareness.",
+      "publications": [
+        "conceicao2026sparc",
+        "conceicao2025survey"
+      ]
+    },
+    {
+      "id": "tracking",
+      "title": "Target localization & tracking",
+      "summary": "Maintaining target awareness through sensing gaps, occlusions and changing viewpoints.",
+      "example": "Visual detection and multi-object tracking preserve a selected person’s identity and support following after temporary occlusion. Complementary acoustic and LiDAR work studies other sensing conditions.",
+      "publications": [
+        "ferreira2024following"
+      ]
+    },
+    {
+      "id": "supervision",
+      "title": "Human supervision & mixed reality",
+      "summary": "Placing mission information and interaction in their spatial context.",
+      "example": "A published mixed-reality interface supports mission interaction. Persistent human–swarm supervision and uncertainty-guided attention are broader research directions.",
+      "publications": [
+        "caeiro2026mr"
+      ]
+    }
+  ],
+  "publicationIds": [
+    "devassy2026frontier",
+    "mendes2026kinodynamic",
+    "vale2025trimodal",
+    "conceicao2025survey"
+  ],
+  "contributorIds": [
+    "john-lewis-devassy",
+    "nivand-khosravi",
+    "niusha-khosravi",
+    "maria-ines-conceicao",
+    "joao-felix-mendes",
+    "akshat-singh"
+  ],
+  "people": {
+    "heading": "Research is a team effort.",
+    "text": "Our projects bring together doctoral researchers, students, alumni and collaborators. Meet some of the researchers whose work shapes our programme."
+  },
+  "join": {
+    "heading": "Build the next experiment with us.",
+    "text": "Interested in a research thesis or a collaboration? Tell us about your interests in aerial robotics, the problem you want to explore, and your relevant experience."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "reviewedOn": "2026-11-09",
+  "sourceDeck": {
+    "sourceId": "S11",
+    "filename": "ISR_Get_Together_Meysam Basiri_b.pptx",
+    "sha256": "8978a0e86a238d9684c5ff3d9593d20f4aa71c17b07a8bffefaa5fd9e584c8e6",
+    "slides": 57,
+    "sourceVideos": 50,
+    "embeddedAssets": 211
+  },
+  "extraction": "Used complete supplied extraction. No new extraction script executed.",
+  "selectedPublicationIds": [
+    "devassy2026frontier",
+    "mendes2026kinodynamic",
+    "vale2025trimodal",
+    "conceicao2025survey",
+    "niusha2026quality",
+    "pimentel2022bimodal",
+    "dias2023bogiecopter",
+    "nishikawa2026recovery",
+    "lewis2025froshe",
+    "conceicao2026sparc",
+    "ferreira2024following",
+    "caeiro2026mr"
+  ],
+  "selectedMediaIds": [
+    "s11-image156",
+    "s11-image118",
+    "s11-image87",
+    "s11-media14",
+    "s11-media30",
+    "s11-media31",
+    "s11-media32",
+    "s11-media29",
+    "s11-image10",
+    "s11-image11",
+    "s11-image12",
+    "s11-image28",
+    "s11-image32",
+    "s11-image7",
+    "s11-image8",
+    "s11-image9"
+  ],
+  "catalogueScope": {
+    "projects": 23,
+    "publications": 35,
+    "peoplePortraits": 26
+  },
+  "publicRepositoryRead": {
+    "organization": "IRSg-ARG",
+    "checkedOn": "2026-11-09",
+    "repositories": [
+      "UAV_3d_reconstruction",
+      "centralized_multi_robot_voxblox",
+      "traj_generation",
+      "uav_gazebo_environments"
+    ],
+    "websiteRepositoryVisible": false
+  },
+  "scientificPrecedence": "Published-paper findings summarized in the information sheet override conflicting presentation shorthand.",
+  "excluded": [
+    "Miguel Pimentel portrait pending identity check",
+    "Commercial headset artwork",
+    "Slide banners and decorative backgrounds",
+    "Concept footage as experimental evidence",
+    "Provisional marginal-gain numbers",
+    "Publisher PDFs and original CV/deck"
+  ],
+  "repository": {
+    "fullName": "IRSg-ARG/irsg-arg.github.io",
+    "defaultBranch": "main",
+    "origin": "https://irsg-arg.github.io",
+    "basePath": "/",
+    "accessConfirmedOn": "2026-11-09",
+    "initialCommit": "585bdb0bb88ae3f0de1cc225379013ad58eaf868"
+  }
+}

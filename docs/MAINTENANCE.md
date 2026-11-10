@@ -1,0 +1,67 @@
+# Content maintenance
+
+Ordinary content is in JSON; templates control layout. A content edit needs a rebuild and check:
+
+~~~sh
+node scripts/build.mjs
+node scripts/check.mjs
+~~~
+
+Review the affected page at desktop and mobile sizes, then commit the source. A push to main deploys through the included workflow after Pages is configured. Content edits can be reviewed in a pull request first.
+
+## Add a publication
+
+1. Add a record to **content/publications.json**, using an existing record as the schema. Give it a unique ID.
+2. Transcribe the exact published title, ordered authors, year, venue, volume, issue, pages, DOI and DOI URL. Preserve accents and published author forms. A year embedded in a DOI is not the publication year.
+3. Add its original or verified BibTeX entry as **public/citations/ID.bib**, with matching fields. Preserve final journal articles and conference versions as distinct records.
+4. Add its ID to **publicationIds** in **content/home.json** if it should appear on the homepage, or to a research theme's **publications** list.
+5. If changing the homepage selection, update **public/citations/selected-publications.bib** to contain that same selection.
+
+Only ready records are included in this initial source selection. The handoff's 35-entry catalogue is a seed rather than a complete bibliography. Verify unresolved entries before adding them publicly. Do not copy publisher PDFs into public media unless an appropriate author-approved public version is supplied.
+
+## Add or update a person
+
+1. Add an ID, preferred name, display context, research interest and optional profile URL to **content/people.json**.
+2. For a portrait, copy the approved image into **public/media/people/** and add a matching **content/media.json** record. Use its media ID in the person's **portrait** field. Retain source provenance and a useful alt description.
+3. If no verified portrait is supplied, set **portrait** to null and supply neutral **initials**.
+4. Add the person's ID to **contributorIds** in **content/home.json**, or to the relevant project's **authorIds** in publication order.
+
+The homepage displays research associations rather than an unconfirmed current employment/enrollment roster. Confirm current, alumni and collaborator classifications before creating a full people directory. A coauthor is not automatically a current member. The Miguel Pimentel portrait from the handoff remains withheld pending identity confirmation.
+
+## Add research media
+
+Use the complete handoff's media manifest, slide-to-project map and curated shortlist first. The complete presentation has already been extracted; rerun its extraction script only when a newer or higher-resolution deck is supplied.
+
+Copy only selected files and posters into **public/media/**. Add a media record with:
+
+- Unique ID, title, path, type, intrinsic dimensions and optional poster.
+- Alt text, caption, credit and experimentType.
+- Original source ID, filename and source slides.
+- A SHA-256 for each copied supplied derivative in **sourceHashes**.
+
+On Windows, **Get-FileHash -Algorithm SHA256 -LiteralPath PATH** can compute a digest. Lowercase the digest when recording it. The check script verifies file bytes against these records.
+
+Use native video controls and an accurate visual description. Keep preload at none. The provided review derivatives are silent except the acoustic recordings; if later using audio, describe/caption the actual soundtrack and keep playback under visitor control. Label conceptual, explanatory, simulation and hardware material according to the manifest.
+
+## Add a project without changing layout
+
+1. Copy **content/projects/probabilistic-frontier-prioritization.json** to a new slug-named JSON file in the same directory.
+2. Replace its title, summary, theme, exact publication ID, author IDs and real media IDs. Supply the new project's problem, method, steps, video description and related papers.
+3. Update **publicationLabel**, **experimentHeading**, **experimentLabel**, **evidenceHeading**, **evidenceIntroduction**, **simulationContext**, **hardwareContext** and **hardwareNote**. These control the narrative surrounding results.
+4. Replace the results array with source-supported records. A simulation record uses evaluation **simulation**; a hardware record uses **outdoor hardware**. The initial template supports comparison metrics plus a hardware trial-value array. Mark an optional ablation record with presentation **wide**. Remove evidence categories that do not apply; their sections are omitted. Keep baseline, metric, units, environment, team size, trial count, qualifications and source reference attached to each result.
+5. Set **codeUrl** and **supplementaryVideo** only when their exact public destinations are confirmed. A null value omits the corresponding link.
+6. Add the slug to a homepage theme's **project** field, or make it the featured project. The builder discovers project JSON files and creates **/research/SLUG/** automatically.
+
+The initial layout is intended for projects with a published paper and an experimental/method narrative. A different evaluation structure can be added to the template deliberately when a future project needs it; do not force an incompatible result into the hardware or simulation trial schema.
+
+## Editorial safeguards and cadence
+
+For the prioritization project, the approximately 14%/10% gains and 22.5–32.0% clustering ablation are simulation results. The separate two-UAV outdoor trials reached 95% coverage in 77, 83 and 85 seconds. Do not combine these into a hardware percentage speedup.
+
+Prefer published-paper evidence over conflicting slide shorthand. Preserve the published first-author form **John Lewis** on FroShe and **John Lewis Devassy** on the prioritization article. Keep current membership separate from historical authorship.
+
+After each accepted paper or major experiment: update its record, media and related project. Each term: confirm people and student-enquiry text. Before each release: check the contact email and DOI destinations, review mobile/keyboard behavior, and run build/check. Assign a named content maintainer before public launch; the owner is still an editorial decision.
+
+## Validation scope
+
+The check script covers internal destinations and anchors, media bytes, citation-field consistency, scientific evidence categories, document headings/language, alt text, ARIA references and controlled video loading. It is not a certification of accessibility, independent identity verification or a new reading of the original research papers. Browser review remains useful after layout/media changes.

@@ -1,0 +1,430 @@
+[
+  {
+    "id": "s11-image156",
+    "title": "Trimodal UAV in flight",
+    "type": "image",
+    "path": "media/images/trimodal-uav-flight.webp",
+    "poster": null,
+    "width": 1800,
+    "height": 1013,
+    "durationSeconds": null,
+    "experimentType": "research photo or experimental still",
+    "alt": "Trimodal UAV in flight",
+    "caption": "Trimodal UAV in flight. Research by Afonso Vale, Meysam Basiri and Frederico Afonso.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image156.jpg",
+      "slides": [
+        56
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/trimodal-uav-flight.webp": "ed5c6c6bf47f0ae55efc97c469e04a328f3941c57b98d76f7c3f1914ebb9c086"
+    }
+  },
+  {
+    "id": "s11-image118",
+    "title": "RGB-D UAV used in kinodynamic exploration",
+    "type": "image",
+    "path": "media/images/rgbd-exploration-uav.webp",
+    "poster": null,
+    "width": 1280,
+    "height": 960,
+    "durationSeconds": null,
+    "experimentType": "research photo or experimental still",
+    "alt": "RGB-D UAV used in kinodynamic exploration",
+    "caption": "RGB-D UAV used in the kinodynamic exploration research of João Félix Mendes, Meysam Basiri and Rodrigo Ventura.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image118.png",
+      "slides": [
+        38,
+        47,
+        56
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/rgbd-exploration-uav.webp": "301f96804347c0ab7d04c4fbdee19bf639e171f219317f5e1238105067c93918"
+    }
+  },
+  {
+    "id": "s11-media14",
+    "title": "Trimodal UAV flight tests",
+    "type": "video",
+    "path": "media/videos/trimodal-flight-tests.mp4",
+    "poster": "media/posters/trimodal-flight-tests.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 32.833333,
+    "experimentType": "real experiment",
+    "alt": "Trimodal UAV flight tests",
+    "caption": "Field tests of the trimodal UAV, showing the platform in its different flight configurations. Vale, Basiri and Afonso, IROS 2025.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media14.mp4",
+      "slides": [
+        18
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/trimodal-flight-tests.mp4": "942efa185be1c4b0d912742ea24243ba85c4032b5a3352b6d82880a02cdf9947",
+      "media/posters/trimodal-flight-tests.jpg": "66412a5c4a5f8820452c299a4846309fe222f3a4d9d1b72ef44c3ebadedea9b8"
+    }
+  },
+  {
+    "id": "s11-media30",
+    "title": "Hard and soft frontier clustering comparison",
+    "type": "video",
+    "path": "media/videos/frontier-clustering-comparison.mp4",
+    "poster": "media/posters/frontier-clustering-comparison.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 5.708333,
+    "experimentType": "explanatory animation",
+    "alt": "Hard and soft frontier clustering comparison",
+    "caption": "Explanatory comparison of hard and soft frontier clustering.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media30.mp4",
+      "slides": [
+        35
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/frontier-clustering-comparison.mp4": "8b8171e59fda56c64cfeb6a1e6a506084984f3c833cf8957180ffb40c22e3440",
+      "media/posters/frontier-clustering-comparison.jpg": "8e5a5b83c9e0f381c91b03179326dbb9f265bf95b870b297228b3319452d3ee0"
+    }
+  },
+  {
+    "id": "s11-media31",
+    "title": "Soft frontier clustering animation",
+    "type": "video",
+    "path": "media/videos/frontier-soft-clustering.mp4",
+    "poster": "media/posters/frontier-soft-clustering.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 10.791667,
+    "experimentType": "explanatory animation",
+    "alt": "Soft frontier clustering animation",
+    "caption": "Explanatory animation showing graded frontier-cluster membership.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media31.mp4",
+      "slides": [
+        35
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/frontier-soft-clustering.mp4": "11d89f7c1cb8cda1338f9667ecf1500ac9ff736c6344d0b8e676ef566d1f8a44",
+      "media/posters/frontier-soft-clustering.jpg": "53e91a8eb5f50541500b5ee5fe5088d8b9fb148226463a3f1c184bcfca0e9bb5"
+    }
+  },
+  {
+    "id": "s11-media32",
+    "title": "Probabilistic frontier prioritization experiments",
+    "type": "video",
+    "path": "media/videos/probabilistic-frontier-experiments.mp4",
+    "poster": "media/posters/probabilistic-frontier-experiments.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 66.875,
+    "experimentType": "real experiment and simulation",
+    "alt": "Probabilistic frontier prioritization experiments",
+    "caption": "Outdoor two-UAV exploration on a court, followed by a separate simulated planner comparison. Devassy, Basiri, Figueiredo and Lima, IEEE RA-L 2026.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media32.mp4",
+      "slides": [
+        36
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/probabilistic-frontier-experiments.mp4": "76ed0d3b6d484b16ca8e665e81721a6fe8b2d0b4de973d0d36851182a7ca1e5b",
+      "media/posters/probabilistic-frontier-experiments.jpg": "38b5c98ddcbc670a397f293f475633b72928fce75f159c1f46bd53769debda15"
+    }
+  },
+  {
+    "id": "s11-media29",
+    "title": "Frontier Shepherding outdoor forest experiment",
+    "type": "image",
+    "path": "media/posters/froshe-outdoor-forest.jpg",
+    "poster": null,
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 61.083333,
+    "experimentType": "real experiment",
+    "alt": "Frontier Shepherding outdoor forest experiment",
+    "caption": "Frontier Shepherding: two UAVs exploring a forest-like outdoor environment. John Lewis, Meysam Basiri and Pedro U. Lima, IROS 2025.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media29.mp4",
+      "slides": [
+        34
+      ],
+      "derivedPoster": true
+    },
+    "sourceHashes": {
+      "media/posters/froshe-outdoor-forest.jpg": "afbc1ed3ddf31acb0be23ad2d590a6aa76cc9e4900bb036064200b8dda4582a8"
+    }
+  },
+  {
+    "id": "s11-image10",
+    "title": "John Lewis Devassy",
+    "type": "image",
+    "path": "media/people/john-lewis-devassy.webp",
+    "poster": null,
+    "width": 551,
+    "height": 698,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of John Lewis Devassy",
+    "caption": "John Lewis Devassy",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image10.jpg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/john-lewis-devassy.webp": "7555c2fda1db767da9930b1a4dea8b90a6a11ff00e2182075ed518ed59aeb4be"
+    }
+  },
+  {
+    "id": "s11-image11",
+    "title": "Akshat Singh",
+    "type": "image",
+    "path": "media/people/akshat-singh.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Akshat Singh",
+    "caption": "Akshat Singh",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image11.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/akshat-singh.webp": "cace13b6cd5c6045ac1d535adf61a632dbdcdfb485efd3bab94909135a602bd5"
+    }
+  },
+  {
+    "id": "s11-image12",
+    "title": "João Félix Mendes",
+    "type": "image",
+    "path": "media/people/joao-felix-mendes.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of João Félix Mendes",
+    "caption": "João Félix Mendes",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image12.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/joao-felix-mendes.webp": "2960fe273dc62c2f985037f7c5530791b9a1f7a52a0d50dea71daebc944d6472"
+    }
+  },
+  {
+    "id": "s11-image28",
+    "title": "Pedro U. Lima",
+    "type": "image",
+    "path": "media/people/pedro-u-lima.webp",
+    "poster": null,
+    "width": 660,
+    "height": 908,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Pedro U. Lima",
+    "caption": "Pedro U. Lima",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image28.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/pedro-u-lima.webp": "93b1a1add4072e0fe1b769596838c7db1254397fa6e80fdc69129e73b30fb433"
+    }
+  },
+  {
+    "id": "s11-image32",
+    "title": "Mário Figueiredo",
+    "type": "image",
+    "path": "media/people/mario-figueiredo.webp",
+    "poster": null,
+    "width": 100,
+    "height": 133,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Mário Figueiredo",
+    "caption": "Mário Figueiredo",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image32.png",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/mario-figueiredo.webp": "6f46d53b6475eb458d8638b093b0183da50cb57c7549f80f0a5681892dd9e15b"
+    }
+  },
+  {
+    "id": "s11-image7",
+    "title": "Nivand Khosravi",
+    "type": "image",
+    "path": "media/people/nivand-khosravi.webp",
+    "poster": null,
+    "width": 768,
+    "height": 1071,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Nivand Khosravi",
+    "caption": "Nivand Khosravi",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image7.jpeg",
+      "slides": [
+        2,
+        10,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/nivand-khosravi.webp": "f2636351350b832ea27b9a846c5d8749839120f896903713755287e227e18122"
+    }
+  },
+  {
+    "id": "s11-image8",
+    "title": "Niusha Khosravi",
+    "type": "image",
+    "path": "media/people/niusha-khosravi.webp",
+    "poster": null,
+    "width": 768,
+    "height": 1085,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Niusha Khosravi",
+    "caption": "Niusha Khosravi",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image8.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/niusha-khosravi.webp": "1079320eda43e5e1b22e6e1a6ba36ff2e82a7933078f17620c9a11d98ebcd138"
+    }
+  },
+  {
+    "id": "s11-image9",
+    "title": "Maria Inês Conceição",
+    "type": "image",
+    "path": "media/people/maria-ines-conceicao.webp",
+    "poster": null,
+    "width": 768,
+    "height": 1178,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Maria Inês Conceição",
+    "caption": "Maria Inês Conceição",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image9.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/maria-ines-conceicao.webp": "0e37476d0aafb9698a9b23a509e4ee5386cbd77da6c02bb03da1952fde3f9ac1"
+    }
+  },
+  {
+    "id": "s11-image87",
+    "title": "Técnico Lisboa raster logo from presentation",
+    "type": "image",
+    "path": "media/logos/tecnico-lisboa.webp",
+    "poster": null,
+    "width": 190,
+    "height": 55,
+    "experimentType": "institutional logo",
+    "alt": "Técnico Lisboa",
+    "caption": "Técnico Lisboa institutional logo.",
+    "source": {
+      "id": "S11",
+      "file": "image87.png",
+      "slides": [
+        25,
+        44
+      ]
+    },
+    "sourceHashes": {
+      "media/logos/tecnico-lisboa.webp": "cd2eb549e4e689da3a0be9681a2f21987194a20d7edb3b98f9d7c2cce01ba81d"
+    }
+  }
+]

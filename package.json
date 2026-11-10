@@ -1,0 +1,15 @@
+{
+  "name": "irsg-arg-research-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static research website for GitHub Pages; no third-party runtime or build dependencies.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}

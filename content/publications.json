@@ -1,0 +1,257 @@
+[
+  {
+    "id": "devassy2026frontier",
+    "title": "Enhancing Multi-Robot Exploration Using Probabilistic Frontier Prioritization With Dirichlet Process Gaussian Mixtures",
+    "authors": [
+      "John Lewis Devassy",
+      "Meysam Basiri",
+      "Mário A. T. Figueiredo",
+      "Pedro U. Lima"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/LRA.2026.3703222",
+    "url": "https://doi.org/10.1109/LRA.2026.3703222",
+    "theme": "Exploration and mapping",
+    "volume": "11",
+    "number": "8",
+    "pages": "9359--9366",
+    "entry_type": "article",
+    "related_projects": [
+      "probabilistic-frontier-prioritization"
+    ],
+    "status": "published",
+    "source_reference": "S05; S01 pp.143–150"
+  },
+  {
+    "id": "mendes2026kinodynamic",
+    "title": "Kinodynamic Trajectory Planning for Efficient UAV Exploration and Reconstruction of Unknown Environments",
+    "authors": [
+      "João Félix Mendes",
+      "Meysam Basiri",
+      "Rodrigo Ventura"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/LRA.2025.3641147",
+    "url": "https://doi.org/10.1109/LRA.2025.3641147",
+    "theme": "Exploration and mapping",
+    "volume": "11",
+    "number": "2",
+    "pages": "1530--1537",
+    "entry_type": "article",
+    "related_projects": [
+      "kinodynamic-exploration"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.115–122; S02"
+  },
+  {
+    "id": "conceicao2026sparc",
+    "title": "Path planning optimisation for SParse, AwaRe and Cooperative Networked Aerial Robot Teams (SpArC-NARTs): Optimisation tool and ground sensing coverage use cases",
+    "authors": [
+      "Maria Inês Conceição",
+      "António Grilo",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2026.105629",
+    "url": "https://doi.org/10.1016/j.robot.2026.105629",
+    "theme": "Communication and coordination",
+    "volume": "205",
+    "pages": "105629",
+    "entry_type": "article",
+    "related_projects": [
+      "communication-aware-planning"
+    ],
+    "status": "published",
+    "source_reference": "S02"
+  },
+  {
+    "id": "conceicao2025survey",
+    "title": "Communication and Motion Coordination Awareness in Networked Aerial Robot Teams",
+    "authors": [
+      "Maria Inês Conceição",
+      "António Grilo",
+      "Meysam Basiri"
+    ],
+    "year": 2025,
+    "venue": "Ad Hoc Networks",
+    "doi": "10.1016/j.adhoc.2025.103875",
+    "url": "https://doi.org/10.1016/j.adhoc.2025.103875",
+    "theme": "Communication and coordination",
+    "volume": "176",
+    "pages": "103875",
+    "entry_type": "article",
+    "related_projects": [
+      "communication-aware-planning"
+    ],
+    "status": "published",
+    "source_reference": "S07"
+  },
+  {
+    "id": "ferreira2024following",
+    "title": "Dynamic Target Tracking and Following with UAVs Using Multi-Target Information: Leveraging YOLOv8 and MOT Algorithms",
+    "authors": [
+      "Diogo Ferreira",
+      "Meysam Basiri"
+    ],
+    "year": 2024,
+    "venue": "Drones",
+    "doi": "10.3390/drones8090488",
+    "url": "https://doi.org/10.3390/drones8090488",
+    "theme": "Target tracking",
+    "volume": "8",
+    "number": "9",
+    "pages": "488",
+    "entry_type": "article",
+    "related_projects": [
+      "visual-target-following"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.33–55"
+  },
+  {
+    "id": "pimentel2022bimodal",
+    "title": "A Bimodal Rolling-Flying Robot for Micro Level Inspection of Flat and Inclined Surfaces",
+    "authors": [
+      "Miguel Pimentel",
+      "Meysam Basiri"
+    ],
+    "year": 2022,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/LRA.2022.3154027",
+    "url": "https://doi.org/10.1109/LRA.2022.3154027",
+    "theme": "Multimodal robots",
+    "volume": "7",
+    "number": "2",
+    "pages": "5135--5142",
+    "entry_type": "article",
+    "related_projects": [
+      "bimodal-rolling-flying"
+    ],
+    "status": "published",
+    "source_reference": "S03; S02"
+  },
+  {
+    "id": "dias2023bogiecopter",
+    "title": "BogieCopter: A Multi-Modal Aerial-Ground Vehicle for Long-Endurance Inspection Applications",
+    "authors": [
+      "Teodoro Dias",
+      "Meysam Basiri"
+    ],
+    "year": 2023,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/ICRA48891.2023.10161038",
+    "url": "https://doi.org/10.1109/ICRA48891.2023.10161038",
+    "theme": "Multimodal robots",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "bogiecopter"
+    ],
+    "status": "published",
+    "source_reference": "S04"
+  },
+  {
+    "id": "vale2025trimodal",
+    "title": "Enhancing UAV Energy Efficiency and Versatility through Trimodal Ground, Hovering, and Fixed-Wing Locomotion Modes",
+    "authors": [
+      "Afonso Vale",
+      "Meysam Basiri",
+      "Frederico Afonso"
+    ],
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/IROS60139.2025.11246401",
+    "url": "https://doi.org/10.1109/IROS60139.2025.11246401",
+    "theme": "Multimodal robots",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "trimodal-uav"
+    ],
+    "status": "published",
+    "source_reference": "S06; S02"
+  },
+  {
+    "id": "lewis2025froshe",
+    "title": "Frontier Shepherding: A Bio-inspired Multi-robot Framework for Large-Scale Exploration",
+    "authors": [
+      "John Lewis",
+      "Meysam Basiri",
+      "Pedro U. Lima"
+    ],
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/IROS60139.2025.11246323",
+    "url": "https://doi.org/10.1109/IROS60139.2025.11246323",
+    "theme": "Exploration and mapping",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "frontier-shepherding"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.93–100; S02"
+  },
+  {
+    "id": "caeiro2026mr",
+    "title": "A Unified Mixed Reality Interface for Dynamic Swarm Mission Planning and Control",
+    "authors": [
+      "Miguel Caeiro",
+      "Akshat Singh",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523316",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523316",
+    "theme": "Human–robot interaction",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "mixed-reality-supervision"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.199–204; S02"
+  },
+  {
+    "id": "niusha2026quality",
+    "title": "Proactive Feature Quality Assessment for LiDAR-Inertial Odometry Using Physical Signal Analysis",
+    "authors": [
+      "Niusha Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523258",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523258",
+    "theme": "Localization and perception",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "lidar-inertial-odometry"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.185–191; S02"
+  },
+  {
+    "id": "nishikawa2026recovery",
+    "title": "Two-Stage Recovery Control of a Quadrotor Tailsitter UAV Without Control Surfaces",
+    "authors": [
+      "Rodrigo Nishikawa",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523332",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523332",
+    "theme": "Deployment and recovery",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "deployment-recovery"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.123–128; S02"
+  }
+]

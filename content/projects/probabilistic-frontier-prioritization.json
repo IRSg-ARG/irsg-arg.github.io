@@ -1,0 +1,157 @@
+{
+  "slug": "probabilistic-frontier-prioritization",
+  "title": "Probabilistic frontier prioritization",
+  "theme": "Exploration & mapping",
+  "description": "Soft cluster memberships and information gain help UAV teams prioritize viewpoints as an unknown environment is mapped.",
+  "introduction": "When several UAVs explore an unknown area, rigid frontier groups can restrict useful choices and duplicate work. This method uses soft clustering to keep viewpoint priorities flexible as the map evolves.",
+  "publicationId": "devassy2026frontier",
+  "authorIds": [
+    "john-lewis-devassy",
+    "meysam-basiri",
+    "mario-figueiredo",
+    "pedro-u-lima"
+  ],
+  "mainMediaId": "s11-media32",
+  "supplementaryVideo": "https://youtu.be/d9iaTWqiM9c",
+  "codeUrl": null,
+  "problem": {
+    "heading": "A changing map needs flexible choices.",
+    "paragraphs": [
+      "Frontiers mark the boundary between known free space and unexplored space. Grouping them helps a team divide its work, but hard cluster boundaries can separate nearby, useful viewpoints.",
+      "As new measurements change the map, those boundaries can constrain the next decision. The aim is to preserve useful alternatives while reducing redundant exploration."
+    ]
+  },
+  "method": {
+    "heading": "Soft memberships. Informative viewpoints.",
+    "paragraphs": [
+      "A Dirichlet-process Gaussian mixture model represents candidate viewpoints with graded cluster memberships and adapts model complexity to the frontier distribution.",
+      "The method combines expected information gain with cluster coherence to form a probabilistic priority. A compatible exploration planner then uses that priority to choose its next motion.",
+      "This is a modular prioritization mechanism demonstrated with FAME and Frontier Shepherding (FroShe). Memberships relate viewpoints to mixture components; they are not a hard assignment of every frontier to a robot."
+    ],
+    "steps": [
+      {
+        "title": "Find frontiers",
+        "text": "Identify boundaries between known and unknown space."
+      },
+      {
+        "title": "Keep soft memberships",
+        "text": "Represent how strongly viewpoints belong to nearby regions."
+      },
+      {
+        "title": "Prioritize information",
+        "text": "Combine expected information gain and cluster coherence."
+      },
+      {
+        "title": "Pass to the planner",
+        "text": "Use priorities within FAME or FroShe."
+      }
+    ],
+    "mediaIds": [
+      "s11-media30",
+      "s11-media31"
+    ]
+  },
+  "videoDescription": "The silent video begins with outdoor court footage and LiDAR-map views from a two-UAV experiment. It then shows a separate simulation comparison of exploration planners. The outdoor footage demonstrates feasibility; the reported percentage improvements below were measured in simulation.",
+  "results": [
+    {
+      "id": "fame",
+      "evaluation": "simulation",
+      "display": "≈14%",
+      "label": "Lower average exploration time",
+      "method": "FAME + FP",
+      "baseline": "Original FAME",
+      "metric": "mean exploration time",
+      "units": "relative percent reduction",
+      "value": 14,
+      "environment": "Tested forest densities and team sizes; unrestricted communication",
+      "teamSize": "Across tested team sizes",
+      "trials": "Aggregate simulation study",
+      "qualification": "Each enhanced planner is compared with its own original version.",
+      "source": "S05, as summarized in brief section 6"
+    },
+    {
+      "id": "froshe",
+      "evaluation": "simulation",
+      "display": "≈10%",
+      "label": "Lower average exploration time",
+      "method": "FroShe + FP",
+      "baseline": "Original FroShe",
+      "metric": "mean exploration time",
+      "units": "relative percent reduction",
+      "value": 10,
+      "environment": "Tested forest densities and team sizes; unrestricted communication",
+      "teamSize": "Across tested team sizes",
+      "trials": "Aggregate simulation study",
+      "qualification": "Each enhanced planner is compared with its own original version.",
+      "source": "S05, as summarized in brief section 6"
+    },
+    {
+      "id": "ablation",
+      "evaluation": "simulation",
+      "display": "22.5–32.0%",
+      "label": "Lower exploration time in the clustering ablation",
+      "method": "DP-GMM frontier prioritization",
+      "baseline": "Dense K-means frontier implementation",
+      "metric": "exploration time",
+      "units": "relative percent reduction range",
+      "value": [
+        22.5,
+        32
+      ],
+      "environment": "Tested court and forest scenarios",
+      "teamSize": 2,
+      "trials": "Simulation ablation",
+      "qualification": "A separate two-UAV ablation, not the same comparison as the FAME/FroShe averages.",
+      "source": "S05, as summarized in brief sections 6 and 7",
+      "presentation": "wide"
+    },
+    {
+      "id": "hardware",
+      "evaluation": "outdoor hardware",
+      "display": "77 / 83 / 85 s",
+      "label": "Time to reach 95% coverage",
+      "method": "FAME-based implementation with probabilistic frontier prioritization",
+      "baseline": null,
+      "metric": "time to 95% coverage",
+      "units": "seconds",
+      "value": [
+        77,
+        83,
+        85
+      ],
+      "environment": "Outdoor court",
+      "sensorConfiguration": "LiDAR mapping",
+      "teamSize": 2,
+      "trials": 3,
+      "qualification": "Hardware feasibility evidence; no hardware percentage speedup is inferred from these trials.",
+      "source": "S05 and S11 slide 36, corrected by brief section 6"
+    }
+  ],
+  "related": [
+    {
+      "title": "Frontier Shepherding",
+      "summary": "A bio-inspired framework in which UAVs shepherd different batches of a virtual frontier flock. Evaluated in simulation and forest-like outdoor experiments.",
+      "publicationId": "lewis2025froshe",
+      "mediaId": "s11-media29",
+      "label": "OUTDOOR EXPERIMENT"
+    },
+    {
+      "title": "Kinodynamic exploration",
+      "summary": "KRH-NBVP considers feasible motion during viewpoint selection; KAEP adds a global planning component. Evaluated in simulation and real flight.",
+      "publicationId": "mendes2026kinodynamic",
+      "mediaId": "s11-image118",
+      "label": "RESEARCH PLATFORM"
+    }
+  ],
+  "publicationLabel": "IEEE RA-L 2026",
+  "experimentHeading": "From priorities to exploration.",
+  "experimentLabel": "OUTDOOR HARDWARE + SIMULATION",
+  "evidenceHeading": [
+    "Two evaluations.",
+    "Different conclusions."
+  ],
+  "evidenceIntroduction": "Simulation measures changes in exploration time against defined baselines. Outdoor trials demonstrate the feasibility of the two-UAV system.",
+  "simulationContext": "Across tested team sizes and forest densities, with unrestricted communication. Each planner is compared with its own enhanced version.",
+  "hardwareContext": "Two UAVs using the FAME-based implementation explored an outdoor court. The endpoint was 95% coverage in each trial.",
+  "hardwareNote": "These three trials demonstrate hardware feasibility. They are separate from the simulated percentage improvements above."
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Aerial Robotics and Multi Drone Systems Group",
+  "fullName": "Aerial Robotics and Multi Drone Systems Group at IRSG-ISR Lisboa",
+  "shortName": "Aerial Robotics",
+  "institution": "Instituto Superior Técnico",
+  "university": "Universidade de Lisboa",
+  "institute": "Institute for Systems and Robotics, ISR-Lisboa",
+  "city": "Lisbon, Portugal",
+  "email": "meysam.basiri@tecnico.ulisboa.pt",
+  "github": "https://github.com/IRSg-ARG",
+  "repository": "IRSg-ARG/irsg-arg.github.io",
+  "origin": "https://irsg-arg.github.io",
+  "basePath": "/",
+  "indexable": true,
+  "language": "en",
+  "contact": {
+    "lead": "Meysam Basiri",
+    "role": "Research lead",
+    "orcid": "https://orcid.org/0000-0002-8456-6284",
+    "address": "Instituto Superior Técnico, Av. Rovisco Pais, 1, 1049-001 Lisboa, Portugal"
+  },
+  "nav": [
+    {
+      "label": "Research",
+      "anchor": "research"
+    },
+    {
+      "label": "Publications",
+      "anchor": "publications"
+    },
+    {
+      "label": "People",
+      "anchor": "people"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+name: Validate and deploy research website
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  SITE_ORIGIN: https://irsg-arg.github.io
+  SITE_BASE_PATH: /
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Build static website
+        run: node scripts/build.mjs
+      - name: Check content, citations, links, and assets
+        run: node scripts/check.mjs
+      - name: Check a repository subpath
+        run: |
+          node scripts/build.mjs --base-path /path-check --out-dir .qa/subpath
+          node scripts/check.mjs --base-path /path-check --out-dir .qa/subpath
+      - name: Upload static website
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
