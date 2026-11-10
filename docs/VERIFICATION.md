@@ -26,6 +26,8 @@ Verified the LiDAR hero image links to the featured project, Meysam’s portrait
 
 Student search handles accents; status and programme filters combine correctly. Inês’s Bachelor record appears under previous supervision in 2026 and links to her ICARSC paper. Publication search locates the featured DOI; filtering it to conference papers correctly shows the empty state. Clearing filters restores the full list. Mobile navigation opens, follows a link and closes.
 
+The new directory links also work from a deeply nested unknown URL. The custom 404 uses absolute root paths, verified by following its Publications navigation back to the bibliography. The static check enforces this behavior for root and subpath builds.
+
 These checks assess the implemented site. They do not independently certify enrollment, portrait identities or completeness beyond the supplied and public sources. See CONTENT_QUESTIONS.md for the remaining content review.
 
 GitHub Actions records build and deployment results. Hosted checks and screenshots are saved with the separate delivery after publication.

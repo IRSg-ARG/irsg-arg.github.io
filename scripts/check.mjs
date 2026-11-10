@@ -39,6 +39,7 @@ for(const [file,html] of pages){
   for(const match of html.matchAll(/\b(?:href|src|poster)="([^"]+)"/g)){
     const raw=decode(match[1]);
     if(/^(https?:|mailto:|tel:|data:)/i.test(raw))continue;
+    if(relative==='404.html'&&!raw.startsWith('#'))assert(raw.startsWith(base+'/'),'404 link must work at unknown URL depths: '+raw);
     const url=new URL(raw,'https://check.invalid'+base+'/'+route);
     if(base&&!url.pathname.startsWith(base+'/')){assert(false,'Link escapes configured base path '+raw+': '+relative);continue;}
     let local=decodeURIComponent(url.pathname.slice(base.length)).replace(/^\/+/,'');

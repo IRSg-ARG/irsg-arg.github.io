@@ -36,6 +36,7 @@ function template(name,values){
 }
 function link(from,target){
   if(/^(https?:|mailto:|tel:|#)/i.test(target))return target;
+  if(from==='404.html')return base+'/'+target.replace(/^\/+/, '');
   const marker=target.indexOf('#');
   const pathname=marker<0?target:target.slice(0,marker);
   const hash=marker<0?'':target.slice(marker);
