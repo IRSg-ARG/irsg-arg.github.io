@@ -1,0 +1,85 @@
+{
+  "slug": "marginal-gain",
+  "title": "GPU-accelerated path-dependent marginal gain",
+  "theme": "Exploration and mapping",
+  "description": "Ongoing work evaluates the additional space each viewpoint contributes along a candidate exploration path.",
+  "introduction": "Successive viewpoints along a path often observe overlapping parts of a map. This research studies path-dependent marginal gain: crediting each viewpoint only for the additional space that earlier viewpoints on the same candidate path are not already expected to reveal.",
+  "status": "Research in progress",
+  "people": [
+    "João Félix Mendes",
+    "Meysam Basiri",
+    "Rodrigo Ventura"
+  ],
+  "publicationIds": [],
+  "primaryMediaId": "s11-image127",
+  "problem": {
+    "heading": "Count newly observed space once.",
+    "paragraphs": [
+      "Scoring every viewpoint independently can give repeated credit to the same unknown region. A path containing several overlapping views may then appear more informative than the new space it would actually reveal.",
+      "Accounting for those overlaps makes path evaluation more demanding. The research asks how to retain the history of expected observations while keeping the overlap calculation suitable for onboard planning."
+    ]
+  },
+  "approach": {
+    "heading": "Use the path’s observation history.",
+    "paragraphs": [
+      "The method represents earlier viewpoints along a candidate path using compact depth-buffer histories. These histories describe which regions are already expected to be visible before a new candidate view is evaluated.",
+      "GPU-parallel overlap tests compare candidate observations against that accumulated history. The resulting marginal-gain score focuses on additional space along the path."
+    ],
+    "steps": [
+      {
+        "title": "Retain earlier views",
+        "text": "Keep a compact history of observations expected along the candidate path."
+      },
+      {
+        "title": "Check overlap",
+        "text": "Use parallel tests to identify space covered by earlier viewpoints."
+      },
+      {
+        "title": "Score additional space",
+        "text": "Credit the candidate view for its new contribution."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Method development",
+      "kind": "context",
+      "text": "The current research direction explores GPU-accelerated evaluation of path-dependent information gain for onboard exploration planning."
+    },
+    {
+      "label": "Overlap illustration",
+      "kind": "concept",
+      "text": "The diagram explains how successive viewpoints can share visible regions and why those regions should receive credit only once along a candidate path."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-image127",
+      "label": "Explanatory diagram",
+      "caption": "Overlapping fields of view along a candidate path illustrate the distinction between absolute and marginal information gain.",
+      "description": "A drawn UAV path passes several viewpoints. Shared viewing regions are shaded to distinguish repeated observations from additional visible space."
+    }
+  ],
+  "relatedSlugs": [
+    "kinodynamic-exploration",
+    "probabilistic-frontier-prioritization",
+    "distributed-exploration"
+  ],
+  "sourceSlides": [
+    40,
+    41
+  ],
+  "sourceReferences": [
+    "S11 slides 40–41; supplied speaker notes",
+    "WEBSITE_INFORMATION_SHEET.md sections 5D, 7 and 17",
+    "catalogue/media_manifest.json s11-image127 (visually inspected; no provisional numbers)"
+  ],
+  "editorQuestions": [
+    "Obtain the current manuscript, exact author list and submission/publication status before adding a publication record.",
+    "Hold s11-media42 and the slide-41 result material until the numerical baselines and experimental conditions are verified.",
+    "The presentation’s computation-speedup and real-flight time claims are intentionally omitted from public copy; confirm CPU implementation/hardware comparison, flight baseline and time-to-95%-coverage endpoint before using them.",
+    "The page’s people list follows the supplied project catalogue and is a research-contributor list, not a verified manuscript author order."
+  ],
+  "type": "catalogue",
+  "themeId": "exploration"
+}

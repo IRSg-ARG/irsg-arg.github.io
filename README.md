@@ -26,10 +26,12 @@ No package installation is required. The builder uses only Node's standard libra
 - **/research/probabilistic-frontier-prioritization/**: overview, method, two explanatory animations, experimental footage, separately labelled simulation and hardware results, complete authorship, paper and supplementary-video links, and BibTeX download/copy.
 - **/students/**: current and previous supervision, including PhD, Master’s, Bachelor’s and research placements; search by name or topic and filter by status or programme.
 - **/publications/**: bibliography grouped by year, with search, publication-type filters, publisher/preprint links, individual verified citations and a bibliography download.
+- **/research/**: searchable project index grouped by research theme and publication status. All 23 catalogue projects have working pages, including two explicitly marked as research in progress.
+- The additional project pages explain their problem, approach, evidence, contributors and exact publications. Warehouse and moving-platform landing are text-led case studies where no project-specific deck footage was supplied.
 - A useful 404 page, robots.txt and sitemap.xml.
 - Responsive layouts, keyboard navigation, visible focus, a skip link, native video controls, silent-video descriptions, and reduced-motion support.
 
-Publication navigation opens the bibliography. Research and people navigation reaches the corresponding homepage sections; students and alumni are linked from the people section and every footer. There are no empty destinations.
+Research navigation opens the complete project index; the homepage research directions link directly to their project pages. Publication navigation opens the bibliography, and people navigation reaches the homepage people section; students and alumni are linked from that section and every footer. There are no empty destinations.
 
 ## Structure
 
@@ -37,7 +39,8 @@ Publication navigation opens the bibliography. Research and people navigation re
 | --- | --- |
 | content/site.json | Group identity, contact, navigation and publication origin/base path |
 | content/home.json | Homepage copy, themes, selected publication/person IDs |
-| content/projects/*.json | Project narrative, evaluation context, results, researchers and related work |
+| content/projects/*.json | Project narrative, evidence categories, media, contributors, publications and related projects |
+| content/research.json | Research groups for the searchable project index |
 | content/people.json | Names, portraits and research associations |
 | content/students.json | Individual supervision records, degree, status, period, topic and provenance |
 | content/publications.json | Published metadata and ordered authors, plus clearly identified archive records |

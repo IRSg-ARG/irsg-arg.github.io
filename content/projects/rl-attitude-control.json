@@ -1,0 +1,109 @@
+{
+  "slug": "rl-attitude-control",
+  "title": "Multitask graph-policy attitude control",
+  "theme": "Deployment and recovery",
+  "description": "One compact learned policy supports smooth attitude tracking and aggressive flight recovery.",
+  "introduction": "Normal flight rewards smooth, accurate tracking; recovery from a disturbed or falling state calls for rapid stabilization. This project trains one compact graph policy to balance those objectives and run directly on a flight controller.",
+  "status": "Published research",
+  "people": [
+    "Yu Tang Liu",
+    "Afonso Vale",
+    "Aamir Ahmad",
+    "Rodrigo Ventura",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "liu2025graph"
+  ],
+  "primaryMediaId": "s11-media23",
+  "problem": {
+    "heading": "Tracking and recovery demand different behaviour.",
+    "paragraphs": [
+      "A controller tuned mainly for smooth commands can respond too slowly to an extreme initial state. A controller that always prioritizes rapid correction can become unnecessarily aggressive during ordinary attitude tracking.",
+      "An onboard method must express that trade-off while fitting the computation available on a small aerial vehicle. The research explores a shared policy conditioned by task priorities."
+    ]
+  },
+  "approach": {
+    "heading": "Encode state, priorities and actions in a graph policy.",
+    "paragraphs": [
+      "The graph policy represents relationships between the vehicle state, task weights and attitude-control commands. Task weights specify the relative priorities of tracking, stabilization and smoothness within the same network.",
+      "The policy is trained with multitask soft actor–critic in parallel Isaac Gym simulations. The published implementation has 697 learned parameters and operates onboard a Pixhawk 6X at approximately 400 Hz, without a companion computer.",
+      "The same policy is used for normal attitude tracking and aggressive recovery. The training visualization and physical flight recordings are presented as different forms of evidence."
+    ],
+    "steps": [
+      {
+        "title": "Observe the onboard state",
+        "text": "Use the current attitude and motion information."
+      },
+      {
+        "title": "Set task priorities",
+        "text": "Weight tracking, stabilization and command smoothness."
+      },
+      {
+        "title": "Evaluate the graph policy",
+        "text": "Produce attitude-control commands with the compact learned network."
+      },
+      {
+        "title": "Run on the autopilot",
+        "text": "Execute the policy directly on the Pixhawk flight controller."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Onboard deployment",
+      "kind": "hardware",
+      "text": "The published implementation reports a 697-parameter policy running at approximately 400 Hz on a Pixhawk 6X. Both normal tracking and aggressive recovery use the same onboard policy."
+    },
+    {
+      "label": "Published recovery campaign",
+      "kind": "hardware",
+      "text": "The published campaign reports 13 successful recoveries in 13 tests, with complete rotor disengagement for 1–3 seconds before recovery. These are the conditions of that test campaign, rather than a general reliability guarantee."
+    },
+    {
+      "label": "Training environment",
+      "kind": "simulation",
+      "text": "The Isaac Gym recording visualizes simulated training. It is separate from the outdoor recovery and attitude-tracking demonstrations."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media23",
+      "label": "Hardware experiment · aggressive recovery",
+      "caption": "Aggressive recovery with the graph policy from Yu Tang Liu and collaborators’ IROS 2025 work.",
+      "description": "An outdoor recovery composite shows the physical UAV stabilizing under the learned controller."
+    },
+    {
+      "id": "s11-media24",
+      "label": "Hardware experiment · normal attitude tracking",
+      "caption": "Normal tracking with the same onboard policy.",
+      "description": "A physical flight demonstration shows normal attitude-tracking behaviour."
+    },
+    {
+      "id": "s11-media21",
+      "label": "Training simulation",
+      "caption": "Parallel simulation used to train the multitask policy.",
+      "description": "An Isaac Gym visualization shows simulated UAVs during policy training."
+    }
+  ],
+  "relatedSlugs": [
+    "deployment-recovery",
+    "tilting-wings",
+    "energy-aware-search"
+  ],
+  "sourceSlides": [
+    23,
+    24,
+    25
+  ],
+  "sourceReferences": [
+    "liu2025graph",
+    "WEBSITE_INFORMATION_SHEET.md sections 5C and 7; published 1–3 s conditions override slide-25 shorthand",
+    "S11 slides 23–25; media manifest"
+  ],
+  "editorQuestions": [
+    "The slide-25 free-fall composite contains conflicting 1–5 second shorthand and is not selected. Use the paper’s 1–3 second rotor-disengagement condition unless later trials are documented."
+  ],
+  "type": "catalogue",
+  "themeId": "deployment"
+}

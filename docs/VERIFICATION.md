@@ -1,37 +1,34 @@
-# Verification of the 10 November 2026 website update
+# Verification of the project expansion
 
-Target: IRSg-ARG/irsg-arg.github.io, published at https://irsg-arg.github.io/ with base path /.
-Runtime: Node.js v24.22.1. No dependencies were installed.
+Date: 10 November 2026. Runtime: Node.js v24.22.1. Target: IRSg-ARG/irsg-arg.github.io, organization root https://irsg-arg.github.io/ with base path /.
 
-## Reproducible checks
+## Build and content checks
 
-Run node scripts/build.mjs and node scripts/check.mjs. Repeat with --base-path /path-check --out-dir .qa/subpath. Both configured builds pass.
+Run node scripts/build.mjs and node scripts/check.mjs. Repeat with --base-path /path-check --out-dir .qa/subpath. Both builds pass.
 
-- Five HTML documents: homepage, project, students, publications and custom 404.
-- 225 internal links, anchors and media paths resolve.
-- 65 publication records: 59 matching citation exports and six explicitly linked archive listings without unverified BibTeX.
-- All 12 original publication citations retain their exact titles, ordered authors, year, venue, volume, issue, pages, DOI and URL.
-- 47 supervision records for 46 people; unique IDs, degree/status fields and source references. Inês Marques is previous Bachelor’s supervision in 2026, per the user correction.
-- 32 source-attributed media records. All supplied image/video/poster bytes match their recorded SHA-256 hashes.
-- The featured paper’s simulation categories and separate two-UAV hardware times remain unchanged.
-- H1, language, descriptions, skip links, alt text, ARIA references and native video controls pass. No autoplay; video preload remains none.
-- New routes appear in the sitemap; canonical URLs retain the organization root.
-- No source PPTX, CV, PDF or ZIP is deployed. Static output is approximately 9.98 MiB.
+- 27 content pages plus the custom 404: homepage, 23 project pages, research index, students and publications.
+- 1,307 internal links, anchors and assets resolve in both configurations.
+- All 23 project records are linked from the research index and included in the sitemap; every project has a valid research group.
+- The 65 publication records retain their existing metadata, with 59 matching citation exports and six linked archive records.
+- 47 supervision records for 46 people retain the user’s corrections.
+- 77 selected media records: 40 playable videos/animations and 37 images, all with source provenance and matching SHA-256 hashes.
+- Videos have native controls, no autoplay and preload none. Research-index cards load still images/posters, not video files.
+- Simulation and concept media require explicit labels. Every generic project includes source references, evidence context and captions/descriptions for selected media.
+- The original probabilistic-prioritization simulation categories, ordered citation and separate outdoor trial values remain unchanged.
+- Source PPTX, original CV, research-paper PDF and ZIP files remain outside the deployable output. Static output is approximately 89.59 MiB.
 
 ## Browser checks
 
-Reviewed the local HTTP preview with the supported in-app browser at desktop width 1280 and mobile widths 390 and 320. No document overflow was observed on the affected pages, and the new images loaded correctly.
+Reviewed the local preview at desktop 1280-pixel width and mobile widths 390 and 320. The research index, long project headings, ongoing-work page, mixed-reality page, tilting-wing prototype and text-led warehouse case study showed no document overflow. The project section navigation scrolls within its own horizontal container on narrow screens.
 
-Verified the LiDAR hero image links to the featured project, Meysam’s portrait appears on the homepage and project authorship panel, Rodrigo Ventura appears as key collaborator, and students/publications links navigate correctly.
+Search by researcher and combined research theme/status filters return the expected projects. The ongoing filter shows the tilting-wing and marginal-gain projects; the empty state and mobile navigation behave correctly. The existing representative project links back to the complete research index.
 
-Student search handles accents; status and programme filters combine correctly. Inês’s Bachelor record appears under previous supervision in 2026 and links to her ICARSC paper. Publication search locates the featured DOI; filtering it to conference papers correctly shows the empty state. Clearing filters restores the full list. Mobile navigation opens, follows a link and closes.
+The Frontier Shepherding hardware video played through more than 22 seconds of its 61.083-second duration with readyState 4 and no media error. Its outdoor footage is separately labelled from the simulation comparison. The SpArC animation is labelled Concept animation, and the mixed-reality waypoint clip is labelled as ongoing hardware work with the published velocity-command interface distinguished in the evidence text. The ongoing marginal-gain page omits provisional quantitative claims and has no fabricated publication link.
 
-The new directory links also work from a deeply nested unknown URL. The custom 404 uses absolute root paths, verified by following its Publications navigation back to the bibliography. The static check enforces this behavior for root and subpath builds.
+Text-led case studies do not borrow unrelated experimental imagery. The expanded project pages preserve exact citation author order and use project-contributor labels without claiming current group membership.
 
-These checks assess the implemented site. They do not independently certify enrollment, portrait identities or completeness beyond the supplied and public sources. See CONTENT_QUESTIONS.md for the remaining content review.
+## Limits and release evidence
 
-GitHub Actions records build and deployment results. Hosted checks and screenshots are saved with the separate delivery after publication.
+These checks assess the implementation and the supplied source mapping. They are not an independent re-review of every original research paper, identity check or accessibility certification. docs/PROJECT_CONTENT_REVIEW.md records source decisions and remaining scientific/content questions. No deck extraction was run.
 
-## Follow-up content corrections
-
-Verified the exact selected-contributors heading and generic platform caption. Rodrigo Ventura (key collaborator, Associate Professor, IST) and Pedro U. Lima (collaborator, Full Professor, IST) display side by side at desktop and mobile widths without document overflow. Sofia Simões appears only under previous Master’s students with graduation before summer 2026; Manuel Brito appears under current Master’s students with the exact supplied thesis title; Yu Tang Liu appears under previous doctoral students as a visiting PhD with the correct IROS 2025 paper link. Combined search/status/degree filters produce the expected records.
+The GitHub Actions run and hosted release checks are recorded in the separate delivery report after publication. Temporary viewport overrides are reset, and the owned preview process is stopped during delivery cleanup.

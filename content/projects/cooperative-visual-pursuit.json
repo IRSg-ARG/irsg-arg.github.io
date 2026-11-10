@@ -1,0 +1,87 @@
+{
+  "slug": "cooperative-visual-pursuit",
+  "title": "Vision-based pursuit and formation control",
+  "theme": "Target localization and tracking",
+  "description": "Nonlinear model predictive control connects smooth target pursuit with camera centring and useful viewing geometry for UAV teams.",
+  "introduction": "A UAV's motion determines what its camera can see. This work plans feasible pursuit motions that keep a target in view and studies how a team can maintain a useful formation around it.",
+  "status": "Published research",
+  "people": [
+    "João Matias",
+    "Meysam Basiri",
+    "Rodrigo Ventura"
+  ],
+  "publicationIds": [
+    "matias2025pursuit"
+  ],
+  "primaryMediaId": "s11-media46",
+  "problem": {
+    "heading": "Tracking depends on where the camera moves.",
+    "paragraphs": [
+      "A target estimate alone does not determine a useful pursuit motion. The robot must move smoothly while preserving an informative view, rather than allowing the target to drift out of the camera image.",
+      "For a team, the relative positions of the UAVs also influence viewing geometry. Coordinating those positions adds a formation-control problem to the task of following a moving target."
+    ]
+  },
+  "approach": {
+    "heading": "Plan motion around the target and the view.",
+    "paragraphs": [
+      "A nonlinear model predictive controller generates smooth, feasible pursuit motions. Camera centring is part of the control objective, connecting the target's image position with how the UAV moves.",
+      "The cooperative formulation coordinates UAV positions to maintain a formation and useful viewing geometry. The published evaluation separates this multi-UAV simulation study from the physical single-UAV experiment."
+    ],
+    "steps": [
+      {
+        "title": "Observe the target",
+        "text": "Use visual target information to support pursuit."
+      },
+      {
+        "title": "Predict feasible motion",
+        "text": "Evaluate pursuit trajectories with nonlinear model predictive control."
+      },
+      {
+        "title": "Preserve the view",
+        "text": "Keep the target near the camera centre while coordinating viewing geometry."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Multi-UAV pursuit and formation",
+      "kind": "simulation",
+      "text": "The paper's multi-UAV pursuit and formation-maintenance evaluation is simulation-based. It studies coordinated behaviour and viewing geometry for a UAV team."
+    },
+    {
+      "label": "Single-UAV field experiment",
+      "kind": "hardware",
+      "text": "The supplied outdoor demonstration uses one UAV. It supports the physical pursuit implementation without being presented as a hardware validation of cooperative team formation."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media46",
+      "label": "Outdoor hardware experiment · one UAV",
+      "caption": "Single-UAV outdoor visual pursuit from João Matias's research. The multi-UAV formation evaluation is a separate simulation study.",
+      "description": "A physical UAV pursues a target outdoors. The clip illustrates the single-robot hardware experiment and does not show a cooperative multi-UAV hardware formation."
+    },
+    {
+      "id": "s11-image136",
+      "label": "Research platform photograph",
+      "caption": "The visual-pursuit research UAV.",
+      "description": "Photograph of the aerial platform associated with the visual-pursuit work."
+    }
+  ],
+  "relatedSlugs": [
+    "visual-target-following",
+    "lidar-target-tracking",
+    "relative-localization"
+  ],
+  "sourceSlides": [
+    47
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md section 5F and S01 paper-summary distinction between multi-UAV simulation and single-UAV hardware",
+    "S11 slide 47; s11-media46 and s11-image136 in the precise media manifest",
+    "matias2025pursuit"
+  ],
+  "editorQuestions": [],
+  "type": "catalogue",
+  "themeId": "tracking"
+}

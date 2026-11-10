@@ -85,6 +85,25 @@ assert(hardware?.evaluation==='outdoor hardware'&&hardware.teamSize===2&&JSON.st
 const sitemap=fs.readFileSync(path.join(directory,'sitemap.xml'),'utf8');
 assert(sitemap.includes(origin+base+'/research/probabilistic-frontier-prioritization/'),'Sitemap base-path mismatch');
 for(const route of ['publications/','students/'])assert(sitemap.includes(origin+base+'/'+route),'Directory missing from sitemap: '+route);
+const research=read('content/research.json');
+const projects=fs.readdirSync(path.join(root,'content/projects')).filter(f=>f.endsWith('.json')).map(f=>read('content/projects/'+f));
+const researchHtml=fs.readFileSync(path.join(directory,'research/index.html'),'utf8');
+assert((researchHtml.match(/data-directory-item/g)||[]).length===projects.length,'Research index omits or duplicates a project');
+for(const p of projects){
+  assert(research.themes.some(t=>t.id===p.themeId),'Project has no valid research theme: '+p.slug);
+  assert(sitemap.includes(origin+base+'/research/'+p.slug+'/'),'Project missing from sitemap: '+p.slug);
+  assert(researchHtml.includes('href="'+p.slug+'/"'),'Project not linked from research index: '+p.slug);
+  if(p.type!=='catalogue')continue;
+  assert(p.problem?.paragraphs.length&&p.approach?.paragraphs.length&&p.evidence?.length&&p.sourceReferences?.length,'Project content or provenance missing: '+p.slug);
+  for(const id of p.publicationIds)assert(pubs.some(pub=>pub.id===id),'Unknown project publication '+id);
+  assert(p.status!=='Published research'||p.publicationIds.length>0,'Published project needs a publication: '+p.slug);
+  for(const selected of p.media){
+    const asset=media.find(m=>m.id===selected.id);
+    assert(asset&&selected.caption&&selected.description,'Project media missing context: '+p.slug+' / '+selected.id);
+    if(asset?.experimentType==='simulation')assert(/simulation/i.test(selected.label),'Simulation footage mislabeled: '+p.slug+' / '+selected.id);
+    if(/concept|design animation|explanatory animation/.test(asset?.experimentType||''))assert(/concept|design|explanatory|illustration/i.test(selected.label),'Concept/illustration label missing: '+p.slug+' / '+selected.id);
+  }
+}
 const studentRecords=read('content/students.json').records;
 assert(new Set(studentRecords.map(s=>s.id)).size===studentRecords.length,'Duplicate supervision records');
 assert(studentRecords.every(s=>s.name&&s.topic&&s.source_reference&&['current','previous'].includes(s.status)),'Supervision record missing provenance or status');

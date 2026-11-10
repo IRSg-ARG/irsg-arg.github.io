@@ -1,0 +1,79 @@
+{
+  "slug": "tilting-wings",
+  "title": "Adaptive tilting-wing configurations",
+  "theme": "Multimodal robots",
+  "description": "A flying prototype investigates wing incidence across the multicopter flight envelope.",
+  "introduction": "Wings can influence a quadrotor even when it is not operating as a fixed-wing aircraft. This ongoing project investigates whether adjusting their incidence can make that contribution useful across a wider range of speeds and attitudes.",
+  "status": "Research in progress",
+  "people": [
+    "Diogo Nunes",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [],
+  "primaryMediaId": "s11-media17",
+  "problem": {
+    "heading": "The airflow changes with the flight condition.",
+    "paragraphs": [
+      "A wing’s useful orientation depends on the local airflow. Forward motion, manoeuvring and propeller-induced flow create different conditions around a multicopter.",
+      "An orientation that helps in one part of the flight envelope may not help in another. The research question is how adjustable wing incidence can respond to those changing conditions."
+    ]
+  },
+  "approach": {
+    "heading": "Let the wing adapt to the local flow.",
+    "paragraphs": [
+      "Building on observations from the trimodal platform, Diogo Nunes’s prototype replaces fixed wings with tilting wings. Their incidence can be adjusted as the vehicle changes speed or attitude.",
+      "The work considers forward-flight lift as well as the influence of propeller-induced airflow. The current research is directed at identifying useful orientations and measuring the resulting net energy benefit."
+    ],
+    "steps": [
+      {
+        "title": "Change the flight condition",
+        "text": "Consider hover, manoeuvring and forward flight."
+      },
+      {
+        "title": "Adjust wing incidence",
+        "text": "Adapt the wing orientation to the local airflow."
+      },
+      {
+        "title": "Evaluate the complete vehicle",
+        "text": "Measure the net effect rather than assuming that added lift guarantees lower energy use."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Flying prototype",
+      "kind": "hardware",
+      "text": "The supplied recording demonstrates that the tilting-wing prototype is flying. It is evidence of prototype operation."
+    },
+    {
+      "label": "Research objective",
+      "kind": "context",
+      "text": "An optimized incidence schedule and a quantified net energy benefit are ongoing research objectives, rather than established results of this demonstration."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media17",
+      "label": "Ongoing research · prototype flight",
+      "caption": "Diogo Nunes’s tilting-wing prototype in flight.",
+      "description": "A physical prototype flies while carrying the adjustable wing configuration. The clip does not establish a quantified energy benefit."
+    }
+  ],
+  "relatedSlugs": [
+    "trimodal-uav",
+    "bogiecopter",
+    "rl-attitude-control"
+  ],
+  "sourceSlides": [
+    20
+  ],
+  "sourceReferences": [
+    "S11 slide 20; author-supplied project description and media manifest",
+    "WEBSITE_INFORMATION_SHEET.md section 5B"
+  ],
+  "editorQuestions": [
+    "Add a final thesis/publication record and quantitative energy results only when the author supplies the finalized title, status, comparison and test conditions."
+  ],
+  "type": "catalogue",
+  "themeId": "multimodal"
+}

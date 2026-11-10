@@ -55,14 +55,15 @@ Use native video controls and an accurate visual description. Keep preload at no
 
 ## Add a project without changing layout
 
-1. Copy **content/projects/probabilistic-frontier-prioritization.json** to a new slug-named JSON file in the same directory.
-2. Replace its title, summary, theme, exact publication ID, author IDs and real media IDs. Supply the new project's problem, method, steps, video description and related papers.
-3. Update **publicationLabel**, **experimentHeading**, **experimentLabel**, **evidenceHeading**, **evidenceIntroduction**, **simulationContext**, **hardwareContext** and **hardwareNote**. These control the narrative surrounding results.
-4. Replace the results array with source-supported records. A simulation record uses evaluation **simulation**; a hardware record uses **outdoor hardware**. The initial template supports comparison metrics plus a hardware trial-value array. Mark an optional ablation record with presentation **wide**. Remove evidence categories that do not apply; their sections are omitted. Keep baseline, metric, units, environment, team size, trial count, qualifications and source reference attached to each result.
-5. Set **codeUrl** and **supplementaryVideo** only when their exact public destinations are confirmed. A null value omits the corresponding link.
-6. Add the slug to a homepage theme's **project** field, or make it the featured project. The builder discovers project JSON files and creates **/research/SLUG/** automatically.
+For an ordinary project, copy a type **catalogue** record in **content/projects/**, such as **tilting-wings.json** or **frontier-shepherding.json**. Supply its unique slug, title, themeId, summary/introduction, status, people names, exact publicationIds, problem, approach, evidence and selected media. Every media entry has its own scientific label, caption and visual description. The primaryMediaId must refer to one of those entries. Use relatedSlugs to connect existing project pages.
 
-The initial layout is intended for projects with a published paper and an experimental/method narrative. A different evaluation structure can be added to the template deliberately when a future project needs it; do not force an incompatible result into the hardware or simulation trial schema.
+The builder discovers all project JSON files, creates **/research/SLUG/**, includes them in the research index and sitemap, and links homepage themes using projectSlugs. **content/research.json** controls research groups; use a valid themeId. Add a project to the relevant homepage theme if appropriate.
+
+Published research needs a verified publication record. A project in progress can have an empty publicationIds array; the page then offers research contact rather than a fabricated paper link. It can use a genuine prototype video or explanatory figure. A project without supplied media can be a text-led case study; leave primaryMediaId null and media empty rather than borrowing an unrelated experiment.
+
+Evidence entries keep their kind: **hardware**, **simulation**, **benchmark**, **concept** or **context**. Separate different experiments and publications. Include a baseline, metric, environment, team size, trial count and source context with any numerical comparison. Keep unresolved details in editorQuestions and update **docs/PROJECT_CONTENT_REVIEW.md**.
+
+The representative probabilistic-prioritization page retains its specialized metric/trial layout. Its content uses the original problem/method/results schema; do not copy that layout for unrelated evidence structures. Video assets always use native controls, preload none and their supplied poster. Index cards use still images or video posters without loading video files.
 
 ## Editorial safeguards and cadence
 

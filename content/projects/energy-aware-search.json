@@ -1,0 +1,96 @@
+{
+  "slug": "energy-aware-search",
+  "title": "Information- and energy-aware deployment/search planning",
+  "theme": "Deployment and recovery",
+  "description": "Joint optimization chooses release positions and search paths for energy-limited UAV teams.",
+  "introduction": "Where a UAV starts can be as important as the path it follows. This work plans release locations and search trajectories together, using prior target information while accounting for each vehicle’s limited energy and sensing performance.",
+  "status": "Published research",
+  "people": [
+    "José Bento",
+    "Meysam Basiri",
+    "Rodrigo Ventura"
+  ],
+  "publicationIds": [
+    "bento2024airdropped",
+    "bento2025information"
+  ],
+  "primaryMediaId": "s11-image92",
+  "problem": {
+    "heading": "Spend the search energy where it is useful.",
+    "paragraphs": [
+      "A search area can contain no-fly regions, uncertain target locations and uneven prior information. A vehicle has a finite energy budget, and passing near a location does not guarantee successful detection.",
+      "Selecting release locations independently of the search paths can miss useful trade-offs. The starting position determines which promising regions a small UAV can reach and inspect with its remaining energy."
+    ]
+  },
+  "approach": {
+    "heading": "Choose starting points and trajectories together.",
+    "paragraphs": [
+      "The planner receives a target-likelihood map, prohibited regions, vehicle energy budgets and a sensing-performance model. It jointly chooses a release position and search path for each UAV.",
+      "Offline simulated-annealing optimization balances search value with travel and sensing constraints. Coordinating the paths helps distribute the team across promising regions while limiting unnecessary overlap.",
+      "The publication programme includes the air-dropped multi-UAV planning study and a related information-oriented, energy-aware small-UAV path-planning contribution. Their exact records are listed separately below."
+    ],
+    "steps": [
+      {
+        "title": "Represent prior information",
+        "text": "Describe target likelihood, prohibited regions and sensing limits."
+      },
+      {
+        "title": "Set each energy budget",
+        "text": "Constrain the travel and sensing available to each vehicle."
+      },
+      {
+        "title": "Optimize deployment and search",
+        "text": "Choose release locations and search paths within one planning problem."
+      },
+      {
+        "title": "Inspect the plan",
+        "text": "Evaluate how the team allocates effort across the search area."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Offline planning example",
+      "kind": "simulation",
+      "text": "The presentation illustrates a computed five-UAV deployment and search plan, including prior target likelihood and prohibited regions. It is an offline optimization example, not an actual aerial deployment trial."
+    },
+    {
+      "label": "Constraint-dependent outcome",
+      "kind": "context",
+      "text": "The path allocation depends on the specified prior, sensing model and energy budgets. The figures do not establish a general detection probability or hardware endurance result."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-image92",
+      "label": "Computed plan · offline optimization",
+      "caption": "A five-UAV release and search plan from José Bento’s research. This is a planning visualization, not flight data.",
+      "description": "A diagram shows computed search trajectories and release locations across a constrained search area."
+    },
+    {
+      "id": "s11-image91",
+      "label": "Planning input · prior target likelihood",
+      "caption": "Prior target information and no-fly regions used by the planning problem.",
+      "description": "A map visualizes target likelihood and restricted regions before optimization."
+    }
+  ],
+  "relatedSlugs": [
+    "deployment-recovery",
+    "communication-aware-planning",
+    "distributed-exploration"
+  ],
+  "sourceSlides": [
+    26,
+    27
+  ],
+  "sourceReferences": [
+    "bento2024airdropped; bento2025information",
+    "S11 slides 26–27; extracted text and notes; images 91–92",
+    "WEBSITE_INFORMATION_SHEET.md section 5C"
+  ],
+  "editorQuestions": [
+    "The five-UAV figure uses an illustrative energy budget in abstract units. It is not presented as a measured battery capacity or hardware endurance result."
+  ],
+  "type": "catalogue",
+  "themeId": "deployment"
+}

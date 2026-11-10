@@ -1,0 +1,87 @@
+{
+  "slug": "visual-target-following",
+  "title": "Visual target tracking and following",
+  "theme": "Target localization and tracking",
+  "description": "Visual detection and multi-object tracking help a UAV preserve a selected person's identity among bystanders and recover after occlusion.",
+  "introduction": "Following a person means keeping track of who they are as well as where they are. This work combines visual detection, multi-object tracking and UAV motion to maintain target identity through changing viewpoints and temporary occlusion.",
+  "status": "Published research",
+  "people": [
+    "Diogo Ferreira",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "ferreira2024following",
+    "ferreira2024mot"
+  ],
+  "primaryMediaId": "s11-media45",
+  "problem": {
+    "heading": "Follow the same person through a changing scene.",
+    "paragraphs": [
+      "A target can become partly hidden, disappear behind an obstacle or move close to other people. A following UAV must avoid switching to a bystander when the original target becomes visible again.",
+      "The perception system and the flight controller therefore face connected tasks: preserve identity, estimate target motion, and move the UAV so that observations remain useful."
+    ]
+  },
+  "approach": {
+    "heading": "Use the other targets as information.",
+    "paragraphs": [
+      "YOLOv8 detections are combined with the BoT-SORT and ByteTrack multi-object trackers. Information about multiple people supports re-detection of the selected target after partial or complete occlusion.",
+      "A depth-sensing module improves distance estimation when available. A three-dimensional following controller reacts to target speed and direction while seeking to maintain line of sight."
+    ],
+    "steps": [
+      {
+        "title": "Detect people",
+        "text": "Identify candidate targets in the onboard camera images."
+      },
+      {
+        "title": "Maintain identities",
+        "text": "Track multiple people to support the selected target's re-detection."
+      },
+      {
+        "title": "Follow in three dimensions",
+        "text": "Translate target information into UAV motion while maintaining visibility."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Simulation evaluation",
+      "kind": "simulation",
+      "text": "The system was first tested in simulation, including target-following scenarios with occlusions and changing target motion."
+    },
+    {
+      "label": "Real-world tracking and following",
+      "kind": "hardware",
+      "text": "The published work also evaluates real-world operation. The supplied field demonstration illustrates following and target re-acquisition among bystanders."
+    },
+    {
+      "label": "Conference and journal publications",
+      "kind": "context",
+      "text": "The Drones article extends the ICARSC 2024 conference contribution. Both publications are linked with their distinct metadata."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media45",
+      "label": "Real experiment · visual target following",
+      "caption": "Visual target following and re-acquisition from Diogo Ferreira's research, using detection and multi-object tracking.",
+      "description": "Field footage illustrates a UAV following a selected person and maintaining target awareness around bystanders and temporary occlusion."
+    }
+  ],
+  "relatedSlugs": [
+    "cooperative-visual-pursuit",
+    "lidar-target-tracking",
+    "moving-platform-landing"
+  ],
+  "sourceSlides": [
+    47
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md section 5F",
+    "S11 slide 47; curated media shortlist s11-media45",
+    "ferreira2024following; ferreira2024mot",
+    "https://www.mdpi.com/2504-446X/8/9/488 — publisher abstract, methods and evaluation sections checked 10 November 2026"
+  ],
+  "editorQuestions": [],
+  "type": "catalogue",
+  "themeId": "tracking"
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "acoustic-target-localization",
+  "title": "Acoustic emergency-target localization",
+  "theme": "Target localization and tracking",
+  "description": "Acoustic bearings, robot motion and cooperation help aerial robots locate emergency sound sources when visual observations are unavailable.",
+  "introduction": "A person signalling for help may be heard before they can be seen. This research studies how moving aerial robots can combine partial acoustic observations to estimate the location of an emergency sound source.",
+  "status": "Published research",
+  "people": [
+    "Meysam Basiri",
+    "Felix Schill",
+    "Pedro U. Lima",
+    "Dario Floreano"
+  ],
+  "publicationIds": [
+    "basiri2018emergency"
+  ],
+  "primaryMediaId": "s11-media44",
+  "problem": {
+    "heading": "A direction is only part of a location.",
+    "paragraphs": [
+      "An acoustic observation can reveal the direction of a source without directly resolving its position. The robot must gather useful observations from changing viewpoints to turn those partial measurements into a location estimate.",
+      "This earlier work complements the group's later visual and LiDAR tracking research. It explores sound as a sensing channel when the target is not visually observable, including emergency signals such as a safety whistle."
+    ]
+  },
+  "approach": {
+    "heading": "Combine bearings across motion and robots.",
+    "paragraphs": [
+      "Onboard acoustic sensing provides bearing observations of the source. Robot motion changes the observation geometry, and cooperation combines the partial information available to different aerial platforms.",
+      "The resulting location estimate depends on both what the microphones hear and where the robots observe from. The work connects sensing with informative motion rather than relying on a single static acoustic observation."
+    ],
+    "steps": [
+      {
+        "title": "Listen for the source",
+        "text": "Use onboard acoustic sensing to obtain target-direction observations."
+      },
+      {
+        "title": "Change the viewpoint",
+        "text": "Use robot motion to gather complementary bearings."
+      },
+      {
+        "title": "Combine information",
+        "text": "Fuse partial observations through motion and cooperation."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Acoustic research demonstration",
+      "kind": "hardware",
+      "text": "The supplied historical experiment accompanies the emergency-source localization research. Its acoustic sensing and robot platform are separate from the visual following and compact-LiDAR experiments shown alongside it in the presentation."
+    },
+    {
+      "label": "Published localization study",
+      "kind": "context",
+      "text": "The Journal of Field Robotics article documents localization of emergency acoustic sources by micro aerial vehicles. The page makes no claim that a general search-and-rescue deployment has been validated by the demonstration."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media44",
+      "label": "Real experiment · acoustic localization",
+      "caption": "Historical acoustic emergency-target localization research. The supplied demonstration retains its original audio.",
+      "description": "Aerial-robot acoustic localization footage illustrates sensing a sound source and combining observations through robot motion. This is the acoustic experiment from slide 47."
+    },
+    {
+      "id": "s11-image133",
+      "label": "Historical research platform",
+      "caption": "An aerial platform used in the earlier acoustic research.",
+      "description": "Photograph of the historical acoustic research UAV."
+    }
+  ],
+  "relatedSlugs": [
+    "acoustic-relative-positioning",
+    "visual-target-following",
+    "lidar-target-tracking"
+  ],
+  "sourceSlides": [
+    47
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md sections 5F and 11",
+    "S11 slide 47: acoustic emergency-source notes; s11-media44 and s11-image133",
+    "basiri2018emergency"
+  ],
+  "editorQuestions": [],
+  "type": "catalogue",
+  "themeId": "tracking"
+}

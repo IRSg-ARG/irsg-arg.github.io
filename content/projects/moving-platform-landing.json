@@ -1,0 +1,62 @@
+{
+  "slug": "moving-platform-landing",
+  "title": "Moving-platform following and landing",
+  "theme": "Heterogeneous robot teams",
+  "description": "Onboard vision enables an aerial robot to detect, follow and land on a moving ground platform.",
+  "introduction": "A ground robot can extend the possibilities of an aerial mission, but the UAV must first reach it safely. This work connects visual relative-pose estimation with autonomous following and landing on a moving platform.",
+  "status": "Published research",
+  "people": [
+    "Jesús Morales",
+    "Isabel Castelo",
+    "Rodrigo Serra",
+    "Pedro U. Lima",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "morales2023landing"
+  ],
+  "primaryMediaId": null,
+  "problem": {
+    "heading": "Return to a platform that keeps moving.",
+    "paragraphs": [
+      "A mobile ground platform offers a potential support point for aerial operations. Following and landing must account for its motion.",
+      "Relative pose must therefore connect visual perception to trajectory planning and flight control."
+    ]
+  },
+  "approach": {
+    "heading": "Use visual markers to guide the approach.",
+    "paragraphs": [
+      "An onboard monocular camera observes ArUco fiducial markers on the ground platform. The estimated relative pose feeds a trajectory planner and decoupled controllers.",
+      "These generate velocity set-points for the UAV autopilot's inner control loops. Perception, planning and set-point generation run onboard the aerial robot."
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Digital-twin evaluation",
+      "kind": "simulation",
+      "text": "The system was tested in a solar-farm digital twin using ROS, Gazebo and ArduPilot software-in-the-loop."
+    },
+    {
+      "label": "Outdoor following and landing",
+      "kind": "hardware",
+      "text": "Physical experiments at Instituto Superior Técnico used a hexacopter and a modified Jackal ground robot."
+    }
+  ],
+  "media": [],
+  "relatedSlugs": [
+    "aerial-ground-warehouse",
+    "visual-target-following",
+    "cooperative-visual-pursuit"
+  ],
+  "sourceSlides": [],
+  "sourceReferences": [
+    "PROJECT_AND_MEDIA_INDEX.md: Moving-platform following and landing",
+    "morales2023landing",
+    "https://www.mdpi.com/1424-8220/23/2/829 — primary publisher abstract checked 10 November 2026"
+  ],
+  "editorQuestions": [
+    "Add an approved project-specific photograph or demonstration video if available; none was identified in the supplied presentation. Do not substitute unrelated UAV imagery or imply that autonomous recharging itself was demonstrated."
+  ],
+  "type": "catalogue",
+  "themeId": "heterogeneous"
+}

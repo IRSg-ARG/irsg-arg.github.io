@@ -1,0 +1,102 @@
+{
+  "slug": "frontier-shepherding",
+  "title": "Frontier Shepherding",
+  "theme": "Exploration and mapping",
+  "description": "Frontiers become a virtual flock and UAVs act as shepherds in a lightweight framework for cooperative exploration.",
+  "introduction": "Frontier Shepherding, or FroShe, treats exploration frontiers as a virtual flock and UAVs as shepherds. By collecting dispersed frontier batches and herding compact ones towards informative regions, the robots coordinate their exploration as the map changes.",
+  "status": "Published research",
+  "people": [
+    "John Lewis Devassy",
+    "Meysam Basiri",
+    "Pedro U. Lima"
+  ],
+  "publicationIds": [
+    "lewis2025froshe"
+  ],
+  "primaryMediaId": "s11-media29",
+  "problem": {
+    "heading": "Keep exploration moving between map updates.",
+    "paragraphs": [
+      "Large environments and growing robot teams make exploration decisions more demanding. Map updates can arrive more slowly than the planning loop, leaving robots to work with frontier information that is already changing.",
+      "Cooperation also requires robots to divide their attention. If every UAV selects the same attractive region, the team spends time covering overlapping ground instead of extending the map."
+    ]
+  },
+  "approach": {
+    "heading": "Collect the flock. Herd it towards information.",
+    "paragraphs": [
+      "FroShe represents map frontiers as a virtual swarm and uses a lightweight estimator to update that swarm between map updates. The flock is divided into batches, with different UAVs shepherding different batches.",
+      "A UAV collects outlying frontiers when its batch is dispersed. Once the batch is compact, the UAV herds it towards a region with high exploration potential. These two behaviours provide a common coordination rule as frontier geometry changes.",
+      "The framework is online and decentralized. Its shepherding behaviour does not require a pre-training stage, and its main coordination advantage emerges when several UAVs explore together."
+    ],
+    "steps": [
+      {
+        "title": "Represent frontiers",
+        "text": "Treat the current map frontiers as a virtual flock."
+      },
+      {
+        "title": "Divide the work",
+        "text": "Give different UAVs separate frontier batches."
+      },
+      {
+        "title": "Collect",
+        "text": "Bring dispersed frontiers back towards their batch."
+      },
+      {
+        "title": "Herd",
+        "text": "Guide compact batches towards informative regions."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Comparison in simulation",
+      "kind": "simulation",
+      "text": "The published study compares FroShe with FAME and a greedy frontier-selection strategy. The multi-UAV comparisons evaluate coordination and completion behaviour; the animation is simulation evidence."
+    },
+    {
+      "label": "Outdoor forest-like exploration",
+      "kind": "hardware",
+      "text": "The supplied film shows two X500 UAVs carrying Ouster OS1 LiDARs exploring a 600 m² forest-like environment with a 10 m sensing range. It demonstrates physical coordination under vegetation, occlusion and sensing noise."
+    },
+    {
+      "label": "Different hardware scenarios",
+      "kind": "hardware",
+      "text": "The source describes a one-UAV 400 m² scenario and a two-UAV 600 m² scenario. Because the areas differ, these demonstrations do not form a direct quantitative one-versus-two-UAV speed comparison."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media29",
+      "label": "Outdoor hardware experiment",
+      "caption": "Two UAVs coordinate exploration in a 600 m² forest-like outdoor environment.",
+      "description": "Silent outdoor footage shows two physical UAVs spreading their exploration across frontier regions. The hardware demonstration is separate from the simulation comparisons."
+    },
+    {
+      "id": "s11-image108",
+      "label": "Simulation comparison",
+      "caption": "FroShe compared with FAME and a greedy frontier-selection strategy in simulation.",
+      "description": "The animation compares simulated exploration behaviour. Its own scenario labels define the illustrated configuration; the outdoor video is a separate experiment."
+    }
+  ],
+  "relatedSlugs": [
+    "distributed-exploration",
+    "probabilistic-frontier-prioritization",
+    "kinodynamic-exploration"
+  ],
+  "sourceSlides": [
+    32,
+    33,
+    34
+  ],
+  "sourceReferences": [
+    "S01 pp.93–100; S02; lewis2025froshe",
+    "S11 slides 32–34; catalogue/featured_media.json; catalogue/media_manifest.json"
+  ],
+  "editorQuestions": [
+    "Preserve the published first-author form John Lewis in the bibliography, while John Lewis Devassy is the preferred person display name.",
+    "Do not repeat the surrounding slide’s 80 × 80 m size in the simulation caption until the animation’s scenario labels are independently checked.",
+    "The existing website registry holds s11-media29 as a poster-only image; it must be upgraded to the genuine video plus poster for this page."
+  ],
+  "type": "catalogue",
+  "themeId": "exploration"
+}

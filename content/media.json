@@ -164,16 +164,17 @@
   {
     "id": "s11-media29",
     "title": "Frontier Shepherding outdoor forest experiment",
-    "type": "image",
-    "path": "media/posters/froshe-outdoor-forest.jpg",
-    "poster": null,
+    "type": "video",
+    "path": "media/videos/froshe-outdoor-forest.mp4",
+    "poster": "media/posters/froshe-outdoor-forest.jpg",
     "width": 1280,
     "height": 720,
     "durationSeconds": 61.083333,
     "experimentType": "real experiment",
-    "alt": "Frontier Shepherding outdoor forest experiment",
-    "caption": "Frontier Shepherding: two UAVs exploring a forest-like outdoor environment. John Lewis, Meysam Basiri and Pedro U. Lima, IROS 2025.",
+    "alt": "Silent outdoor footage shows two physical UAVs spreading their exploration across frontier regions. The hardware demonstration is separate from the simulation comparisons.",
+    "caption": "Two UAVs, 600 m² forest-like environment; distinct from simulation time-improvement results.",
     "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
     "source": {
       "id": "S11",
       "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
@@ -181,9 +182,10 @@
       "slides": [
         34
       ],
-      "derivedPoster": true
+      "derivedPoster": false
     },
     "sourceHashes": {
+      "media/videos/froshe-outdoor-forest.mp4": "902dc35983ccbc6fc9976f17c7bdc9f40b6ef527715cf3311de8e6022f908e96",
       "media/posters/froshe-outdoor-forest.jpg": "afbc1ed3ddf31acb0be23ad2d590a6aa76cc9e4900bb036064200b8dda4582a8"
     }
   },
@@ -850,6 +852,1261 @@
     },
     "sourceHashes": {
       "media/people/yu-tang-liu.webp": "ea1d281dc11a76b745ce20bc197185083b0f78016fbccd7094f9b0d857f33446"
+    }
+  },
+  {
+    "id": "s11-image37",
+    "title": "Compact LiDAR research UAV in flight",
+    "type": "image",
+    "path": "media/images/lidar-uav-flight.webp",
+    "poster": null,
+    "width": 477,
+    "height": 338,
+    "durationSeconds": null,
+    "experimentType": "research photo or experimental still",
+    "alt": "Photograph of the group's LiDAR-equipped aerial research platform.",
+    "caption": "Photograph of the group's LiDAR-equipped aerial research platform.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image37.png",
+      "slides": [
+        8
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/lidar-uav-flight.webp": "e9ebd2b5c32f1f840e4ec395c2f9a3a3c97861571a7a5547e8d3fb7c2495fec7"
+    }
+  },
+  {
+    "id": "s11-media1",
+    "title": "Onboard LiDAR-inertial mapping",
+    "type": "video",
+    "path": "media/videos/onboard-lidar-inertial-odometry.mp4",
+    "poster": "media/posters/onboard-lidar-inertial-odometry.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 44.375,
+    "experimentType": "real experiment",
+    "alt": "A real UAV flight is presented with the evolving trajectory and registered LiDAR map. The clip illustrates onboard motion estimation and online mapping.",
+    "caption": "Outdoor flight footage with online map visualisation.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media1.mp4",
+      "slides": [
+        7
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/onboard-lidar-inertial-odometry.mp4": "7d441c8320e56eb46348593dd1045cba81acb95381cdefae5fe2b52630907417",
+      "media/posters/onboard-lidar-inertial-odometry.jpg": "4686fb277656fedb628372692ae1314302c840aaa29862568258b730e9d377fb"
+    }
+  },
+  {
+    "id": "s11-image41",
+    "title": "LiDAR measurement trust illustration",
+    "type": "video",
+    "path": "media/animations/lio-trust-fusion.mp4",
+    "poster": "media/posters/lio-trust-fusion.jpg",
+    "width": 380,
+    "height": 440,
+    "durationSeconds": 4,
+    "experimentType": "explanatory animation",
+    "alt": "The animation explains confidence weighting in sensor fusion; it does not show an experimental trajectory.",
+    "caption": "Illustration of reliability weighting, not an experimental result.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image41.gif",
+      "slides": [
+        8
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/animations/lio-trust-fusion.mp4": "89fdec65a73282d742fe58b7474ba7bb96484499ba99f340e39fba54b2651015",
+      "media/posters/lio-trust-fusion.jpg": "054b07c1f786d9da0764aa2ffe183354ef0e1c36d48de5f77636f7137c7c9426"
+    }
+  },
+  {
+    "id": "s11-media2",
+    "title": "Acoustic leader–follower positioning",
+    "type": "video",
+    "path": "media/videos/acoustic-relative-positioning.mp4",
+    "poster": "media/posters/acoustic-relative-positioning.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 49.921995,
+    "experimentType": "real experiment",
+    "alt": "A follower aerial robot uses sound from a leader to maintain relative awareness and follow it. This is the acoustic demonstration on the left of slide 9, separate from the LiDAR experiment shown alongside it.",
+    "caption": "Known acoustic signals support relative positioning; source audio retained for review.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "source audio retained",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media2.mp4",
+      "slides": [
+        9
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/acoustic-relative-positioning.mp4": "2809140723ea659b8004dbb319480b60bbba206fda08676d5e307caf55c458dd",
+      "media/posters/acoustic-relative-positioning.jpg": "ea1b8dd90ad447cb8b3e3629bdefbe5eb715f049b49935ce8dc5684c6fad17be"
+    }
+  },
+  {
+    "id": "s11-media4",
+    "title": "Dual-IMU relative-localization outdoor experiment",
+    "type": "video",
+    "path": "media/videos/dual-imu-outdoor-localization.mp4",
+    "poster": "media/posters/dual-imu-outdoor-localization.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 23.208333,
+    "experimentType": "real experiment",
+    "alt": "Two UAVs fly outdoors while the observing platform maintains an estimate of the target's relative motion. The clip accompanies the ICARSC 2026 dual-IMU study.",
+    "caption": "Observer and target UAV flight; numerical baselines belong to the ICARSC paper.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media4.mp4",
+      "slides": [
+        10
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/dual-imu-outdoor-localization.mp4": "b3cfcfd941d6fc6a9ba104803b47a6b9cb554e5f7d64fddbc099f0e14d5deb47",
+      "media/posters/dual-imu-outdoor-localization.jpg": "0b663ecdb834515a7c48f1d4b8f627e73ef73fbd823b087819d8e1ed28f06f0a"
+    }
+  },
+  {
+    "id": "s11-media3",
+    "title": "Compact LiDAR UAV-to-UAV flight overview",
+    "type": "video",
+    "path": "media/videos/sparse-lidar-uav-overview.mp4",
+    "poster": "media/posters/sparse-lidar-uav-overview.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 27.916667,
+    "experimentType": "real experiment",
+    "alt": "Real outdoor UAV-to-UAV flight footage provides context for sparse LiDAR sensing. It is the LiDAR demonstration from slide 9, not the acoustic leader-following clip.",
+    "caption": "Overview associated with Nivand’s research; use slide 10 for the specific dual-IMU result.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media3.mp4",
+      "slides": [
+        9
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/sparse-lidar-uav-overview.mp4": "2958513036b874f66e832e5cd3690f288369ef7bc25bb18f39741e51cf8d5b2f",
+      "media/posters/sparse-lidar-uav-overview.jpg": "51e7a497e54ab07bf3f0fc91287fd1b2d755245d5c40dda8d8114f0c36caac63"
+    }
+  },
+  {
+    "id": "s11-image48",
+    "title": "UAV platforms used for relative localization",
+    "type": "image",
+    "path": "media/images/relative-localization-platforms.webp",
+    "poster": null,
+    "width": 1280,
+    "height": 960,
+    "durationSeconds": null,
+    "experimentType": "research photo or experimental still",
+    "alt": "A supplied photograph of the relative-localization research platforms.",
+    "caption": "A supplied photograph of the relative-localization research platforms.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image48.png",
+      "slides": [
+        9,
+        56
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/relative-localization-platforms.webp": "f7db46b29b8d56af253a21153da4cab8f859d2fe9ce177ba9b291c8479bf6baa"
+    }
+  },
+  {
+    "id": "s11-media44",
+    "title": "Acoustic emergency-target localization",
+    "type": "video",
+    "path": "media/videos/acoustic-target-localization.mp4",
+    "poster": "media/posters/acoustic-target-localization.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 14.458333,
+    "experimentType": "real experiment",
+    "alt": "Aerial-robot acoustic localization footage illustrates sensing a sound source and combining observations through robot motion. This is the acoustic experiment from slide 47.",
+    "caption": "Historical acoustic-target experiment. Source audio retained for review.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "source audio retained",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media44.mp4",
+      "slides": [
+        47
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/acoustic-target-localization.mp4": "f33e5fbe2e663804d05355b8ec4db9dec402cbdf4634328fc3a93cb2b65bff84",
+      "media/posters/acoustic-target-localization.jpg": "d86e70bba8b80b4f7adc6e58b6beaaba52369b51ed31cb0d4869ad20f8d95baf"
+    }
+  },
+  {
+    "id": "s11-image133",
+    "title": "Historical acoustic research UAV",
+    "type": "image",
+    "path": "media/images/acoustic-research-platform.webp",
+    "poster": null,
+    "width": 1415,
+    "height": 1171,
+    "durationSeconds": null,
+    "experimentType": "research photo or experimental still",
+    "alt": "Photograph of the historical acoustic research UAV.",
+    "caption": "Photograph of the historical acoustic research UAV.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image133.jpeg",
+      "slides": [
+        47
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/acoustic-research-platform.webp": "d09a43ef045dd802bd138d0ece2072b4a515834980a87c07bd1fe153756e96f7"
+    }
+  },
+  {
+    "id": "s11-media45",
+    "title": "Visual target following and re-identification",
+    "type": "video",
+    "path": "media/videos/visual-following-reacquisition.mp4",
+    "poster": "media/posters/visual-following-reacquisition.jpg",
+    "width": 640,
+    "height": 480,
+    "durationSeconds": 18,
+    "experimentType": "real experiment",
+    "alt": "Field footage illustrates a UAV following a selected person and maintaining target awareness around bystanders and temporary occlusion.",
+    "caption": "Diogo Ferreira’s tracking/following demonstration with target identity overlay.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media45.mp4",
+      "slides": [
+        47
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/visual-following-reacquisition.mp4": "b65ae6bf0a0ef74f20cd516256b723c1d6213476e96f7cbbc83d9cf0e9e55428",
+      "media/posters/visual-following-reacquisition.jpg": "2c544394de11d24044fcc0b48bfa7d96c01a3aa04c4e573c50dd4a7d58d7f673"
+    }
+  },
+  {
+    "id": "s11-media46",
+    "title": "Vision-based pursuit outdoor experiment",
+    "type": "video",
+    "path": "media/videos/visual-pursuit-outdoor.mp4",
+    "poster": "media/posters/visual-pursuit-outdoor.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 30.833333,
+    "experimentType": "real experiment",
+    "alt": "A physical UAV pursues a target outdoors. The clip illustrates the single-robot hardware experiment and does not show a cooperative multi-UAV hardware formation.",
+    "caption": "João Matias’s work. This real experiment is single-UAV; multi-UAV validation is simulation.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media46.mp4",
+      "slides": [
+        47
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/visual-pursuit-outdoor.mp4": "d6dedbaf43d9d87ece6ff334cbbef29e184f7504da18c61d6d55f6a8eefdfc0e",
+      "media/posters/visual-pursuit-outdoor.jpg": "c01264f90c58a06da1f4a9edb809aaaad83d426f132ad2e0292a61f690988e6c"
+    }
+  },
+  {
+    "id": "s11-image136",
+    "title": "Visual-pursuit research UAV",
+    "type": "image",
+    "path": "media/images/visual-pursuit-uav.webp",
+    "poster": null,
+    "width": 1280,
+    "height": 960,
+    "durationSeconds": null,
+    "experimentType": "research photo or experimental still",
+    "alt": "Photograph of the aerial platform associated with the visual-pursuit work.",
+    "caption": "Photograph of the aerial platform associated with the visual-pursuit work.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image136.png",
+      "slides": [
+        47,
+        56
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/visual-pursuit-uav.webp": "f7d82812519957a4d421e9e8682f35efca5386a6b295d53541f8bb3c4aa043b2"
+    }
+  },
+  {
+    "id": "s11-media49",
+    "title": "Cooperative LiDAR following simulation",
+    "type": "video",
+    "path": "media/videos/cooperative-lidar-simulation.mp4",
+    "poster": "media/posters/cooperative-lidar-simulation.jpg",
+    "width": 1280,
+    "height": 688,
+    "durationSeconds": 62.583333,
+    "experimentType": "simulation",
+    "alt": "A simulated scene shows two UAVs tracking and following a target while coordinating their motion. This clip presents the full cooperative pipeline, not a real two-UAV flight.",
+    "caption": "Full two-UAV pipeline in simulation, including state sharing and visibility-aware planning.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media49.mp4",
+      "slides": [
+        49
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/cooperative-lidar-simulation.mp4": "9d23408fff4d8624a0e027ded16c4c1638e936bb3efd94ae7136eb9bd670e538",
+      "media/posters/cooperative-lidar-simulation.jpg": "545490607ad0497585f9e40572dbca77b908971214559911debf18b7134d9e2f"
+    }
+  },
+  {
+    "id": "s11-media48",
+    "title": "Compact LiDAR target tracking top view",
+    "type": "video",
+    "path": "media/videos/lidar-tracking-top-view.mp4",
+    "poster": "media/posters/lidar-tracking-top-view.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 52.458333,
+    "experimentType": "real experiment",
+    "alt": "Top-view footage of the physical sensing and tracking experiment on one UAV. It provides hardware context for the local tracking component.",
+    "caption": "Single-UAV outdoor target-tracking footage; do not call it cooperative hardware validation.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media48.mp4",
+      "slides": [
+        47
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/lidar-tracking-top-view.mp4": "b1f1342ee05c31722afb244045677113794458a166d82d1284696fa87699f407",
+      "media/posters/lidar-tracking-top-view.jpg": "59581a03b4399618f54b326b668f33b262620d6047e2ef05b4d6b531b3c02fd7"
+    }
+  },
+  {
+    "id": "s11-media47",
+    "title": "Compact LiDAR target tracking visualisation",
+    "type": "video",
+    "path": "media/videos/lidar-tracking-visualisation.mp4",
+    "poster": "media/posters/lidar-tracking-visualisation.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 53.583333,
+    "experimentType": "real experiment visualisation",
+    "alt": "A visualization of target tracking using real experimental LiDAR data. It is distinct from the two-UAV simulation that demonstrates cooperative following.",
+    "caption": "Hugo Aranha’s compact LiDAR sensing/tracking demonstration; this is separate from the two-UAV simulation.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media47.mp4",
+      "slides": [
+        47
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/lidar-tracking-visualisation.mp4": "a8d002ff5a38ca0ae1a76b8e41ce6df22039f5d0685c1b758eec1baf217165f7",
+      "media/posters/lidar-tracking-visualisation.jpg": "ae15ca7217371030af6b6a19c548558dd3b1c2240e7359d3b36aac86b05230cb"
+    }
+  },
+  {
+    "id": "s11-media5",
+    "title": "Bimodal robot rolling indoors",
+    "type": "video",
+    "path": "media/videos/bimodal-rolling.mp4",
+    "poster": "media/posters/bimodal-rolling.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 8,
+    "experimentType": "real experiment",
+    "alt": "A physical two-wheeled quadrotor rolls along an indoor surface.",
+    "caption": "Passive wheels; propeller-driven surface locomotion.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media5.mp4",
+      "slides": [
+        14
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/bimodal-rolling.mp4": "a64180b7755498dcdfa1cb3186763833f0fc438868d1466f75bf909c60015c5d",
+      "media/posters/bimodal-rolling.jpg": "dc66967d36257c4d9cde11127e43304d8d61a7d30d8e221f9cd7be96c1e083a9"
+    }
+  },
+  {
+    "id": "s11-media6",
+    "title": "Bimodal robot ramp test",
+    "type": "video",
+    "path": "media/videos/bimodal-ramp.mp4",
+    "poster": "media/posters/bimodal-ramp.jpg",
+    "width": 400,
+    "height": 720,
+    "durationSeconds": 3.333333,
+    "experimentType": "real experiment",
+    "alt": "A short portrait-format experiment shows the wheeled aerial robot moving on an inclined surface.",
+    "caption": "Short portrait clip of the rolling–flying prototype.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media6.mp4",
+      "slides": [
+        14
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/bimodal-ramp.mp4": "9345a099b8252b8eca2792715e4ccddbfc9364dab1e80dd93cb34a7682398de4",
+      "media/posters/bimodal-ramp.jpg": "a43199f8b915077a6825bb4bb3dc406d6f66a0c1e98f2b9e3e376d1cc1d24049"
+    }
+  },
+  {
+    "id": "s11-media7",
+    "title": "Bimodal robot surface/flight test",
+    "type": "video",
+    "path": "media/videos/bimodal-transition.mp4",
+    "poster": "media/posters/bimodal-transition.jpg",
+    "width": 400,
+    "height": 720,
+    "durationSeconds": 13,
+    "experimentType": "real experiment",
+    "alt": "The prototype is shown in a surface/flight test; this footage is separate from the simulation also inventoried in the presentation.",
+    "caption": "Portrait prototype demonstration.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media7.mp4",
+      "slides": [
+        14
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/bimodal-transition.mp4": "4ab37b8af98724d1f7d0bc76cd812c829b51c15e0fb88d3c4de0a5eb92b34641",
+      "media/posters/bimodal-transition.jpg": "7c814c9c9f041ea8aa07018537f4b0bed05dc4b9989678c05a1cd6a886d467ea"
+    }
+  },
+  {
+    "id": "s11-media9",
+    "title": "BogieCopter inclined-surface demonstration",
+    "type": "video",
+    "path": "media/videos/bogiecopter-incline-overview.mp4",
+    "poster": "media/posters/bogiecopter-incline-overview.jpg",
+    "width": 1024,
+    "height": 576,
+    "durationSeconds": 46.125,
+    "experimentType": "real experiment",
+    "alt": "The real platform traverses an inclined surface with on-screen operating-mode and speed annotations.",
+    "caption": "Video contains on-screen speed/operating-mode annotations.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media9.mp4",
+      "slides": [
+        15
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/bogiecopter-incline-overview.mp4": "e71590b10085b69a3e35471209bf976f957705246992d9cbbfde053273398ca6",
+      "media/posters/bogiecopter-incline-overview.jpg": "62ae80b029a30d36b6f3b994e9d85b1a8d0895bd5202ac610370e8aea5643643"
+    }
+  },
+  {
+    "id": "s11-media10",
+    "title": "BogieCopter indoor flight",
+    "type": "video",
+    "path": "media/videos/bogiecopter-flight.mp4",
+    "poster": "media/posters/bogiecopter-flight.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 12.708333,
+    "experimentType": "real experiment",
+    "alt": "BogieCopter flies indoors, showing the vehicle’s flight capability separately from its surface locomotion.",
+    "caption": "Flight capability of the aerial–ground platform.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media10.mp4",
+      "slides": [
+        16
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/bogiecopter-flight.mp4": "315cfae837954f064562fb834072dbbc03cfa775df90c75ecbf7f861778e70e1",
+      "media/posters/bogiecopter-flight.jpg": "8960229f6697fef3b6c4dfdc4e396f36b80952b48e2041920ab14f4ce5467659"
+    }
+  },
+  {
+    "id": "s11-media12",
+    "title": "BogieCopter wall-climbing demonstration",
+    "type": "video",
+    "path": "media/videos/bogiecopter-wall.mp4",
+    "poster": "media/posters/bogiecopter-wall.jpg",
+    "width": 400,
+    "height": 720,
+    "durationSeconds": 4.916667,
+    "experimentType": "real experiment",
+    "alt": "Portrait-format footage shows the platform moving against a surface.",
+    "caption": "Short portrait surface-climbing test.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media12.mp4",
+      "slides": [
+        16
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/bogiecopter-wall.mp4": "f9f591fbbafb5c9ba51691c8774c35e43e545c9a826e0f4dd6bd503baa9e0a25",
+      "media/posters/bogiecopter-wall.jpg": "2c80dbb79b3adab9e9bc4bac4984263dba47e3f1c944f87ecbb8974c5214eb5c"
+    }
+  },
+  {
+    "id": "s11-media16",
+    "title": "Trimodal UAV ground navigation and transitions",
+    "type": "video",
+    "path": "media/videos/trimodal-ground-tests.mp4",
+    "poster": "media/posters/trimodal-ground-tests.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 50,
+    "experimentType": "real experiment",
+    "alt": "Field footage shows supported ground motion and changes between operating conditions.",
+    "caption": "Field tests; use full paper for the conditions of range/endurance claims.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media16.mp4",
+      "slides": [
+        19
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/trimodal-ground-tests.mp4": "085cdc10d3d25cc821a022232cba7bdf2f4040f43b7e417842b84037da25b784",
+      "media/posters/trimodal-ground-tests.jpg": "998fb10fa7920eb4c48e790a30d16d5f6f61c9e3d7def4006685ca31461793b9"
+    }
+  },
+  {
+    "id": "s11-media13",
+    "title": "Trimodal UAV configuration animation",
+    "type": "video",
+    "path": "media/videos/trimodal-design-animation.mp4",
+    "poster": "media/posters/trimodal-design-animation.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 18.958333,
+    "experimentType": "design animation",
+    "alt": "A CAD/design visualization shows the platform’s mechanical configuration.",
+    "caption": "CAD/design visualisation; not flight footage.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media13.mp4",
+      "slides": [
+        17
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/trimodal-design-animation.mp4": "3b303b40f26df5f770aad8c6f24ba95764237dda72ab2439f61d963716a8b55d",
+      "media/posters/trimodal-design-animation.jpg": "6cbe960463c4012addbf45520683c1ea125f20e72e462af6c06408633d78768d"
+    }
+  },
+  {
+    "id": "s11-image29",
+    "title": "Frederico Afonso",
+    "type": "image",
+    "path": "media/people/frederico-afonso.webp",
+    "poster": null,
+    "width": 100,
+    "height": 133,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Frederico Afonso",
+    "caption": "Portrait of Frederico Afonso",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image29.png",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/frederico-afonso.webp": "d860c54eef34458e94011796f08360e2ebbaddafe3bf4e26e926b29c4d829460"
+    }
+  },
+  {
+    "id": "s11-media17",
+    "title": "Tilting-wing prototype flight",
+    "type": "video",
+    "path": "media/videos/tilting-wing-prototype.mp4",
+    "poster": "media/posters/tilting-wing-prototype.jpg",
+    "width": 400,
+    "height": 720,
+    "durationSeconds": 19.791667,
+    "experimentType": "ongoing prototype",
+    "alt": "A physical prototype flies while carrying the adjustable wing configuration. The clip does not establish a quantified energy benefit.",
+    "caption": "Diogo Nunes’s ongoing work; no quantified net energy benefit established here.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media17.mp4",
+      "slides": [
+        20
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/tilting-wing-prototype.mp4": "8b7640cd90a189858bef4bf3c331217a01d25500940bb04713b57cd481c7d4d5",
+      "media/posters/tilting-wing-prototype.jpg": "d139e781935c7cdb51a9d1b4512ad94870c56ded0b6933edf8567ce97fcf75b4"
+    }
+  },
+  {
+    "id": "s11-media20",
+    "title": "ArduPilot release/recovery onboard view",
+    "type": "video",
+    "path": "media/videos/ardupilot-recovery-onboard.mp4",
+    "poster": "media/posters/ardupilot-recovery-onboard.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 13.458333,
+    "experimentType": "real experiment",
+    "alt": "A physical UAV is released and progresses through an onboard recovery sequence. Exact controller tuning is not assigned to another project.",
+    "caption": "Sofia Simões’s onboard sequence in slide 23; verify exact controller attribution before detailed claims.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media20.mp4",
+      "slides": [
+        23
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/ardupilot-recovery-onboard.mp4": "6861e3c685c47d53033a14cd21733750f740553b56eed5434dd5ecb0259f7f64",
+      "media/posters/ardupilot-recovery-onboard.jpg": "e9c406050bb693bc8b4602cd4daa94ccb653916d3f89a5b8261025a143e0f779"
+    }
+  },
+  {
+    "id": "s11-media19",
+    "title": "Post-release recovery simulation",
+    "type": "video",
+    "path": "media/videos/deployment-recovery-simulation.mp4",
+    "poster": "media/posters/deployment-recovery-simulation.jpg",
+    "width": 512,
+    "height": 448,
+    "durationSeconds": 10.083333,
+    "experimentType": "simulation",
+    "alt": "A simulated vehicle recovers after release under the modelled conditions.",
+    "caption": "Placed in Lorenzo Giordano’s recovery column on slide 23.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media19.mp4",
+      "slides": [
+        23
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/deployment-recovery-simulation.mp4": "7c117ece6fee941e66412b20aab790ae3b83d21bb9fb49336c1d44b1349444aa",
+      "media/posters/deployment-recovery-simulation.jpg": "fbe1eba7d19b76cbe18055f5a7ef0f68b249341052bac3da72480cbcf6ca5f3a"
+    }
+  },
+  {
+    "id": "s11-image80",
+    "title": "Tailsitter recovery simulation",
+    "type": "video",
+    "path": "media/animations/tailsitter-recovery-simulation.mp4",
+    "poster": "media/posters/tailsitter-recovery-simulation.jpg",
+    "width": 586,
+    "height": 330,
+    "durationSeconds": 15.041667,
+    "experimentType": "simulation",
+    "alt": "A simulated tailsitter recovery sequence, supplied as a playable derivative of the presentation animation.",
+    "caption": "Animated sequence in the second recovery column on slide 23, associated with Rodrigo Nishikawa’s simulation work.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image80.gif",
+      "slides": [
+        23
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/animations/tailsitter-recovery-simulation.mp4": "964008f391f3a734376906521baa5bfebb3d8771d0c6c83d4cfd8c3b414e2539",
+      "media/posters/tailsitter-recovery-simulation.jpg": "740c453a0456462b231d7440441dd4570637146a6cf07aad129e2e1ed8d019c7"
+    }
+  },
+  {
+    "id": "s11-media23",
+    "title": "Graph-policy aggressive recovery demonstration",
+    "type": "video",
+    "path": "media/videos/rl-aggressive-recovery.mp4",
+    "poster": "media/posters/rl-aggressive-recovery.jpg",
+    "width": 1152,
+    "height": 720,
+    "durationSeconds": 8.583333,
+    "experimentType": "real experiment",
+    "alt": "An outdoor recovery composite shows the physical UAV stabilizing under the learned controller.",
+    "caption": "Outdoor recovery composite associated with the IROS 2025 graph-policy work.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media23.mp4",
+      "slides": [
+        24
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/rl-aggressive-recovery.mp4": "1629515a22807d451d03c6352359bcf71590c318c8c064fb93405227ca265ed4",
+      "media/posters/rl-aggressive-recovery.jpg": "11a46775d24a741ca90bd25f6d0ee856dd5ac050bdddac1792ccdc8281d19e90"
+    }
+  },
+  {
+    "id": "s11-media24",
+    "title": "Graph-policy normal attitude tracking",
+    "type": "video",
+    "path": "media/videos/rl-attitude-tracking.mp4",
+    "poster": "media/posters/rl-attitude-tracking.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 8.375,
+    "experimentType": "real experiment",
+    "alt": "A physical flight demonstration shows normal attitude-tracking behaviour.",
+    "caption": "Normal tracking demonstration associated with the same policy.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media24.mp4",
+      "slides": [
+        24
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/rl-attitude-tracking.mp4": "ea11906f47d222fa69c25eef687999e863d7febb8c920653c6f183f1a8046f95",
+      "media/posters/rl-attitude-tracking.jpg": "8c643d37e676f962cfe1ba20d86f9bedadd56d822a01e042d4408ac2bf726e2e"
+    }
+  },
+  {
+    "id": "s11-media21",
+    "title": "Multitask attitude-control training simulation",
+    "type": "video",
+    "path": "media/videos/multitask-training-simulation.mp4",
+    "poster": "media/posters/multitask-training-simulation.jpg",
+    "width": 1152,
+    "height": 720,
+    "durationSeconds": 5.875,
+    "experimentType": "simulation",
+    "alt": "An Isaac Gym visualization shows simulated UAVs during policy training.",
+    "caption": "IsaacGym training visualisation associated with Yu Tang Liu’s work.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media21.mp4",
+      "slides": [
+        23
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/multitask-training-simulation.mp4": "6b89c040420c694d743eef7a96653b76763b5003afe872ab01c567050bc6dfa5",
+      "media/posters/multitask-training-simulation.jpg": "83a2863cbba0a8d7e5d0f434dd1bcbd0f27c52524a351d7a81917e84753b5552"
+    }
+  },
+  {
+    "id": "s11-image30",
+    "title": "Aamir Ahmad",
+    "type": "image",
+    "path": "media/people/aamir-ahmad.webp",
+    "poster": null,
+    "width": 440,
+    "height": 440,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Aamir Ahmad",
+    "caption": "Portrait of Aamir Ahmad",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image30.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/aamir-ahmad.webp": "15dff1c7e96898797be250b877ec77e475c2bace65a36e7c9c826e8ae4b357fc"
+    }
+  },
+  {
+    "id": "s11-image92",
+    "title": "Presentation image 92",
+    "type": "image",
+    "path": "media/images/image092.webp",
+    "poster": null,
+    "width": 480,
+    "height": 400,
+    "durationSeconds": null,
+    "experimentType": "diagram, plot or visualisation",
+    "alt": "A diagram shows computed search trajectories and release locations across a constrained search area.",
+    "caption": "A diagram shows computed search trajectories and release locations across a constrained search area.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image92.png",
+      "slides": [
+        27
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/image092.webp": "7c158842722546df24faba10a2aa7f33fe9550fad7167587396242de4f896dc9"
+    }
+  },
+  {
+    "id": "s11-image91",
+    "title": "Presentation image 91",
+    "type": "image",
+    "path": "media/images/image091.webp",
+    "poster": null,
+    "width": 675,
+    "height": 535,
+    "durationSeconds": null,
+    "experimentType": "diagram, plot or visualisation",
+    "alt": "A map visualizes target likelihood and restricted regions before optimization.",
+    "caption": "A map visualizes target likelihood and restricted regions before optimization.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image91.png",
+      "slides": [
+        27
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/image091.webp": "10e8a50e0d99c56457ca6dcb88820666b3f65a410fb0600309daf8b8db0bb926"
+    }
+  },
+  {
+    "id": "s11-media26",
+    "title": "Distributed multi-UAV exploration simulation 1",
+    "type": "video",
+    "path": "media/videos/distributed-exploration-01.mp4",
+    "poster": "media/posters/distributed-exploration-01.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 41.708333,
+    "experimentType": "simulation",
+    "alt": "A simulated UAV team moves through an environment while constructing a map. The clip illustrates the distributed planning process rather than a physical flight.",
+    "caption": "André Ribeiro, Drones 2024. Robot count should follow the source labels/experiment, not be inferred from the filename.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media26.mp4",
+      "slides": [
+        31
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/distributed-exploration-01.mp4": "39e8503284e7e3852face1b8c4c47aa3bbc471cb4355608cdf4ecaa12bde7578",
+      "media/posters/distributed-exploration-01.jpg": "52eb0c9b7001c6cc40b7535a02687d84fe2aeb9cff80e4ba50b5429f002664cc"
+    }
+  },
+  {
+    "id": "s11-media27",
+    "title": "Distributed multi-UAV exploration simulation 2",
+    "type": "video",
+    "path": "media/videos/distributed-exploration-02.mp4",
+    "poster": "media/posters/distributed-exploration-02.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 28.583333,
+    "experimentType": "simulation",
+    "alt": "Simulation footage from the comparison presented on slide 31. Robot counts should be read from the displayed experiment labels.",
+    "caption": "Part of the team-size comparison on slide 31.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media27.mp4",
+      "slides": [
+        31
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/distributed-exploration-02.mp4": "bb040674d5ed345d2db30c996f3df7435d7b45e2707af1b7e4ffedf6bb9fa5b2",
+      "media/posters/distributed-exploration-02.jpg": "5ab0654d23f1b655beb355e28424a9a198aa13af291fa5faebf2752003596790"
+    }
+  },
+  {
+    "id": "s11-media28",
+    "title": "Distributed multi-UAV exploration simulation 3",
+    "type": "video",
+    "path": "media/videos/distributed-exploration-03.mp4",
+    "poster": "media/posters/distributed-exploration-03.jpg",
+    "width": 1264,
+    "height": 720,
+    "durationSeconds": 33.916667,
+    "experimentType": "simulation",
+    "alt": "A simulated map and vehicle trajectories show exploration progress under the study’s conditions.",
+    "caption": "Part of the team-size comparison on slide 31.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media28.mp4",
+      "slides": [
+        31
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/distributed-exploration-03.mp4": "dbe08f015acdeeb763bb10ba23d95ad729b9b77d5a08e6814a355c4a013deac3",
+      "media/posters/distributed-exploration-03.jpg": "d85de1a56433b8df460c95d3f3bafe3a808fffe06f8f21e5a39e5b3027ca793a"
+    }
+  },
+  {
+    "id": "s11-image108",
+    "title": "Frontier Shepherding simulation comparison",
+    "type": "video",
+    "path": "media/animations/froshe-simulation-comparison.mp4",
+    "poster": "media/posters/froshe-simulation-comparison.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 21.375,
+    "experimentType": "simulation",
+    "alt": "The animation compares simulated exploration behaviour. Its own scenario labels define the illustrated configuration; the outdoor video is a separate experiment.",
+    "caption": "Comparison with FAME and a greedy strategy. Check actual environment size in source labels; the surrounding slide says 80 × 80 m.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image108.gif",
+      "slides": [
+        33
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/animations/froshe-simulation-comparison.mp4": "d50bc2a3a500f3720da9d7a40b52674fa80cb883ee925eb802768da2dee89d16",
+      "media/posters/froshe-simulation-comparison.jpg": "c202a470bbc6329757a5a2399c1c4276534249786e00c992b8e619f783657f9d"
+    }
+  },
+  {
+    "id": "s11-media36",
+    "title": "KAEP outdoor camera view",
+    "type": "video",
+    "path": "media/videos/kaep-outdoor-camera.mp4",
+    "poster": "media/posters/kaep-outdoor-camera.jpg",
+    "width": 960,
+    "height": 720,
+    "durationSeconds": 25.166667,
+    "experimentType": "real experiment",
+    "alt": "A physical UAV observes a lamp structure as its onboard mapping and trajectory planner select new views. This experiment uses RTK-GPS/IMU localization.",
+    "caption": "RGB-D camera view of the IST lamp-structure experiment.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media36.mp4",
+      "slides": [
+        38
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/kaep-outdoor-camera.mp4": "e5167cee34531d5624a107abc40312f8796c0d7a4de2fe095cb40860e0f32da7",
+      "media/posters/kaep-outdoor-camera.jpg": "1a233e1de9a7d65bd48a79b9f3c0d2ec0d82de425442e7ba5654677ffd49cc32"
+    }
+  },
+  {
+    "id": "s11-media35",
+    "title": "KAEP outdoor reconstructed map",
+    "type": "video",
+    "path": "media/videos/kaep-outdoor-map.mp4",
+    "poster": "media/posters/kaep-outdoor-map.jpg",
+    "width": 960,
+    "height": 720,
+    "durationSeconds": 25.291667,
+    "experimentType": "real experiment visualisation",
+    "alt": "A map visualization accompanies the physical lamp-structure experiment. It is a reconstruction from a real run, rather than a simulation environment.",
+    "caption": "Map view of the outdoor lamp-structure experiment; real test used RTK-GPS/IMU localization.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media35.mp4",
+      "slides": [
+        38
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/kaep-outdoor-map.mp4": "5e0f42734c1c33304ce623a21edfe651529d149a18ac3b32c1bdfee4c1175e30",
+      "media/posters/kaep-outdoor-map.jpg": "224ff2c1147535019285367376f229acec1aeefea68a4e03f5b5c1ddf98fc489"
+    }
+  },
+  {
+    "id": "s11-media33",
+    "title": "KRH-NBVP exploration simulation",
+    "type": "video",
+    "path": "media/videos/krh-nbvp-simulation.mp4",
+    "poster": "media/posters/krh-nbvp-simulation.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 21.291667,
+    "experimentType": "simulation",
+    "alt": "A simulated planning run illustrates the kinodynamic trajectory-selection behaviour.",
+    "caption": "Right-hand planner on slide 37: executable trajectory segments.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media33.mp4",
+      "slides": [
+        37
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/krh-nbvp-simulation.mp4": "a766d2f84bc88400d670bc9d77bf75dcc49719ed3766cf5c58838780c5b9efb7",
+      "media/posters/krh-nbvp-simulation.jpg": "974dc6edeecf8d1b53745190b8df5b70803e713daae409bc44ddbbb5896db22c"
+    }
+  },
+  {
+    "id": "s11-image127",
+    "title": "Presentation image 127",
+    "type": "image",
+    "path": "media/images/image127.webp",
+    "poster": null,
+    "width": 1181,
+    "height": 1332,
+    "durationSeconds": null,
+    "experimentType": "diagram, plot or visualisation",
+    "alt": "A drawn UAV path passes several viewpoints. Shared viewing regions are shaded to distinguish repeated observations from additional visible space.",
+    "caption": "A drawn UAV path passes several viewpoints. Shared viewing regions are shaded to distinguish repeated observations from additional visible space.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image127.png",
+      "slides": [
+        40
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/images/image127.webp": "7dfb2d9a745f7ecfd85478d5478292434c0583c2ff2e3d41f2f8f98721150b83"
+    }
+  },
+  {
+    "id": "s11-media43",
+    "title": "Intermittent communication and coverage concept",
+    "type": "video",
+    "path": "media/videos/sparc-communication-concept.mp4",
+    "poster": "media/posters/sparc-communication-concept.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 13.5,
+    "experimentType": "concept animation",
+    "alt": "The animation illustrates UAV paths, temporary disconnection and information-exchange opportunities. It does not show an actual optimized SpArC-NARTs result.",
+    "caption": "Explicitly labelled conceptual on slide 44. Not an actual optimized trajectory/result from SpArC-NARTs.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media43.mp4",
+      "slides": [
+        44
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/sparc-communication-concept.mp4": "77513a4f715084af9ace9c0995551f527cd283d71e8c72220b025646c5f07fe1",
+      "media/posters/sparc-communication-concept.jpg": "56a3e676c894943dabc4495bcd47618cf887368ee90ae3b3affe23b94fe626c5"
+    }
+  },
+  {
+    "id": "s11-image31",
+    "title": "António Grilo",
+    "type": "image",
+    "path": "media/people/antonio-grilo.webp",
+    "poster": null,
+    "width": 287,
+    "height": 365,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of António Grilo",
+    "caption": "Portrait of António Grilo",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": null,
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image31.jpg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/antonio-grilo.webp": "9460fd76de1e46e244830623579d7a0383e324472e5a397145aec0f3045d4d3d"
+    }
+  },
+  {
+    "id": "s11-media50",
+    "title": "Mixed-reality spatial waypoint tasking",
+    "type": "video",
+    "path": "media/videos/mixed-reality-waypoints.mp4",
+    "poster": "media/posters/mixed-reality-waypoints.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 57.875,
+    "experimentType": "real experiment",
+    "alt": "A mixed-reality interface is used to place a sequence of waypoints in three-dimensional space and a physical UAV follows the commanded path. The ICARSC 2026 paper documents a velocity-command interface; the relationship between that implementation and this spatial-tasking demonstration remains an author attribution question.",
+    "caption": "Slide 53 describes one-UAV autonomous waypoint execution; distinguish this demonstration from the velocity-command interface described in the ICARSC paper.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation; project researchers credited in context.",
+    "audio": "silent review derivative",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "media50.mp4",
+      "slides": [
+        53
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/videos/mixed-reality-waypoints.mp4": "31643938e8d362520a37994569c23b35a05e38570bf5672b16c3b570bd23f20b",
+      "media/posters/mixed-reality-waypoints.jpg": "95477f178450b3c8bf7a4ca2dc0fd3ecb48eeb823d8647f1c1c171a5140a3bf3"
     }
   }
 ]

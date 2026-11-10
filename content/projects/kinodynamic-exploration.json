@@ -1,0 +1,116 @@
+{
+  "slug": "kinodynamic-exploration",
+  "title": "Kinodynamic exploration and reconstruction",
+  "theme": "Exploration and mapping",
+  "description": "Exploration planners evaluate informative trajectory segments that respect UAV dynamics and maintain useful motion.",
+  "introduction": "An informative viewpoint is useful only if a UAV can reach it efficiently. KRH-NBVP considers feasible motion while choosing where to observe next, and KAEP adds a global planning component to reach informative regions that remain beyond a local search.",
+  "status": "Published research",
+  "people": [
+    "João Félix Mendes",
+    "Meysam Basiri",
+    "Rodrigo Ventura"
+  ],
+  "publicationIds": [
+    "mendes2026kinodynamic",
+    "mendes2026centralized"
+  ],
+  "primaryMediaId": "s11-media36",
+  "problem": {
+    "heading": "Choose a motion, as well as a view.",
+    "paragraphs": [
+      "A planner that selects viewpoints geometrically can ask a UAV to make sharp turns or repeatedly slow down. Reaching each observation point then consumes time that a viewpoint-only score may not represent.",
+      "Local exploration can also reach a point where nearby candidates reveal little new space. Efficient reconstruction needs both dynamically feasible motion and a way to reach informative regions elsewhere in the map."
+    ]
+  },
+  "approach": {
+    "heading": "Build the vehicle’s dynamics into exploration.",
+    "paragraphs": [
+      "KRH-NBVP builds a tree of feasible trajectory segments that respect the UAV’s speed and acceleration limits. Candidate trajectories are evaluated using information gain, trajectory length and how well they maintain speed.",
+      "KAEP combines this local kinodynamic exploration with a global planning component. It can direct the vehicle towards remaining informative regions when local progress becomes limited.",
+      "A separate 2026 contribution studies centralized multi-UAV exploration and reconstruction using existing single-UAV planners. That framework is a related extension; the outdoor camera and reconstruction footage shown here belongs to the single-UAV kinodynamic evaluation."
+    ],
+    "steps": [
+      {
+        "title": "Generate feasible segments",
+        "text": "Build candidate trajectories that respect speed and acceleration limits."
+      },
+      {
+        "title": "Score information and motion",
+        "text": "Consider new space, distance travelled and maintained speed together."
+      },
+      {
+        "title": "Replan from new observations",
+        "text": "Update the map as the UAV executes its selected motion."
+      },
+      {
+        "title": "Reach remaining regions",
+        "text": "Use KAEP’s global component when local exploration becomes less informative."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Simulation comparison",
+      "kind": "simulation",
+      "text": "Simulation evaluates the effect of selecting kinodynamically feasible trajectory segments rather than geometric next-best viewpoints. The KRH-NBVP clip illustrates this planning behaviour."
+    },
+    {
+      "label": "Outdoor onboard mapping and planning",
+      "kind": "hardware",
+      "text": "In the lamp-structure experiment at Instituto Superior Técnico, a UAV uses an RGB-D camera while mapping and trajectory planning run onboard. The supplied real-flight evaluation uses RTK-GPS/IMU localization."
+    },
+    {
+      "label": "Three-trial real-flight comparison",
+      "kind": "hardware",
+      "text": "Mean time to 95% coverage over three real trials per planner was 36.77 s for KAEP, 47.95 s for KRH-NBVP, 50.68 s for AEP and 89.27 s for RH-NBVP. These values refer to the same source evaluation and completion criterion."
+    },
+    {
+      "label": "Related centralized multi-UAV framework",
+      "kind": "context",
+      "text": "The ICARM 2026 paper is listed separately from the RA-L kinodynamic article. Its multi-UAV framework should not inherit the single-UAV hardware timings above."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media36",
+      "label": "Outdoor hardware experiment",
+      "caption": "KAEP outdoor RGB-D camera view from the lamp-structure experiment at Técnico.",
+      "description": "A physical UAV observes a lamp structure as its onboard mapping and trajectory planner select new views. This experiment uses RTK-GPS/IMU localization."
+    },
+    {
+      "id": "s11-media35",
+      "label": "Hardware-run map visualization",
+      "caption": "Reconstructed map from the same outdoor KAEP experiment.",
+      "description": "A map visualization accompanies the physical lamp-structure experiment. It is a reconstruction from a real run, rather than a simulation environment."
+    },
+    {
+      "id": "s11-media33",
+      "label": "Simulation",
+      "caption": "KRH-NBVP exploration using feasible trajectory segments in simulation.",
+      "description": "A simulated planning run illustrates the kinodynamic trajectory-selection behaviour."
+    }
+  ],
+  "relatedSlugs": [
+    "distributed-exploration",
+    "probabilistic-frontier-prioritization",
+    "marginal-gain"
+  ],
+  "sourceSlides": [
+    37,
+    38,
+    39
+  ],
+  "sourceReferences": [
+    "S01 pp.115–122; S02; mendes2026kinodynamic",
+    "S01 pp.129–136; S02; mendes2026centralized",
+    "WEBSITE_INFORMATION_SHEET.md section 7 (real-trial conditions and exact mean times)",
+    "S11 slides 37–39; catalogue/featured_media.json; catalogue/media_manifest.json"
+  ],
+  "editorQuestions": [
+    "Keep the final RA-L publication year 2026 even though its DOI contains 2025.",
+    "The centralized ICARM publication still lacks final DOI/pages in the available record; retain its existing verified preprint link without inventing proceedings fields.",
+    "No GNSS-free claim should be attached to the supplied lamp-structure flight."
+  ],
+  "type": "catalogue",
+  "themeId": "exploration"
+}

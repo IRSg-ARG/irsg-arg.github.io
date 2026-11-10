@@ -1,0 +1,96 @@
+{
+  "slug": "bimodal-rolling-flying",
+  "title": "Bimodal rolling–flying robot",
+  "theme": "Multimodal robots",
+  "description": "A quadrotor with passive wheels uses its existing propellers for flight and surface locomotion.",
+  "introduction": "Flight helps a robot reach an inspection site, while rolling can keep it close to a surface without continuously supporting its weight in the air. This robot combines those capabilities using passive wheels and a shared propulsion system.",
+  "status": "Published research",
+  "people": [
+    "Miguel Pimentel",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "pimentel2022bimodal"
+  ],
+  "primaryMediaId": "s11-media5",
+  "problem": {
+    "heading": "Inspection does not always require continuous flight.",
+    "paragraphs": [
+      "A small aerial robot can reach surfaces that are difficult to access from the ground. Once there, maintaining contact or travelling along the surface presents a different locomotion problem from free flight.",
+      "Adding a separate powered ground drivetrain increases the number of actuators and mechanisms the vehicle must carry. The research asks how one propulsion system can support both aerial access and surface motion."
+    ]
+  },
+  "approach": {
+    "heading": "One propulsion system, two ways to move.",
+    "paragraphs": [
+      "Two passive wheels support the quadrotor during surface locomotion. The propellers provide the forces needed to move along flat or inclined surfaces, while the same vehicle retains its flight capability.",
+      "The design connects platform mechanics with motion control: thrust must be used differently when the wheels constrain the robot than when the robot is freely flying. The published study addresses this rolling–flying configuration for close inspection."
+    ],
+    "steps": [
+      {
+        "title": "Reach the surface",
+        "text": "Use flight to access the inspection location."
+      },
+      {
+        "title": "Establish wheel contact",
+        "text": "Let the passive wheels support surface motion."
+      },
+      {
+        "title": "Redirect thrust",
+        "text": "Use the existing propellers to drive locomotion."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Physical prototype",
+      "kind": "hardware",
+      "text": "The supplied experiments demonstrate propeller-driven rolling, ramp motion and the platform’s surface/flight capabilities. These are genuine prototype tests."
+    },
+    {
+      "label": "Scope of the demonstrations",
+      "kind": "context",
+      "text": "The clips illustrate particular operating conditions. They do not establish a universal energy saving or mission endurance multiplier."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media5",
+      "label": "Hardware experiment · indoor rolling",
+      "caption": "Miguel Pimentel and Meysam Basiri’s rolling–flying prototype uses passive wheels and propeller thrust for surface locomotion.",
+      "description": "A physical two-wheeled quadrotor rolls along an indoor surface."
+    },
+    {
+      "id": "s11-media6",
+      "label": "Hardware experiment · ramp test",
+      "caption": "A ramp test of the same bimodal prototype.",
+      "description": "A short portrait-format experiment shows the wheeled aerial robot moving on an inclined surface."
+    },
+    {
+      "id": "s11-media7",
+      "label": "Hardware experiment · surface and flight",
+      "caption": "A further physical demonstration of the rolling–flying platform.",
+      "description": "The prototype is shown in a surface/flight test; this footage is separate from the simulation also inventoried in the presentation."
+    }
+  ],
+  "relatedSlugs": [
+    "bogiecopter",
+    "trimodal-uav",
+    "tilting-wings"
+  ],
+  "sourceSlides": [
+    12,
+    13,
+    14
+  ],
+  "sourceReferences": [
+    "pimentel2022bimodal",
+    "S11 slides 12–14; project catalogue, slide map and media manifest",
+    "WEBSITE_INFORMATION_SHEET.md section 5B"
+  ],
+  "editorQuestions": [
+    "Miguel Pimentel’s flagged acknowledgment portrait remains withheld; no portrait is needed to credit his work."
+  ],
+  "type": "catalogue",
+  "themeId": "multimodal"
+}

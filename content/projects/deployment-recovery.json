@@ -1,0 +1,118 @@
+{
+  "slug": "deployment-recovery",
+  "title": "Airborne deployment and autonomous recovery",
+  "theme": "Deployment and recovery",
+  "description": "Complementary projects study how small UAVs recover stable flight after release.",
+  "introduction": "A carrier aircraft could bring small UAVs close to a remote mission, preserving their energy for local sensing and search. Before that concept can be useful, each released vehicle must recover from uncertain attitude and motion. The group studies complementary parts of that recovery problem.",
+  "status": "Published research",
+  "people": [
+    "Lorenzo Giordano",
+    "Rodrigo Nishikawa",
+    "Sofia Simões",
+    "Yu Tang Liu",
+    "Meysam Basiri",
+    "Rodrigo Ventura"
+  ],
+  "publicationIds": [
+    "nishikawa2026recovery",
+    "liu2025graph"
+  ],
+  "primaryMediaId": "s11-media20",
+  "problem": {
+    "heading": "A useful mission starts with a controlled recovery.",
+    "paragraphs": [
+      "A small UAV released into the air may have large attitude errors, non-zero velocity and rapid angular motion. Its first task is to establish a controllable state before beginning the local mission.",
+      "This is both a controller problem and a sequencing problem. Detecting free fall, choosing when to activate the motors and transitioning into stabilized flight must work together onboard the vehicle."
+    ]
+  },
+  "approach": {
+    "heading": "Separate the recovery questions and their evidence.",
+    "paragraphs": [
+      "Lorenzo Giordano investigated demanding post-release motion and nonlinear or switching control strategies in simulation. Rodrigo Nishikawa’s tailsitter study uses two recovery stages: first orient thrust to arrest the fall, then recover attitude and altitude, comparing PID and nonlinear model predictive control in simulation.",
+      "Sofia Simões implemented an ArduPilot recovery architecture that sequences free-fall detection, motor activation, stabilization and position holding. Its real drop sequence is shown separately from those simulation studies.",
+      "Yu Tang Liu’s published graph-policy work follows a learning-based direction, combining normal attitude tracking with aggressive recovery. Its dedicated project page presents the separate policy, training and real-flight evidence."
+    ],
+    "steps": [
+      {
+        "title": "Detect the release state",
+        "text": "Recognize free fall and the current motion condition."
+      },
+      {
+        "title": "Sequence recovery",
+        "text": "Activate the chosen stabilization strategy at the appropriate stage."
+      },
+      {
+        "title": "Arrest the descent",
+        "text": "Recover thrust direction and controlled motion."
+      },
+      {
+        "title": "Enter the local mission",
+        "text": "Transition into the stabilized operating mode."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "ArduPilot drop sequence",
+      "kind": "hardware",
+      "text": "The onboard recording from Sofia Simões’s work shows a real release/recovery sequence. It is not a standalone validation of Nishikawa’s simulated controller or Liu’s learned policy."
+    },
+    {
+      "label": "High-speed deployment study",
+      "kind": "simulation",
+      "text": "Lorenzo Giordano’s work models post-release motion and compares recovery strategies in simulation."
+    },
+    {
+      "label": "Two-stage tailsitter study",
+      "kind": "simulation",
+      "text": "Rodrigo Nishikawa’s published PID/NMPC recovery comparison is evaluated in simulation. It is not presented as a completed carrier-aircraft release experiment."
+    },
+    {
+      "label": "Carrier deployment concept",
+      "kind": "concept",
+      "text": "Long-range transport by a carrier aircraft motivates the research. The conceptual mission animation is not treated as evidence of an integrated real carrier deployment."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media20",
+      "label": "Hardware experiment · ArduPilot recovery sequence",
+      "caption": "An onboard view of Sofia Simões’s real drop and recovery sequence.",
+      "description": "A physical UAV is released and progresses through an onboard recovery sequence. Exact controller tuning is not assigned to another project."
+    },
+    {
+      "id": "s11-media19",
+      "label": "Simulation · Lorenzo Giordano’s recovery study",
+      "caption": "Post-release recovery simulation from Lorenzo Giordano’s work.",
+      "description": "A simulated vehicle recovers after release under the modelled conditions."
+    },
+    {
+      "id": "s11-image80",
+      "label": "Simulation · tailsitter recovery",
+      "caption": "A simulation associated with Rodrigo Nishikawa’s two-stage tailsitter recovery study.",
+      "description": "A simulated tailsitter recovery sequence, supplied as a playable derivative of the presentation animation."
+    }
+  ],
+  "relatedSlugs": [
+    "rl-attitude-control",
+    "energy-aware-search",
+    "trimodal-uav"
+  ],
+  "sourceSlides": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "sourceReferences": [
+    "nishikawa2026recovery; liu2025graph",
+    "S11 slides 22–25; speaker notes, slide map and media manifest",
+    "WEBSITE_INFORMATION_SHEET.md section 5C"
+  ],
+  "editorQuestions": [
+    "Confirm the precise controller and tuning used in Sofia Simões’s real drop recording before making controller-specific performance claims.",
+    "No final thesis/publication metadata is supplied for Lorenzo’s simulation work. Its source attribution remains the author-supplied presentation."
+  ],
+  "type": "catalogue",
+  "themeId": "deployment"
+}

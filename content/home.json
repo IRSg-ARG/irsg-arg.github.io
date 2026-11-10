@@ -30,6 +30,11 @@
       "example": "Reliability-aware LiDAR-inertial odometry weights observations using physical signal and geometric quality cues. Semi-cooperative relative localization shares motion information between UAVs.",
       "publications": [
         "niusha2026quality"
+      ],
+      "projectSlugs": [
+        "lidar-inertial-odometry",
+        "acoustic-relative-positioning",
+        "relative-localization"
       ]
     },
     {
@@ -41,6 +46,12 @@
         "vale2025trimodal",
         "dias2023bogiecopter",
         "pimentel2022bimodal"
+      ],
+      "projectSlugs": [
+        "bimodal-rolling-flying",
+        "bogiecopter",
+        "trimodal-uav",
+        "tilting-wings"
       ]
     },
     {
@@ -50,6 +61,11 @@
       "example": "Complementary studies investigate release dynamics, recovery control and onboard stabilization. The tailsitter two-stage recovery study is evaluated in simulation.",
       "publications": [
         "nishikawa2026recovery"
+      ],
+      "projectSlugs": [
+        "deployment-recovery",
+        "rl-attitude-control",
+        "energy-aware-search"
       ]
     },
     {
@@ -61,7 +77,14 @@
         "lewis2025froshe",
         "mendes2026kinodynamic"
       ],
-      "project": "probabilistic-frontier-prioritization"
+      "project": "probabilistic-frontier-prioritization",
+      "projectSlugs": [
+        "distributed-exploration",
+        "frontier-shepherding",
+        "probabilistic-frontier-prioritization",
+        "kinodynamic-exploration",
+        "marginal-gain"
+      ]
     },
     {
       "id": "communication",
@@ -71,6 +94,9 @@
       "publications": [
         "conceicao2026sparc",
         "conceicao2025survey"
+      ],
+      "projectSlugs": [
+        "communication-aware-planning"
       ]
     },
     {
@@ -80,6 +106,12 @@
       "example": "Visual detection and multi-object tracking preserve a selected person’s identity and support following after temporary occlusion. Complementary acoustic and LiDAR work studies other sensing conditions.",
       "publications": [
         "ferreira2024following"
+      ],
+      "projectSlugs": [
+        "acoustic-target-localization",
+        "visual-target-following",
+        "cooperative-visual-pursuit",
+        "lidar-target-tracking"
       ]
     },
     {
@@ -89,6 +121,9 @@
       "example": "A published mixed-reality interface supports mission interaction. Persistent human–swarm supervision and uncertainty-guided attention are broader research directions.",
       "publications": [
         "caeiro2026mr"
+      ],
+      "projectSlugs": [
+        "mixed-reality-supervision"
       ]
     }
   ],

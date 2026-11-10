@@ -133,14 +133,16 @@
       "summary": "A bio-inspired framework in which UAVs shepherd different batches of a virtual frontier flock. Evaluated in simulation and forest-like outdoor experiments.",
       "publicationId": "lewis2025froshe",
       "mediaId": "s11-media29",
-      "label": "OUTDOOR EXPERIMENT"
+      "label": "OUTDOOR EXPERIMENT",
+      "projectSlug": "frontier-shepherding"
     },
     {
       "title": "Kinodynamic exploration",
       "summary": "KRH-NBVP considers feasible motion during viewpoint selection; KAEP adds a global planning component. Evaluated in simulation and real flight.",
       "publicationId": "mendes2026kinodynamic",
       "mediaId": "s11-image118",
-      "label": "RESEARCH PLATFORM"
+      "label": "RESEARCH PLATFORM",
+      "projectSlug": "kinodynamic-exploration"
     }
   ],
   "publicationLabel": "IEEE RA-L 2026",
@@ -153,5 +155,7 @@
   "evidenceIntroduction": "Simulation measures changes in exploration time against defined baselines. Outdoor trials demonstrate the feasibility of the two-UAV system.",
   "simulationContext": "Across tested team sizes and forest densities, with unrestricted communication. Each planner is compared with its own enhanced version.",
   "hardwareContext": "Two UAVs using the FAME-based implementation explored an outdoor court. The endpoint was 95% coverage in each trial.",
-  "hardwareNote": "These three trials demonstrate hardware feasibility. They are separate from the simulated percentage improvements above."
+  "hardwareNote": "These three trials demonstrate hardware feasibility. They are separate from the simulated percentage improvements above.",
+  "themeId": "exploration",
+  "status": "Published research"
 }

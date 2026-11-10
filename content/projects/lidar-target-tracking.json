@@ -1,0 +1,104 @@
+{
+  "slug": "lidar-target-tracking",
+  "title": "Cooperative compact-LiDAR target tracking",
+  "theme": "Target localization and tracking",
+  "description": "Compact target estimates and visibility-aware control help UAVs maintain tracking when 3D LiDAR detections are sparse or intermittent.",
+  "introduction": "A person can generate only a small number of returns in a compact 3D LiDAR scan. This work connects local detection, shared target estimates and predictive following motions so that robots can help one another maintain awareness.",
+  "status": "Published research",
+  "people": [
+    "Hugo Aranha",
+    "Rodrigo Ventura",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "aranha2026lidar"
+  ],
+  "primaryMediaId": "s11-media49",
+  "problem": {
+    "heading": "Sparse observations can disappear between viewpoints.",
+    "paragraphs": [
+      "At longer ranges, a person may contribute too few LiDAR returns for consistent detection. Missed observations create gaps in the local target estimate and make reliable following difficult.",
+      "Cooperation can provide complementary observations, but sensing and motion must work together. A UAV must follow the target while preserving visibility, avoiding obstacles and maintaining separation from its teammate."
+    ]
+  },
+  "approach": {
+    "heading": "Share estimates, then move to keep seeing.",
+    "paragraphs": [
+      "Each UAV processes its compact LiDAR observations locally and maintains a target estimate using an unscented Kalman filter. Robots share target state estimates and covariance, rather than exchanging full point clouds.",
+      "A nonlinear model predictive controller uses these estimates to follow the target with line-of-sight constraints. This joins cooperative estimation with motion that seeks to preserve useful observations.",
+      "When one robot misses a detection, the shared estimate can incorporate information from its teammate. The complete two-UAV pipeline is demonstrated in simulation, while a separate outdoor experiment evaluates sensing and tracking on one UAV."
+    ],
+    "steps": [
+      {
+        "title": "Detect locally",
+        "text": "Process sparse compact-LiDAR observations on each UAV."
+      },
+      {
+        "title": "Estimate and share",
+        "text": "Exchange target state and uncertainty between local filters."
+      },
+      {
+        "title": "Follow with visibility",
+        "text": "Use predictive control to preserve line of sight and safe motion."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Complete cooperative pipeline",
+      "kind": "simulation",
+      "text": "The two-UAV simulation runs local detection, cooperative target estimation and visibility-aware following together. This is the evidence for the complete cooperative pipeline."
+    },
+    {
+      "label": "Outdoor sensing and tracking",
+      "kind": "hardware",
+      "text": "A separate single-UAV outdoor experiment supports the compact-LiDAR sensing and tracking components. It is not presented as a two-UAV cooperative hardware trial."
+    },
+    {
+      "label": "Observation uncertainty",
+      "kind": "context",
+      "text": "The method shares both a target estimate and its uncertainty. Sparse detections motivate cooperation, while visibility constraints connect the quality of future observations to robot motion."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media49",
+      "label": "Simulation · complete two-UAV pipeline",
+      "caption": "Two UAVs run cooperative LiDAR tracking and visibility-aware following in simulation.",
+      "description": "A simulated scene shows two UAVs tracking and following a target while coordinating their motion. This clip presents the full cooperative pipeline, not a real two-UAV flight."
+    },
+    {
+      "id": "s11-media48",
+      "label": "Outdoor hardware experiment · one UAV",
+      "caption": "A separate single-UAV outdoor LiDAR tracking experiment, shown from above.",
+      "description": "Top-view footage of the physical sensing and tracking experiment on one UAV. It provides hardware context for the local tracking component."
+    },
+    {
+      "id": "s11-media47",
+      "label": "Real-experiment data visualization",
+      "caption": "Compact-LiDAR target-tracking visualization from the separate outdoor sensing work.",
+      "description": "A visualization of target tracking using real experimental LiDAR data. It is distinct from the two-UAV simulation that demonstrates cooperative following."
+    }
+  ],
+  "relatedSlugs": [
+    "relative-localization",
+    "cooperative-visual-pursuit",
+    "visual-target-following"
+  ],
+  "sourceSlides": [
+    47,
+    48,
+    49
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md sections 5F and 7",
+    "S11 slides 47–49; slide-49 notes explicitly distinguish two-UAV simulation and separate single-UAV outdoor tests",
+    "Curated media shortlist and manifest: s11-media47, s11-media48, s11-media49",
+    "aranha2026lidar — final CRV proceedings citation in current website catalogue"
+  ],
+  "editorQuestions": [
+    "Obtain the complete quantitative evaluation context before adding detection-recall curves or RMSE metric cards. The supplied source distinguishes reported simulation values from a separate single-UAV Livox Mid-360 experiment; this draft retains that distinction without publishing incomplete metric conditions."
+  ],
+  "type": "catalogue",
+  "themeId": "tracking"
+}

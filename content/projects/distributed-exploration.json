@@ -1,0 +1,102 @@
+{
+  "slug": "distributed-exploration",
+  "title": "Distributed frontier and next-best-view exploration",
+  "theme": "Exploration and mapping",
+  "description": "Distributed UAV teams combine frontier regions and next-best-view planning to map unknown environments.",
+  "introduction": "A team can map an unknown environment in parallel, provided its robots choose complementary places to look. This framework combines frontier-based exploration with next-best-view planning, giving each UAV a local planning loop that uses shared team information when communication is available.",
+  "status": "Published research",
+  "people": [
+    "André Ribeiro",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "ribeiro2024exploration",
+    "ribeiro2024cooperative"
+  ],
+  "primaryMediaId": "s11-media26",
+  "problem": {
+    "heading": "More robots need complementary viewpoints.",
+    "paragraphs": [
+      "Sending several UAVs into the same environment can create repeated observations and unnecessary travel. The team needs a way to spread its effort across unexplored regions while each vehicle continues to maintain and update its own map.",
+      "The value of an additional UAV also depends on the environment. A compact space may offer fewer opportunities for parallel exploration than a larger, more open area, so team size and deployment conditions matter."
+    ]
+  },
+  "approach": {
+    "heading": "Local planning, informed by the team.",
+    "paragraphs": [
+      "Each UAV uses 3D LiDAR measurements to construct a local OctoMap and detect frontiers at the boundary between known free space and unknown space. Mean-shift clustering groups those frontiers into candidate exploration regions.",
+      "When communication is available, robots exchange maps and positions. Distance-based assignment encourages different UAVs to work on different regions. Each robot then selects its next viewpoint using expected information gain, travel cost and the positions of nearby teammates.",
+      "The vehicle moves towards the selected viewpoint, updates its map and repeats the process. Planning remains local to each UAV, while exchanged information helps reduce redundant exploration."
+    ],
+    "steps": [
+      {
+        "title": "Map locally",
+        "text": "Build a 3D occupancy map from onboard LiDAR observations."
+      },
+      {
+        "title": "Group frontiers",
+        "text": "Cluster boundaries between known and unexplored space."
+      },
+      {
+        "title": "Coordinate regions",
+        "text": "Use exchanged maps and positions to separate the team’s choices."
+      },
+      {
+        "title": "Select a view",
+        "text": "Balance information gain, travel cost and nearby teammates."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Simulation study",
+      "kind": "simulation",
+      "text": "The published evaluation compares exploration time and path length in Test City and forest environments using different team sizes. These results come from simulation."
+    },
+    {
+      "label": "Environment-dependent team size",
+      "kind": "simulation",
+      "text": "In the compact Test City scenario, the third UAV brings little additional benefit after the second. The forest scenario offers more scope for parallel exploration. The illustrated trials start the UAVs at the same location, so the conclusion is tied to those deployment conditions."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media26",
+      "label": "Simulation",
+      "caption": "Distributed multi-UAV exploration in simulation, from André Ribeiro’s research.",
+      "description": "A simulated UAV team moves through an environment while constructing a map. The clip illustrates the distributed planning process rather than a physical flight."
+    },
+    {
+      "id": "s11-media27",
+      "label": "Simulation",
+      "caption": "A second simulated exploration run from the team-size comparison.",
+      "description": "Simulation footage from the comparison presented on slide 31. Robot counts should be read from the displayed experiment labels."
+    },
+    {
+      "id": "s11-media28",
+      "label": "Simulation",
+      "caption": "A further simulation run from the exploration team-size comparison.",
+      "description": "A simulated map and vehicle trajectories show exploration progress under the study’s conditions."
+    }
+  ],
+  "relatedSlugs": [
+    "frontier-shepherding",
+    "probabilistic-frontier-prioritization",
+    "kinodynamic-exploration"
+  ],
+  "sourceSlides": [
+    30,
+    31
+  ],
+  "sourceReferences": [
+    "S01 pp.56–77; S02; ribeiro2024exploration",
+    "S01 pp.21–26; ribeiro2024cooperative",
+    "S11 slides 30–31; catalogue/slide_project_map.csv; catalogue/media_manifest.json"
+  ],
+  "editorQuestions": [
+    "The supplied clip filenames do not establish the robot count. Captions intentionally defer to the experiment labels instead of assigning a team size from filename order.",
+    "No hardware performance claim is made for the distributed exploration study."
+  ],
+  "type": "catalogue",
+  "themeId": "exploration"
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "mixed-reality-supervision",
+  "title": "Mixed-reality mission interaction and supervision",
+  "theme": "Human–robot interaction",
+  "description": "Spatial interfaces connect UAV mission information and commands with their physical three-dimensional context.",
+  "introduction": "A UAV mission is three-dimensional, but its information is often divided across maps, video windows and status panels. Mixed-reality interaction explores how to place mission information and commands in their spatial context, alongside a broader research direction in persistent human–swarm supervision.",
+  "status": "Published research",
+  "people": [
+    "Miguel Caeiro",
+    "Akshat Singh",
+    "Rodrigo Ventura",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "caeiro2026mr"
+  ],
+  "primaryMediaId": "s11-media50",
+  "problem": {
+    "heading": "Make the mission’s spatial context easier to understand.",
+    "paragraphs": [
+      "An operator may need to combine vehicle positions, trajectories and hazards from several separate views. Adding UAVs increases the amount of information without increasing the operator’s available attention.",
+      "The supervision challenge is to present useful information in relation to the environment and support guidance at the level of mission intent. Uncertainty and situations requiring human input are important parts of that wider research question."
+    ]
+  },
+  "approach": {
+    "heading": "Interact with the mission in three dimensions.",
+    "paragraphs": [
+      "The published ICARSC 2026 work introduces a unified mixed-reality interface for dynamic swarm mission planning and control. Miguel Caeiro is its first author, with Akshat Singh, Rodrigo Ventura and Meysam Basiri; the real-UAV interface described in that paper uses velocity commands.",
+      "Akshat Singh’s broader doctoral research explores persistent spatial tasking and supervision of UAV teams. The supplied demonstration shows one UAV receiving a sequence of three-dimensional waypoints through a mixed-reality interface.",
+      "Further research aims to present vehicle positions, planned paths, hazards and uncertainty in context, and to direct human attention to situations requiring a decision. These are supervision goals rather than demonstrated reductions in operator workload."
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Published interface",
+      "kind": "hardware",
+      "text": "The ICARSC paper documents a real-UAV mixed-reality interface using velocity commands, alongside its interface evaluation."
+    },
+    {
+      "label": "One-UAV spatial tasking",
+      "kind": "hardware",
+      "text": "The supplied presentation demonstration shows three-dimensional waypoint tasking with one physical UAV as part of the ongoing supervision research."
+    },
+    {
+      "label": "Team supervision direction",
+      "kind": "context",
+      "text": "Persistent multi-UAV supervision, uncertainty displays and attention by exception are research aims. The supplied one-UAV demonstration does not establish a team-scale workload benefit."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media50",
+      "label": "Ongoing research · hardware demonstration",
+      "caption": "Spatial waypoint tasking with one UAV, shown in the ongoing mixed-reality supervision research.",
+      "description": "A mixed-reality interface is used to place a sequence of waypoints in three-dimensional space and a physical UAV follows the commanded path. The ICARSC 2026 paper documents a velocity-command interface; the relationship between that implementation and this spatial-tasking demonstration remains an author attribution question."
+    }
+  ],
+  "relatedSlugs": [
+    "communication-aware-planning",
+    "cooperative-visual-pursuit",
+    "kinodynamic-exploration"
+  ],
+  "sourceSlides": [
+    51,
+    52,
+    53
+  ],
+  "sourceReferences": [
+    "S01 pp.199–204; S02; caeiro2026mr",
+    "S11 slides 51–53; supplied speaker notes",
+    "WEBSITE_INFORMATION_SHEET.md sections 5G, 7 and 17; catalogue/featured_media.json"
+  ],
+  "editorQuestions": [
+    "Confirm whether the one-UAV waypoint demonstration extends the published velocity-command interface before attributing it as a result of that paper.",
+    "Preserve Miguel Caeiro as first author of the published ICARSC paper despite the slide’s emphasis on Akshat’s PhD direction.",
+    "No quantitative workload reduction, uncertainty-display validation or persistent team-supervision benefit is claimed.",
+    "Excluded commercial headset artwork s11-image152 is not selected."
+  ],
+  "type": "catalogue",
+  "themeId": "supervision"
+}

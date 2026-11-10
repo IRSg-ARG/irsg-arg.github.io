@@ -1,0 +1,65 @@
+{
+  "slug": "aerial-ground-warehouse",
+  "title": "Collaborative aerial–ground warehouse inspection",
+  "theme": "Heterogeneous robot teams",
+  "description": "A ground robot transports and localizes a UAV for short flights that capture imagery of warehouse shelves.",
+  "introduction": "A ground robot can carry a UAV between warehouse aisles, reserving flight for close-range observations of high shelves. This collaborative system captures inventory imagery without external navigation infrastructure or a prior 3D map.",
+  "status": "Published research",
+  "people": [
+    "Rafaela Chaffilla",
+    "Paulo Alvito",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "chaffilla2025warehouse"
+  ],
+  "primaryMediaId": null,
+  "problem": {
+    "heading": "Combine ground endurance with aerial reach.",
+    "paragraphs": [
+      "Ground robots cannot easily observe high shelves. UAVs reach those locations, but their battery limits make long transit flights costly.",
+      "Repetitive indoor aisles also make reliable localization difficult. The team needs navigation that can work with a simple floor plan."
+    ]
+  },
+  "approach": {
+    "heading": "Travel on the ground. Observe from the air.",
+    "paragraphs": [
+      "The UGV combines 2D LiDAR scan-to-map matching with an Extended Kalman Filter. The UAV uses fiducial-based relative localization.",
+      "The UAV takes off, follows the ground robot, captures shelf images and lands. Ground transport connects these short flight segments."
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Simulation evaluation",
+      "kind": "simulation",
+      "text": "The paper compares ground-robot localization with established methods across simulated warehouse layouts."
+    },
+    {
+      "label": "Physical system trials",
+      "kind": "hardware",
+      "text": "Real experiments demonstrate UAV following and landing, producing geo-referenced shelf imagery for downstream inventory recognition."
+    },
+    {
+      "label": "Data-capture scope",
+      "kind": "context",
+      "text": "End-to-end item identification and enterprise-system integration are outside the paper’s scope."
+    }
+  ],
+  "media": [],
+  "relatedSlugs": [
+    "moving-platform-landing",
+    "relative-localization",
+    "visual-target-following"
+  ],
+  "sourceSlides": [],
+  "sourceReferences": [
+    "S09; chaffilla2025warehouse",
+    "Primary publisher article and abstract: https://www.mdpi.com/2504-446X/9/11/792 (reviewed for this draft)"
+  ],
+  "editorQuestions": [
+    "No project-specific media is identified in the handoff. This draft is a text-only case study and does not borrow another platform’s footage.",
+    "Publisher source confirms simulation and physical following/landing; do not turn the image-capture result into a claim of demonstrated automated end-to-end inventory counting."
+  ],
+  "type": "catalogue",
+  "themeId": "heterogeneous"
+}

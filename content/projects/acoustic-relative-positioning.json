@@ -1,0 +1,89 @@
+{
+  "slug": "acoustic-relative-positioning",
+  "title": "Acoustic relative positioning",
+  "theme": "Localization and cooperative perception",
+  "description": "Known sound signals and onboard microphone arrays give aerial robots a way to estimate where their teammates are and follow a leader.",
+  "introduction": "Before compact LiDAR became part of the group's UAV platforms, sound offered another route to relative awareness. Robots emit known acoustic signals, listen with onboard microphone arrays, and use the resulting estimates to coordinate their motion.",
+  "status": "Published research",
+  "people": [
+    "Meysam Basiri",
+    "Felix Schill",
+    "Dario Floreano",
+    "Pedro U. Lima"
+  ],
+  "publicationIds": [
+    "basiri2013relative",
+    "basiri2014audio",
+    "basiri2016bearing"
+  ],
+  "primaryMediaId": "s11-media2",
+  "problem": {
+    "heading": "Where is the other robot?",
+    "paragraphs": [
+      "A team needs relative position information to act together. An aerial robot cannot always depend on GNSS or an external positioning installation to locate its neighbours.",
+      "The acoustic research asks whether signals produced by the robots themselves can provide useful relative observations through onboard sensing. It forms part of Meysam Basiri's earlier work on swarms of micro aerial vehicles."
+    ]
+  },
+  "approach": {
+    "heading": "Signal, listen and estimate.",
+    "paragraphs": [
+      "Each sound-emitting robot produces a known acoustic signal. An onboard microphone array on another robot records that signal and supports relative bearing or position estimation.",
+      "In the leader–follower demonstration, the follower uses the acoustic estimate to follow the leader without GNSS or wireless state exchange. The associated RSS, ICRA and RA-L papers describe related stages of this research, with their own formulations and evaluations."
+    ],
+    "steps": [
+      {
+        "title": "Emit a known signal",
+        "text": "Make the neighbouring aerial robot acoustically observable."
+      },
+      {
+        "title": "Listen onboard",
+        "text": "Record the sound using a microphone array carried by the robot."
+      },
+      {
+        "title": "Estimate relative state",
+        "text": "Use the acoustic observations to estimate bearing or position."
+      },
+      {
+        "title": "Follow the leader",
+        "text": "Use relative awareness to guide the follower's motion."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Leader–follower hardware demonstration",
+      "kind": "hardware",
+      "text": "The supplied experiment shows acoustic leader following using onboard sensing. The demonstration is attributed to the historical sound-based work, not to the later LiDAR localization methods."
+    },
+    {
+      "label": "A sequence of published methods",
+      "kind": "context",
+      "text": "The linked 2013, 2014 and 2016 publications document distinct contributions to acoustic relative positioning and bearing estimation. Their results are kept with the corresponding papers rather than merged into a single performance claim."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media2",
+      "label": "Real experiment · acoustic leader following",
+      "caption": "Historical acoustic leader–follower positioning using known sound signals and onboard microphones. The supplied clip retains its original audio.",
+      "description": "A follower aerial robot uses sound from a leader to maintain relative awareness and follow it. This is the acoustic demonstration on the left of slide 9, separate from the LiDAR experiment shown alongside it."
+    }
+  ],
+  "relatedSlugs": [
+    "relative-localization",
+    "acoustic-target-localization",
+    "lidar-inertial-odometry"
+  ],
+  "sourceSlides": [
+    9
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md section 5A",
+    "PROJECT_AND_MEDIA_INDEX.md: Acoustic relative positioning",
+    "S11 slide 9; left-hand acoustic demonstration s11-media2",
+    "basiri2013relative; basiri2014audio; basiri2016bearing"
+  ],
+  "editorQuestions": [],
+  "type": "catalogue",
+  "themeId": "localization"
+}

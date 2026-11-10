@@ -1,0 +1,91 @@
+{
+  "slug": "communication-aware-planning",
+  "title": "Communication-aware motion and coverage planning",
+  "theme": "Communication and coordination",
+  "description": "Coverage planning considers the changing radio links and information-exchange opportunities created by moving UAVs.",
+  "introduction": "Where a UAV flies changes the network it can use, and the available network changes how well a team can cooperate. This research connects communication awareness with motion and coverage planning, allowing robots to explore while creating useful opportunities to exchange information.",
+  "status": "Published research",
+  "people": [
+    "Maria Inês Conceição",
+    "António Grilo",
+    "Meysam Basiri",
+    "Inês Marques"
+  ],
+  "publicationIds": [
+    "conceicao2025survey",
+    "conceicao2026sparc",
+    "marques2026connectivity"
+  ],
+  "primaryMediaId": "s11-media43",
+  "problem": {
+    "heading": "Plan around information arriving intermittently.",
+    "paragraphs": [
+      "Aerial robot teams use shared maps and teammate information to coordinate their motion. Distance and obstacles continually change radio quality, so useful information may arrive late or be temporarily unavailable.",
+      "Maintaining a useful team therefore involves more than planning each vehicle’s coverage path. The motion plan also influences when robots can exchange information and reconnect their knowledge of the mission."
+    ]
+  },
+  "approach": {
+    "heading": "Bring communication and motion into the same plan.",
+    "paragraphs": [
+      "The communication and motion awareness survey organizes approaches to this coupled problem. It provides a broader framework for understanding how aerial teams account for the network while coordinating motion.",
+      "SpArC-NARTs plans coverage trajectories offline using simulated annealing. It accounts for energy, sensing uncertainty, prior information and expected radio performance, balancing exploration with opportunities for information exchange.",
+      "Inês Marques and Meysam Basiri’s connectivity-aware coverage paper is a separate contribution. It uses simulated annealing for multi-UAV coverage planning with connectivity considerations and retains its own authorship and publication record."
+    ],
+    "steps": [
+      {
+        "title": "Specify the mission",
+        "text": "Define coverage goals and the vehicle, sensing and energy limits."
+      },
+      {
+        "title": "Model communication",
+        "text": "Represent the expected radio opportunities along candidate paths."
+      },
+      {
+        "title": "Optimize cooperation",
+        "text": "Balance coverage with information-exchange opportunities."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Published research framework",
+      "kind": "context",
+      "text": "The project includes a published survey, the SpArC-NARTs coverage-planning framework and a distinct connectivity-aware coverage contribution. Their publication records and authors remain separate."
+    },
+    {
+      "label": "Conceptual communication example",
+      "kind": "concept",
+      "text": "The supplied animation illustrates how temporarily disconnected UAVs can create opportunities to exchange information. It is an explanatory concept, rather than a measured or optimized SpArC-NARTs trajectory."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media43",
+      "label": "Concept animation",
+      "caption": "An explanatory example of coverage and intermittent information exchange.",
+      "description": "The animation illustrates UAV paths, temporary disconnection and information-exchange opportunities. It does not show an actual optimized SpArC-NARTs result."
+    }
+  ],
+  "relatedSlugs": [
+    "distributed-exploration",
+    "energy-aware-search",
+    "mixed-reality-supervision"
+  ],
+  "sourceSlides": [
+    43,
+    44
+  ],
+  "sourceReferences": [
+    "S07; conceicao2025survey",
+    "S02; conceicao2026sparc",
+    "S01 pp.137–142; S02; marques2026connectivity",
+    "S11 slides 43–44; catalogue/featured_media.json; catalogue/media_manifest.json"
+  ],
+  "editorQuestions": [
+    "The standalone SpArC-NARTs article is not packaged; verify detailed quantitative results against the article before adding them.",
+    "The supplied animation is explicitly conceptual and must remain labelled accordingly.",
+    "Keep Inês Marques’s ICARSC paper as a distinct contribution rather than attributing it to Maria Inês Conceição or naming it SpArC-NARTs."
+  ],
+  "type": "catalogue",
+  "themeId": "communication"
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "bogiecopter",
+  "title": "BogieCopter",
+  "theme": "Multimodal robots",
+  "description": "Tiltable axles and passive wheels combine flight with surface locomotion for inspection.",
+  "introduction": "BogieCopter explores how an aerial robot can use the surfaces around it. Passive wheels and tiltable axles let the platform combine flight with ground and inclined-surface motion, matching its locomotion to the inspection task.",
+  "status": "Published research",
+  "people": [
+    "Teodoro Dias",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "dias2023bogiecopter"
+  ],
+  "primaryMediaId": "s11-media9",
+  "problem": {
+    "heading": "Use the surface when it can support the robot.",
+    "paragraphs": [
+      "Aerial access is valuable for inspection, but remaining airborne requires the propulsion system to support the vehicle’s weight. A surface can provide support during parts of the mission where free flight is unnecessary.",
+      "Changing between flight and supported locomotion requires a mechanical configuration and control strategy that work across different contact conditions, including inclined surfaces."
+    ]
+  },
+  "approach": {
+    "heading": "Adapt the axles to the operating mode.",
+    "paragraphs": [
+      "BogieCopter combines passive wheels with tiltable axles. The configuration supports aerial and surface locomotion, allowing the same robot to fly and to move while in contact with its environment.",
+      "The platform study brings together vehicle design and experimental evaluation of different operating modes. Flight, incline traversal and climbing demonstrations show complementary capabilities of the physical prototype."
+    ],
+    "steps": [
+      {
+        "title": "Access by air",
+        "text": "Fly to the part of the structure to be inspected."
+      },
+      {
+        "title": "Configure for contact",
+        "text": "Use the wheel and axle arrangement for supported motion."
+      },
+      {
+        "title": "Move along the surface",
+        "text": "Apply propulsion within the selected locomotion mode."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Surface locomotion",
+      "kind": "hardware",
+      "text": "The supplied hardware recordings show inclined-surface movement and climbing with the physical BogieCopter prototype."
+    },
+    {
+      "label": "Flight capability",
+      "kind": "hardware",
+      "text": "A separate indoor flight recording demonstrates that the aerial–ground design retains free-flight capability."
+    },
+    {
+      "label": "Energy comparison conditions",
+      "kind": "context",
+      "text": "The paper’s power comparisons depend on operating mode, speed and payload. The demonstrations are not presented as a fixed multiplier for every inspection mission."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media9",
+      "label": "Hardware experiment · inclined surface",
+      "caption": "BogieCopter surface-locomotion experiments by Teodoro Dias and Meysam Basiri.",
+      "description": "The real platform traverses an inclined surface with on-screen operating-mode and speed annotations."
+    },
+    {
+      "id": "s11-media10",
+      "label": "Hardware experiment · indoor flight",
+      "caption": "Indoor flight of the aerial–ground platform.",
+      "description": "BogieCopter flies indoors, showing the vehicle’s flight capability separately from its surface locomotion."
+    },
+    {
+      "id": "s11-media12",
+      "label": "Hardware experiment · climbing",
+      "caption": "A short physical climbing demonstration.",
+      "description": "Portrait-format footage shows the platform moving against a surface."
+    }
+  ],
+  "relatedSlugs": [
+    "bimodal-rolling-flying",
+    "trimodal-uav",
+    "tilting-wings"
+  ],
+  "sourceSlides": [
+    15,
+    16
+  ],
+  "sourceReferences": [
+    "dias2023bogiecopter",
+    "S11 slides 15–16; media manifest",
+    "WEBSITE_INFORMATION_SHEET.md sections 5B and 7"
+  ],
+  "editorQuestions": [
+    "Any later power or payload metric card must preserve the no-payload test condition and distinguish nominal payload allowance from separate design-test scenarios."
+  ],
+  "type": "catalogue",
+  "themeId": "multimodal"
+}

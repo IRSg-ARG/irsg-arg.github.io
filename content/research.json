@@ -1,0 +1,14 @@
+{
+  "title": "Research, from the robot to the team.",
+  "description": "Explore our research in aerial robot design, perception, planning and cooperation, with publications and genuine experimental media.",
+  "themes": [
+    {"id":"localization","title":"Localization & cooperative perception","summary":"Estimate motion and relative position when observations are uncertain or intermittent."},
+    {"id":"multimodal","title":"Multimodal aerial robots","summary":"Combine flight with surface motion and adapt the platform to the task."},
+    {"id":"deployment","title":"Aerial deployment & recovery","summary":"Recover controlled flight after release and plan how the deployed team should search."},
+    {"id":"exploration","title":"Exploration & mapping","summary":"Choose informative viewpoints, coordinate exploration and reconstruct unknown environments."},
+    {"id":"communication","title":"Communication-aware coordination","summary":"Plan cooperation around the information that moving robots can exchange."},
+    {"id":"tracking","title":"Target localization & tracking","summary":"Maintain target awareness through sensing gaps, occlusion and changing viewpoints."},
+    {"id":"supervision","title":"Human supervision & mixed reality","summary":"Place mission information and interaction in their spatial context."},
+    {"id":"heterogeneous","title":"Heterogeneous robot teams","summary":"Combine aerial and ground platforms for inspection, following and landing."}
+  ]
+}

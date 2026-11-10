@@ -44,7 +44,7 @@ document.querySelectorAll('[data-directory]').forEach(directory=>{
   const filters=[...directory.querySelectorAll('[data-filter]')];
   const items=[...directory.querySelectorAll('[data-directory-item]')];
   const normalize=value=>String(value).normalize('NFD').replace(/\p{M}/gu,'').toLowerCase();
-  const isPublication=items.some(item=>item.classList.contains('publication'));
+  const resultUnit=directory.dataset.resultUnit||(items.some(item=>item.classList.contains('publication'))?'publication':'supervision record');
   const update=()=>{
     const terms=normalize(search?.value||'').trim().split(/\s+/).filter(Boolean);
     let visible=0;
@@ -54,7 +54,7 @@ document.querySelectorAll('[data-directory]').forEach(directory=>{
     });
     directory.querySelectorAll('[data-directory-section]').forEach(section=>{section.hidden=![...section.querySelectorAll('[data-directory-item]')].some(item=>!item.hidden);});
     const count=directory.querySelector('[data-result-count]');
-    if(count)count.textContent=visible+(visible===items.length?'':' of '+items.length)+(isPublication?' publication':' supervision record')+(items.length===1?'':'s');
+    if(count)count.textContent=visible+(visible===items.length?'':' of '+items.length)+' '+resultUnit+(items.length===1?'':'s');
     const empty=directory.querySelector('[data-empty]');if(empty)empty.hidden=visible>0;
     directory.querySelectorAll('.year-jump a').forEach(anchor=>{const section=document.getElementById(anchor.hash.slice(1));anchor.hidden=!!section?.hidden;});
   };

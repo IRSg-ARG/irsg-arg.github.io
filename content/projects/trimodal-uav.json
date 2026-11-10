@@ -1,0 +1,102 @@
+{
+  "slug": "trimodal-uav",
+  "title": "Trimodal ground, hover and fixed-wing UAV",
+  "theme": "Multimodal robots",
+  "description": "A modular UAV combines ground motion, hovering and fixed-wing forward flight.",
+  "introduction": "Different parts of a mission call for different forms of movement. This modular platform combines ground locomotion, hovering and fixed-wing forward flight so that vehicle configuration can follow the task.",
+  "status": "Published research",
+  "people": [
+    "Afonso Vale",
+    "Meysam Basiri",
+    "Frederico Afonso"
+  ],
+  "publicationIds": [
+    "vale2025trimodal"
+  ],
+  "primaryMediaId": "s11-media14",
+  "problem": {
+    "heading": "One flight mode cannot serve every task equally well.",
+    "paragraphs": [
+      "Hovering is useful for precise observation and manoeuvring, while forward flight offers a different way to cover distance. Ground locomotion can exploit surface support when the robot does not need to remain airborne.",
+      "Combining these modes creates a design and integration challenge: the physical platform and onboard control must support several operating configurations without treating each as a separate robot."
+    ]
+  },
+  "approach": {
+    "heading": "Combine three locomotion modes in one platform.",
+    "paragraphs": [
+      "The vehicle integrates ground motion, quadrotor-style hovering and fixed-wing forward flight in a modular platform. ArduPilot integration connects the design with practical onboard operation.",
+      "The published work includes wind-tunnel and field evaluation. The project brings together the mechanical configuration, control integration and operating-mode transitions rather than relying only on a design concept."
+    ],
+    "steps": [
+      {
+        "title": "Move on the ground",
+        "text": "Use supported locomotion where a suitable surface is available."
+      },
+      {
+        "title": "Hover and manoeuvre",
+        "text": "Use multicopter operation for low-speed positioning."
+      },
+      {
+        "title": "Fly forward",
+        "text": "Use the winged configuration for forward flight."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Field flight evaluation",
+      "kind": "hardware",
+      "text": "The supplied field-test video shows the physical trimodal UAV operating in its flight configurations, with operating-mode annotations."
+    },
+    {
+      "label": "Ground operation and transitions",
+      "kind": "hardware",
+      "text": "A separate field recording demonstrates ground navigation and transitions. It complements the flight tests rather than serving as a simulation of them."
+    },
+    {
+      "label": "Range and endurance",
+      "kind": "context",
+      "text": "The paper’s range estimates are configuration-specific and derived from measured power and an assumed battery capacity. Range and endurance are different quantities; no universal mission multiplier is claimed here."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media14",
+      "label": "Hardware experiment · field flight tests",
+      "caption": "Trimodal UAV field evaluation by Afonso Vale, Meysam Basiri and Frederico Afonso, IROS 2025.",
+      "description": "A real UAV is shown in flight configurations with on-screen operating-mode labels."
+    },
+    {
+      "id": "s11-media16",
+      "label": "Hardware experiment · ground operation",
+      "caption": "Ground navigation and transitions with the same physical platform.",
+      "description": "Field footage shows supported ground motion and changes between operating conditions."
+    },
+    {
+      "id": "s11-media13",
+      "label": "Design animation",
+      "caption": "An animation explaining the platform configuration; this is not flight footage.",
+      "description": "A CAD/design visualization shows the platform’s mechanical configuration."
+    }
+  ],
+  "relatedSlugs": [
+    "bimodal-rolling-flying",
+    "bogiecopter",
+    "tilting-wings"
+  ],
+  "sourceSlides": [
+    17,
+    18,
+    19
+  ],
+  "sourceReferences": [
+    "vale2025trimodal",
+    "S11 slides 17–19; media manifest and curated shortlist",
+    "WEBSITE_INFORMATION_SHEET.md sections 5B and 7"
+  ],
+  "editorQuestions": [
+    "The embedded endurance-chart decimal is inconsistent with its minutes-and-seconds value. That chart is not selected. Any recreated chart must convert 9 min 39 s to 9.65 min and preserve the paper’s configuration and battery assumptions."
+  ],
+  "type": "catalogue",
+  "themeId": "multimodal"
+}

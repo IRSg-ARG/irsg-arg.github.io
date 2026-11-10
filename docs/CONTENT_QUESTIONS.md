@@ -13,3 +13,9 @@ Resolved: Inês Marques was supervised by Meysam Basiri at Bachelor’s level. T
 Resolved: final publisher citations were found for the Kalman-consensus, robust cooperative localization, sparse LiDAR detection, MapEx and CRV tracking papers. Their exact titles, ordered authors and published metadata replace stale in-press notes in the source seed.
 
 Resolved in the follow-up corrections: Sofia Simões graduated before summer 2026 and is now listed under previous Master’s students. Manuel Brito is a current Master’s student with the exact user-supplied quaternion-based INDI thesis title. Yu Tang Liu is a previous visiting PhD student, supervised during the year leading to his IROS 2025 paper. Exact visit dates and Manuel’s start date were not supplied; no specific dates were invented.
+
+## Project expansion
+
+All 23 projects in the handoff catalogue now have pages. See PROJECT_CONTENT_REVIEW.md for source-specific decisions: provisional marginal-gain metrics remain omitted, mixed-reality waypoint tasking is treated as ongoing follow-up, and simulation/hardware evidence remains separate.
+
+Manuel Brito’s current thesis title is recorded in the student directory. A dedicated project brief, approach/evidence and approved media are still needed before extending it into a project case study.

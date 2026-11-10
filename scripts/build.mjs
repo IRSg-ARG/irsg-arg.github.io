@@ -9,6 +9,8 @@ const people=read('content/people.json');
 const publications=read('content/publications.json');
 const media=read('content/media.json');
 const students=read('content/students.json');
+const research=read('content/research.json');
+const projects=fs.readdirSync(path.join(root,'content/projects')).filter(f=>f.endsWith('.json')).sort().map(filename=>read('content/projects/'+filename));
 const argument=(name,fallback)=>{const i=process.argv.indexOf(name);if(i<0)return fallback;if(!process.argv[i+1]||process.argv[i+1].startsWith('--'))throw Error('Missing value for '+name);return process.argv[i+1];};
 const base=argument('--base-path',process.env.SITE_BASE_PATH??site.basePath).replace(/\/+$/,'');
 if(base&&!/^\/[a-zA-Z0-9._/-]+$/.test(base))throw Error('Base path must be empty or a URL path starting with /');
@@ -52,7 +54,7 @@ const pubById=id=>{const publication=publications.find(p=>p.id===id);if(!publica
 const paragraphs=items=>items.map(text=>'<p>'+h(text)+'</p>').join('');
 function image(id,route,options={}){
   const m=mediaById(id);
-  const asset=options.poster?m.poster:m.path;
+  const asset=options.poster||m.type==='video'?m.poster:m.path;
   if(!asset)throw Error('No image path '+id);
   return '<img src="'+h(link(route,asset))+'" width="'+m.width+'" height="'+m.height+'" alt="'+h(options.alt??m.alt)+'" '+(options.eager?'fetchpriority="high" loading="eager"':'loading="lazy"')+' decoding="async">';
 }
@@ -96,25 +98,67 @@ function page(route,title,description,body,options={}){
 }
 const projectRoute='research/'+home.featured.projectSlug+'/';
 const lead=personById('meysam-basiri');
+const projectBySlug=slug=>{const p=projects.find(p=>p.slug===slug);if(!p)throw Error('Unknown project '+slug);return p;};
+const themeFor=p=>research.themes.find(t=>t.id===p.themeId);
+const primaryMedia=p=>p.primaryMediaId||p.mainMediaId||null;
+function projectCard(p,route,directory=false){
+  const target=link(route,'research/'+p.slug+'/'),cover=primaryMedia(p),theme=themeFor(p),ongoing=p.status==='Research in progress';
+  const searchText=[p.title,p.description,p.introduction,p.theme,...(p.people||p.authorIds?.map(id=>personById(id).name)||[]),...(p.publicationIds||[p.publicationId]).filter(Boolean).map(id=>pubById(id).title)].join(' ');
+  const visual=cover?image(cover,route):'<div class="project-card-graphic" aria-hidden="true"><span>'+h(p.slug==='moving-platform-landing'?'VISION + MOTION':'UAV + UGV')+'</span><svg viewBox="0 0 180 90"><path d="M15 65H165M35 65V30H75V65M105 65V45H145V65M55 30L115 20M115 20L145 45"/><circle cx="55" cy="25" r="8"/><circle cx="115" cy="20" r="8"/></svg></div>';
+  return '<article class="project-card"'+(directory?' data-directory-item data-theme="'+h(p.themeId)+'" data-status="'+(ongoing?'ongoing':'published')+'" data-search-text="'+h(searchText)+'"':'')+'><a class="project-card-visual" href="'+h(target)+'" aria-label="Explore '+h(p.title)+'">'+visual+'</a><div class="project-card-copy"><p class="project-card-meta">'+h(theme?.title||p.theme)+'<span class="project-state'+(ongoing?' is-ongoing':'')+'">'+h(ongoing?'In progress':'Published research')+'</span></p><h3><a href="'+h(target)+'">'+h(p.title)+'</a></h3><p>'+h(p.description||p.introduction)+'</p></div></article>';
+}
+function projectContributor(name,route,index){
+  const normalize=s=>s.toLowerCase().normalize('NFD').replace(/\p{M}/gu,'').replace(/[^a-z0-9]/g,'');
+  const person=people.find(p=>normalize(p.name)===normalize(name));
+  const student=students.records.find(p=>normalize(p.name)===normalize(name));
+  const portrait=person?.portrait||student?.portrait||media.find(m=>m.experimentType==='portrait'&&normalize(m.title)===normalize(name))?.id;
+  const visual=portrait?image(portrait,route,{alt:'Portrait of '+name}):'<div class="initials" aria-hidden="true">'+h(name.split(' ').map(s=>s[0]).slice(0,2).join(''))+'</div>';
+  return '<article class="author-card" id="researcher-'+index+'">'+visual+'<div><h3>'+h(name)+'</h3><p>'+h(person?.appointment||'Project contributor')+'</p></div></article>';
+}
+function projectFigure(item,route,id,primary=false){
+  const m=mediaById(item.id),body=m.type==='video'?video(m.id,route,m.title,id):image(m.id,route,{eager:primary});
+  return '<figure class="project-media-item'+(primary?' is-primary':'')+'"><p class="eyebrow">'+h(item.label)+'</p><div class="project-media-frame">'+body+'</div><figcaption id="'+id+'">'+h(item.caption)+'</figcaption><details class="visual-description"><summary>Visual description</summary><p>'+h(item.description)+'</p>'+(m.audio&&m.audio.includes('retained')?'<p>This recording retains its source audio. Playback and volume are controlled by the visitor.</p>':'')+'</details></figure>';
+}
+function catalogueProject(p,route){
+  const theme=themeFor(p),primary=p.media.find(m=>m.id===p.primaryMediaId),other=p.media.filter(m=>m.id!==p.primaryMediaId);
+  const paper=p.publicationIds.length?pubById(p.publicationIds[0]):null;
+  const publicationSection=paper?'<section id="publications" class="wrap section-space project-publications" aria-labelledby="project-papers-title"><p class="eyebrow">PUBLICATIONS & RESOURCES</p><h2 id="project-papers-title">Read the work.</h2><div class="publication-list">'+p.publicationIds.map(id=>publication(pubById(id),route)).join('')+'</div></section>':'<section class="wrap section-space project-publications" aria-labelledby="project-contact-title"><p class="eyebrow">RESEARCH IN PROGRESS</p><h2 id="project-contact-title">Discuss this research.</h2><p>This ongoing project forms part of our aerial robotics programme. Get in touch to discuss its research questions or potential collaboration.</p><a class="text-link" href="mailto:'+h(site.email)+'">Contact Meysam Basiri ↗</a></section>';
+  return template('project-detail',{
+    HOME:h(link(route,'')),RESEARCH:h(link(route,'research/')),THEME_LINK:h(link(route,'research/#theme-'+p.themeId)),THEME:h(theme?.title||p.theme),STATUS:h(p.status),TITLE:h(p.title),INTRODUCTION:h(p.introduction),
+    PEOPLE_LINKS:p.people.map((name,i)=>'<a href="#researcher-'+i+'">'+h(name)+'</a>').join(''),
+    PRIMARY_ACTION:paper?'<a class="button" href="'+h(paper.url)+'">Read the '+(p.publicationIds.length>1?'primary ':'')+'paper <span aria-hidden="true">↗</span></a>':'<a class="button" href="mailto:'+h(site.email)+'">Discuss the project <span aria-hidden="true">↗</span></a>',
+    MEDIA_NAV:primary?'<a href="#media">Research media</a>':'',PUBLICATION_NAV:paper?'<a href="#publications">Publications</a>':'',
+    PRIMARY_MEDIA:primary?'<section id="media" class="project-experiment wrap" aria-labelledby="project-media-title"><div class="media-heading"><h2 id="project-media-title">'+h(mediaById(primary.id).type==='video'?'See the work in motion.':'A closer look.')+'</h2></div>'+projectFigure(primary,route,'primary-media-caption',true)+'</section>':'',
+    PROBLEM_HEADING:h(p.problem.heading),PROBLEM_COPY:paragraphs(p.problem.paragraphs),METHOD_HEADING:h(p.approach.heading),METHOD_COPY:paragraphs(p.approach.paragraphs),
+    METHOD_STEPS:p.approach.steps?.length?'<ol class="method-flow" aria-label="Research approach">'+p.approach.steps.map(s=>'<li><h3>'+h(s.title)+'</h3><p>'+h(s.text)+'</p></li>').join('')+'</ol>':'',
+    EVIDENCE:p.evidence.map(e=>'<article class="evidence-card evidence-'+h(e.kind)+'"><p class="eyebrow">'+h({hardware:'Hardware',simulation:'Simulation',benchmark:'Benchmark',concept:'Concept',context:'Research context'}[e.kind])+'</p><h3>'+h(e.label)+'</h3><p>'+h(e.text)+'</p></article>').join(''),
+    ADDITIONAL_MEDIA:other.length?'<div class="project-media-gallery">'+other.map((m,i)=>projectFigure(m,route,'additional-media-caption-'+i)).join('')+'</div>':'',
+    PEOPLE:p.people.map((name,i)=>projectContributor(name,route,i)).join(''),PUBLICATIONS:publicationSection,
+    RELATED:p.relatedSlugs.map(slug=>projectCard(projectBySlug(slug),route)).join(''),JOIN:join()
+  });
+}
 const homeBody=template('home',{
   HERO_EYEBROW:h(home.hero.eyebrow),HERO_TITLE:home.hero.lines.map(line=>'<span>'+h(line)+'</span>').join(''),
   HERO_SUMMARY:h(home.hero.summary),HERO_IMAGE:image(home.hero.mediaId,'',{eager:true}),
   INSTITUTION_LOGO:image('s11-image87','',{alt:'Técnico Lisboa'}),INTRO_HEADING:h(home.introduction.heading),INTRO_TEXT:h(home.introduction.text),
   FEATURED_EYEBROW:h(home.featured.eyebrow),FEATURED_HEADING:h(home.featured.heading),FEATURED_SUMMARY:h(home.featured.summary),
   PROJECT_LINK:h(link('',projectRoute)),FEATURED_VIDEO:video(home.featured.mediaId,'','Outdoor court exploration followed by a simulation comparison'),
-  THEMES:home.themes.map((t,i)=>'<details class="theme-item" id="theme-'+h(t.id)+'"><summary><span class="theme-number">'+String(i+1).padStart(2,'0')+'</span><span><span class="theme-title">'+h(t.title)+'</span><span class="theme-summary">'+h(t.summary)+'</span></span><span class="theme-toggle" aria-hidden="true">+</span></summary><div class="theme-body"><p>'+h(t.example)+'</p><ul>'+t.publications.map(id=>{const p=pubById(id);return '<li><a href="'+h(p.url)+'">'+h(p.title)+'</a> ('+p.year+')</li>';}).join('')+'</ul>'+(t.project?'<a class="text-link" href="'+h(link('','research/'+t.project+'/'))+'">Explore the prioritization project →</a>':'')+(t.id==='multimodal'?'<a class="text-link" href="'+h(link('',mediaById(home.fieldFilmId).path))+'" data-open-dialog="flight-film">Watch trimodal field tests ↗</a>':'')+'</div></details>').join(''),
+  THEMES:home.themes.map((t,i)=>'<details class="theme-item" id="theme-'+h(t.id)+'"><summary><span class="theme-number">'+String(i+1).padStart(2,'0')+'</span><span><span class="theme-title">'+h(t.title)+'</span><span class="theme-summary">'+h(t.summary)+'</span></span><span class="theme-toggle" aria-hidden="true">+</span></summary><div class="theme-body"><p>'+h(t.example)+'</p><ul>'+t.projectSlugs.map(slug=>'<li><a href="'+h(link('','research/'+slug+'/'))+'">'+h(projectBySlug(slug).title)+'</a></li>').join('')+'</ul>'+(t.id==='multimodal'?'<a class="text-link" href="'+h(link('',mediaById(home.fieldFilmId).path))+'" data-open-dialog="flight-film">Watch trimodal field tests ↗</a>':'')+'</div></details>').join(''),
   PUBLICATIONS:home.publicationIds.map(id=>publication(pubById(id),'')).join(''),SELECTED_BIB:h(link('','citations/selected-publications.bib')),
-  PEOPLE_HEADING:h(home.people.heading),PEOPLE_TEXT:h(home.people.text),STUDENTS_LINK:h(link('','students/')),PUBLICATIONS_LINK:h(link('','publications/')),
+  PEOPLE_HEADING:h(home.people.heading),PEOPLE_TEXT:h(home.people.text),STUDENTS_LINK:h(link('','students/')),PUBLICATIONS_LINK:h(link('','publications/')),RESEARCH_LINK:h(link('','research/')),
   LEAD:'<article class="lead-card">'+image(lead.portrait,'',{alt:'Portrait of Meysam Basiri'})+'<h3>'+h(lead.name)+'</h3><p class="lead-role">Research lead</p><p>'+h(lead.interest)+'<br>'+h(site.institute)+'</p><a class="text-link" href="'+h(lead.profile)+'">Profile on ORCID ↗</a><a class="text-link" href="'+h(link('','students/'))+'">Students & alumni →</a></article>',
   PEOPLE:home.contributorIds.filter(id=>!personById(id).displayContext.toLowerCase().endsWith('collaborator')).map(id=>personCard(id,'')).join(''),
   COLLABORATORS:home.contributorIds.filter(id=>personById(id).displayContext.toLowerCase().endsWith('collaborator')).map(id=>personCard(id,'')).join(''),JOIN:join(),FLIGHT_VIDEO:video(home.fieldFilmId,'','Real field tests of the trimodal UAV')
 });
 fs.writeFileSync(path.join(output,'index.html'),page('',site.name+' | ISR-Lisboa',home.description,homeBody));
 const routes=[''];
-for(const filename of fs.readdirSync(path.join(root,'content/projects')).filter(f=>f.endsWith('.json')).sort()){
-  const p=read('content/projects/'+filename);
+for(const p of projects){
   if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.slug))throw Error('Invalid project slug');
   const route='research/'+p.slug+'/';
+  if(p.type==='catalogue'){
+    const body=catalogueProject(p,route),schema={'@context':'https://schema.org','@type':'TechArticle',headline:p.title,author:p.people.map(name=>({'@type':'Person',name})),citation:p.publicationIds.map(id=>pubById(id).url),about:p.theme};
+    fs.mkdirSync(path.join(output,route),{recursive:true});fs.writeFileSync(path.join(output,route,'index.html'),page(route,p.title+' | Aerial Robotics',p.description,body,{article:true,mediaId:p.primaryMediaId||undefined,schema}));routes.push(route);continue;
+  }
   const paper=pubById(p.publicationId);
   const sim=p.results.filter(r=>r.evaluation==='simulation');
   const hardware=p.results.find(r=>r.evaluation==='outdoor hardware');
@@ -128,7 +172,7 @@ SUPPLEMENTARY_RESOURCE:p.supplementaryVideo?'<a href="'+h(p.supplementaryVideo)+
 CODE_RESOURCE:p.codeUrl?'<a href="'+h(p.codeUrl)+'">Project code <span aria-hidden="true">↗</span></a>':'',
 SIMULATION_SECTION:sim.length?'<section class="simulation-results" aria-labelledby="simulation-title"><div class="result-heading"><h3 id="simulation-title">Simulation</h3><span class="evidence-label">COMPARATIVE EVALUATION</span></div><p class="result-context">'+h(p.simulationContext||'')+'</p><div class="metric-grid">'+sim.filter(r=>r.presentation!=='wide').map(r=>'<article class="metric"><span class="metric-value">'+h(r.display)+'</span><h4>'+h(r.label)+'</h4><p>'+h(r.method)+'</p><p class="baseline">Baseline: '+h(r.baseline)+'</p></article>').join('')+'</div>'+(ablation?'<div class="ablation"><strong>'+h(ablation.display)+'</strong><div><h4>'+h(ablation.label)+'</h4><p>'+h(ablation.teamSize)+' UAVs · '+h(ablation.environment)+'. '+h(ablation.method)+' compared with '+h(ablation.baseline)+'.</p></div></div>':'')+'</section>':'',
 HARDWARE_SECTION:hardware?'<section class="hardware-results" aria-labelledby="hardware-title"><div class="result-heading"><h3 id="hardware-title">Outdoor hardware</h3><span class="evidence-label">FEASIBILITY TRIALS</span></div><p>'+h(p.hardwareContext||hardware.qualification)+'</p><div class="trial-grid">'+hardware.value.map((seconds,i)=>'<div class="trial"><span>TRIAL '+(i+1)+'</span><p>'+h(seconds)+'<small>'+h(hardware.units==='seconds'?'s':hardware.units)+'</small></p></div>').join('')+'</div><p class="evidence-note">'+h(p.hardwareNote||hardware.qualification)+'</p></section>':'',
-HOME:h(link(route,'')),RESEARCH:h(link(route,'')+'#research'),THEME:h(p.theme),PROJECT_TITLE:h(p.title),INTRODUCTION:h(p.introduction),
+    HOME:h(link(route,'')),RESEARCH:h(link(route,'research/')),THEME:h(p.theme),PROJECT_TITLE:h(p.title),INTRODUCTION:h(p.introduction),
     AUTHOR_LINKS:p.authorIds.map(id=>'<a href="#author-'+h(id)+'">'+h(personById(id).name)+'</a>').join(''),
     PAPER_URL:h(paper.url),BIB_URL:h(link(route,'citations/'+paper.id+'.bib')),MAIN_VIDEO:video(p.mainMediaId,route,p.title+' experiment and simulation comparison'),
     VIDEO_DESCRIPTION:h(p.videoDescription),PROBLEM_HEADING:h(p.problem.heading),PROBLEM_COPY:paragraphs(p.problem.paragraphs),
@@ -141,7 +185,7 @@ HOME:h(link(route,'')),RESEARCH:h(link(route,'')+'#research'),THEME:h(p.theme),P
     AUTHORS:p.authorIds.map(id=>personCard(id,route,true)).join(''),
     PAPER_TITLE:h(paper.title),PAPER_AUTHORS:h(paper.authors.join(', ')),PAPER_VENUE:venue(paper),PAPER_DOI:h(paper.doi),SUPPLEMENTARY_VIDEO:h(p.supplementaryVideo),
     BIBTEX:h(fs.readFileSync(path.join(root,'public/citations',paper.id+'.bib'),'utf8').trim()),
-    RELATED:p.related.map(r=>{const publication=pubById(r.publicationId);return '<article class="related-card">'+image(r.mediaId,route)+'<p class="eyebrow">'+h(r.label)+'</p><h3>'+h(r.title)+'</h3><p>'+h(r.summary)+'</p><a class="text-link" href="'+h(publication.url)+'">Read the '+publication.year+' paper ↗</a></article>';}).join(''),
+    RELATED:p.related.map(r=>{const publication=pubById(r.publicationId);return '<article class="related-card">'+image(r.mediaId,route)+'<p class="eyebrow">'+h(r.label)+'</p><h3>'+h(r.title)+'</h3><p>'+h(r.summary)+'</p><a class="text-link" href="'+h(r.projectSlug?link(route,'research/'+r.projectSlug+'/'):publication.url)+'">'+(r.projectSlug?'Explore the project':'Read the '+publication.year+' paper')+' ↗</a></article>';}).join(''),
     JOIN:join()
   });
   const schema={'@context':'https://schema.org','@type':'ScholarlyArticle',headline:paper.title,author:paper.authors.map(name=>({'@type':'Person',name})),datePublished:String(paper.year),identifier:paper.doi,url:paper.url,isPartOf:{'@type':'Periodical',name:paper.venue},about:p.title};
@@ -155,6 +199,12 @@ function writeDirectory(route,title,description,body){
   fs.writeFileSync(path.join(output,route,'index.html'),page(route,title+' | Aerial Robotics',description,body,{schema}));
   routes.push(route);
 }
+const researchRoute='research/';
+writeDirectory(researchRoute,'Research projects',research.description,template('research',{
+  HOME:h(link(researchRoute,'')),TITLE:h(research.title),COUNT:String(projects.length),
+  THEME_OPTIONS:research.themes.map(t=>'<option value="'+h(t.id)+'">'+h(t.title)+'</option>').join(''),
+  PROJECT_GROUPS:research.themes.map(t=>'<section class="research-theme-group" id="theme-'+h(t.id)+'" data-directory-section><div class="research-theme-heading"><h2>'+h(t.title)+'</h2><p>'+h(t.summary)+'</p></div><div class="project-card-grid">'+projects.filter(p=>p.themeId===t.id).map(p=>projectCard(p,researchRoute,true)).join('')+'</div></section>').join(''),JOIN:join()
+}));
 const publicationRoute='publications/';
 const years=[...new Set(publications.map(p=>p.year))].sort((a,b)=>b-a);
 const kinds=['Journal article','Conference paper','Book chapter','Report & rulebook','Preprint','Thesis','Poster'];

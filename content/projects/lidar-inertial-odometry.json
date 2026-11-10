@@ -1,0 +1,107 @@
+{
+  "slug": "lidar-inertial-odometry",
+  "title": "Reliable onboard LiDAR-inertial localization",
+  "theme": "Localization and cooperative perception",
+  "description": "Physical signal and geometric quality cues help LiDAR-inertial odometry decide how strongly each observation should influence the motion estimate.",
+  "introduction": "A robot needs more than a stream of measurements: it needs to know which measurements to trust. This work weights LiDAR observations before they correct the inertial estimate, improving localization in environments with uneven sensing quality.",
+  "status": "Published research",
+  "people": [
+    "Niusha Khosravi",
+    "Rodrigo Ventura",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "niusha2026quality"
+  ],
+  "primaryMediaId": "s11-image37",
+  "problem": {
+    "heading": "Every return is not equally informative.",
+    "paragraphs": [
+      "A rigid surface can provide stable geometric constraints, while vegetation, distant returns and weakly structured regions offer less reliable corrections. Treating these observations alike can let poor measurements distort the state estimate.",
+      "LiDAR-inertial odometry combines fast motion prediction from an IMU with geometric correction from a laser scanner. The challenge is to assess measurement reliability before an observation contributes to that correction."
+    ]
+  },
+  "approach": {
+    "heading": "Assess trust before updating the state.",
+    "paragraphs": [
+      "The method introduces proactive measurement weighting into FAST-LIO2. It examines local intensity consistency, geometric planarity and measurement range to estimate how much confidence to place in each LiDAR point.",
+      "These physical and geometric cues adjust measurement covariance. More reliable observations exert greater influence on the state correction, while weaker observations contribute less.",
+      "The reliability study builds on the group's broader onboard localization work. Its benchmark comparison is distinct from the general mapping demonstration shown here, which comes from John Lewis Devassy's exploration experiments."
+    ],
+    "steps": [
+      {
+        "title": "Predict motion",
+        "text": "Use inertial measurements to propagate the robot's state."
+      },
+      {
+        "title": "Assess each return",
+        "text": "Evaluate intensity consistency, surface planarity and range reliability."
+      },
+      {
+        "title": "Weight the correction",
+        "text": "Adjust observation covariance before the LiDAR state update."
+      },
+      {
+        "title": "Align the map",
+        "text": "Register new scans using the resulting pose estimate."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Featureless benchmark evaluation",
+      "kind": "benchmark",
+      "text": "The published quantitative reliability evaluation uses the MARS-LVIG Featureless benchmark. It evaluates the weighted FAST-LIO2 correction separately from the outdoor mapping examples."
+    },
+    {
+      "label": "Qualitative outdoor reconstruction",
+      "kind": "hardware",
+      "text": "The golf-course reconstructions provide qualitative evidence of geometric consistency. They should be read as outdoor mapping examples, rather than as the source of the benchmark's percentage error reduction."
+    },
+    {
+      "label": "General onboard mapping demonstration",
+      "kind": "context",
+      "text": "The real-flight clip from John Lewis Devassy's work illustrates the underlying LiDAR–IMU localization layer and online map registration. It is not a direct comparison of the reliability-weighted method with its baseline."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-image37",
+      "label": "Research platform photograph",
+      "caption": "A compact-LiDAR research UAV in flight, shown alongside the measurement-reliability research.",
+      "description": "Photograph of the group's LiDAR-equipped aerial research platform."
+    },
+    {
+      "id": "s11-media1",
+      "label": "Real experiment · localization context",
+      "caption": "Onboard LiDAR-inertial mapping from John Lewis Devassy's exploration work. This demonstrates the localization layer, separately from Niusha Khosravi's reliability benchmark.",
+      "description": "A real UAV flight is presented with the evolving trajectory and registered LiDAR map. The clip illustrates onboard motion estimation and online mapping."
+    },
+    {
+      "id": "s11-image41",
+      "label": "Explanatory animation",
+      "caption": "An illustration of measurement trust entering the LiDAR-inertial fusion process.",
+      "description": "The animation explains confidence weighting in sensor fusion; it does not show an experimental trajectory."
+    }
+  ],
+  "relatedSlugs": [
+    "relative-localization",
+    "kinodynamic-exploration",
+    "probabilistic-frontier-prioritization"
+  ],
+  "sourceSlides": [
+    7,
+    8
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md sections 5A and 7; paper-supported benchmark context overrides conflicting slide-8 speaker shorthand",
+    "PROJECT_AND_MEDIA_INDEX.md: Reliable onboard LiDAR-inertial localization",
+    "S11 slides 7–8; complete supplied slide text, notes and media manifest",
+    "niusha2026quality"
+  ],
+  "editorQuestions": [
+    "If adding numerical LIO results or comparison plots, retain the MARS-LVIG Featureless benchmark, metric definitions and baseline. The slide-8 spoken attribution of the percentage reduction to the golf course conflicts with the paper-supported information sheet."
+  ],
+  "type": "catalogue",
+  "themeId": "localization"
+}

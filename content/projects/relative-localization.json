@@ -1,0 +1,108 @@
+{
+  "slug": "relative-localization",
+  "title": "Semi-cooperative LiDAR/inertial relative localization",
+  "theme": "Localization and cooperative perception",
+  "description": "Sharing motion information from two UAVs helps maintain relative position and velocity when compact LiDAR observations disappear.",
+  "introduction": "A small UAV may produce only a few LiDAR returns, and those observations can vanish for extended intervals. This work combines intermittent detections with inertial information from both robots to maintain relative awareness through sensing gaps.",
+  "status": "Published research",
+  "people": [
+    "Nivand Khosravi",
+    "Rodrigo Ventura",
+    "Meysam Basiri"
+  ],
+  "publicationIds": [
+    "nivand2026dualimu",
+    "nivand2025adaptive",
+    "nivand2026sparsity"
+  ],
+  "primaryMediaId": "s11-media4",
+  "problem": {
+    "heading": "Keep estimating when detections stop.",
+    "paragraphs": [
+      "Compact 3D LiDAR offers direct spatial observations of another UAV, but a small target can generate very few points. Orientation, scanning patterns, occlusion and clutter can interrupt detections.",
+      "A relative-state estimator must therefore bridge periods without a direct observation. A prediction based only on a simple target-motion assumption can become inaccurate when the target changes its motion."
+    ]
+  },
+  "approach": {
+    "heading": "Share motion, then correct with LiDAR.",
+    "paragraphs": [
+      "The target UAV shares its IMU measurements and attitude estimate. The observing UAV combines those messages with its own inertial measurements and sparse onboard LiDAR detections.",
+      "A 9-DOF dual-IMU extended Kalman filter propagates relative motion during observation gaps and corrects the relative position and velocity estimate when valid detections return.",
+      "Related publications investigate adaptive LiDAR tracking and detection under extreme sparsity. Their separate experiments complement the dual-IMU study; they are not interchangeable evaluations of the same estimator."
+    ],
+    "steps": [
+      {
+        "title": "Detect the target UAV",
+        "text": "Extract usable observations from sparse compact-LiDAR returns."
+      },
+      {
+        "title": "Share onboard motion",
+        "text": "Receive the target's IMU measurements and attitude estimate."
+      },
+      {
+        "title": "Propagate relative motion",
+        "text": "Combine both robots' inertial information while detections are absent."
+      },
+      {
+        "title": "Correct when visible",
+        "text": "Use returning LiDAR observations to update the relative estimate."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "label": "Outdoor dual-IMU comparison",
+      "kind": "hardware",
+      "text": "Across 13 outdoor flight segments with 3–30 m separation, the 9-DOF dual-IMU model reduced relative-position RMSE from 3.96 m to 1.43 m against a constant-velocity, non-cooperative baseline. This comparison concerns the reported outdoor dataset."
+    },
+    {
+      "label": "Intermittent observation conditions",
+      "kind": "hardware",
+      "text": "Valid detections occurred in 13–41% of LiDAR scans in these experiments, with observation gaps reaching 11 seconds. These are recorded experimental conditions, rather than universal specifications of the sensor."
+    },
+    {
+      "label": "Related detection and filtering studies",
+      "kind": "context",
+      "text": "The adaptive-filtering and severe-sparsity papers address complementary parts of UAV-to-UAV sensing. Their publication links retain their own evaluation settings and author order."
+    }
+  ],
+  "media": [
+    {
+      "id": "s11-media4",
+      "label": "Outdoor hardware experiment · two UAVs",
+      "caption": "The dual-IMU relative-localization experiment combines sparse LiDAR detections with motion information from both UAVs.",
+      "description": "Two UAVs fly outdoors while the observing platform maintains an estimate of the target's relative motion. The clip accompanies the ICARSC 2026 dual-IMU study."
+    },
+    {
+      "id": "s11-media3",
+      "label": "Real experiment · UAV-to-UAV LiDAR overview",
+      "caption": "An overview of the compact-LiDAR UAV-to-UAV flight work, presented separately from the acoustic demonstration on the same slide.",
+      "description": "Real outdoor UAV-to-UAV flight footage provides context for sparse LiDAR sensing. It is the LiDAR demonstration from slide 9, not the acoustic leader-following clip."
+    },
+    {
+      "id": "s11-image48",
+      "label": "Research platform photograph",
+      "caption": "UAV platforms presented with the relative-localization research.",
+      "description": "A supplied photograph of the relative-localization research platforms."
+    }
+  ],
+  "relatedSlugs": [
+    "acoustic-relative-positioning",
+    "lidar-inertial-odometry",
+    "lidar-target-tracking"
+  ],
+  "sourceSlides": [
+    9,
+    10
+  ],
+  "sourceReferences": [
+    "WEBSITE_INFORMATION_SHEET.md sections 5A and 7: dual-IMU baseline, 13 segments and 3–30 m conditions",
+    "S11 slides 9–10; slide-to-project map and media manifest",
+    "nivand2026dualimu; nivand2025adaptive; nivand2026sparsity"
+  ],
+  "editorQuestions": [
+    "Confirm the final IAS proceedings DOI and publication date for nivand2025adaptive; the current verified catalogue links an available 2026 arXiv version while retaining the institutional IAS 2025 citation."
+  ],
+  "type": "catalogue",
+  "themeId": "localization"
+}
