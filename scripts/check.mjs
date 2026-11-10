@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
 const site=read('content/site.json'),media=read('content/media.json'),pubs=read('content/publications.json');
+const sourceIndex=read('docs/source-index.json');
 const arg=(name,fallback)=>{const i=process.argv.indexOf(name);return i<0?fallback:process.argv[i+1];};
 const directory=path.resolve(root,arg('--out-dir','dist'));
 if(!directory.startsWith(root+path.sep))throw Error('Check directory is outside project');
@@ -56,7 +57,8 @@ for(const [file,html] of pages){
 }
 for(const m of media){
   assert(!/review-only/.test(m.path),'Withheld asset selected: '+m.id);
-  assert(m.source?.id==='S11'||(['U01','U02'].includes(m.source?.id)&&m.source.suppliedOn==='2026-11-10'&&m.source.authorization),'Missing source provenance: '+m.id);
+  const suppliedSource=sourceIndex.additionalSources.find(s=>s.id===m.source?.id&&s.type?.startsWith('User-supplied'));
+  assert(m.source?.id==='S11'||(suppliedSource&&m.source.suppliedOn===suppliedSource.date&&m.source.authorization),'Missing source provenance: '+m.id);
   for(const file of [m.path,m.poster].filter(Boolean))assert(fs.existsSync(path.join(directory,file)),'Missing media: '+file);
   for(const [file,digest] of Object.entries(m.sourceHashes||{})){
     const target=path.join(directory,file);

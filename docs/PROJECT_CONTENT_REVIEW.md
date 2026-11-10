@@ -56,7 +56,7 @@ All 23 catalogue projects are represented. Published records use the current cit
 
 - Preserve the published first-author form John Lewis in the bibliography, while John Lewis Devassy is the preferred person display name.
 - Do not repeat the surrounding slide’s 80 × 80 m size in the simulation caption until the animation’s scenario labels are independently checked.
-- The existing website registry holds s11-media29 as a poster-only image; it must be upgraded to the genuine video plus poster for this page.
+- The former poster-only s11-media29 entry was upgraded to the genuine video plus poster for this page.
 
 ## Kinodynamic exploration and reconstruction
 
@@ -86,5 +86,5 @@ All 23 catalogue projects are represented. Published records use the current cit
 
 ## Collaborative aerial–ground warehouse inspection
 
-- No project-specific media is identified in the handoff. This draft is a text-only case study and does not borrow another platform’s footage.
+- Completed 10 November 2026: the user supplied the composite UAV/UGV platform photograph and two real-world UAV-following-UGV recordings for Rafaela Chaffilla’s work. The warehouse page and research-index card now use these assets. External and onboard views are labelled separately; the clips are evidence of following rather than shelf imaging or landing. These assets are not assigned to the separate moving-platform landing study.
 - Publisher source confirms simulation and physical following/landing; do not turn the image-capture result into a claim of demonstrated automated end-to-end inventory counting.

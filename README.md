@@ -27,7 +27,7 @@ No package installation is required. The builder uses only Node's standard libra
 - **/students/**: current and previous supervision, including PhD, Master’s, Bachelor’s and research placements; search by name or topic and filter by status or programme.
 - **/publications/**: bibliography grouped by year, with search, publication-type filters, publisher/preprint links, individual verified citations and a bibliography download.
 - **/research/**: searchable project index grouped by research theme and publication status. All 23 catalogue projects have working pages, including two explicitly marked as research in progress.
-- The additional project pages explain their problem, approach, evidence, contributors and exact publications. Warehouse and moving-platform landing are text-led case studies where no project-specific deck footage was supplied.
+- The additional project pages explain their problem, approach, evidence, contributors and exact publications. The warehouse project includes the user-supplied UAV/UGV photograph and real following experiment from external and onboard views. Moving-platform landing remains a text-led case study where no dedicated media was supplied.
 - A useful 404 page, robots.txt and sitemap.xml.
 - Responsive layouts, keyboard navigation, visible focus, a skip link, native video controls, silent-video descriptions, and reduced-motion support.
 

@@ -2108,5 +2108,85 @@
       "media/videos/mixed-reality-waypoints.mp4": "31643938e8d362520a37994569c23b35a05e38570bf5672b16c3b570bd23f20b",
       "media/posters/mixed-reality-waypoints.jpg": "95477f178450b3c8bf7a4ca2dc0fd3ecb48eeb823d8647f1c1c171a5140a3bf3"
     }
+  },
+  {
+    "id": "u03-warehouse-platforms",
+    "title": "Rafaela Chaffilla’s UAV and UGV experimental platforms",
+    "type": "image",
+    "path": "media/images/warehouse-uav-ugv-platforms.png",
+    "poster": null,
+    "width": 1228,
+    "height": 598,
+    "durationSeconds": null,
+    "experimentType": "research platform photograph",
+    "alt": "Two platform photographs: the warehouse-inspection UGV on the left and the research quadrotor on the right.",
+    "caption": "The UGV (left) and UAV (right) used in Rafaela Chaffilla’s collaborative aerial–ground warehouse-inspection experiments.",
+    "credit": "Supplied by Meysam Basiri for Rafaela Chaffilla’s research project.",
+    "source": {
+      "id": "U03",
+      "file": "Screenshot 2026-11-10 152107.png",
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied the composite platform photograph for Rafaela’s collaborative aerial–ground warehouse-inspection project.",
+      "context": "Platform photographs, not a depiction of a warehouse inventory-capture trial."
+    },
+    "sourceHashes": {
+      "media/images/warehouse-uav-ugv-platforms.png": "316a689f84f0ec85bec22a0c07dcd6c21795322b6b95dba53fe3cf1887bcc53e"
+    }
+  },
+  {
+    "id": "u04-warehouse-following-external",
+    "title": "UAV following the UGV · external view",
+    "type": "video",
+    "path": "media/videos/warehouse-uav-following-external.mp4",
+    "poster": "media/posters/warehouse-uav-following-external.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 20.0533125,
+    "experimentType": "real experiment",
+    "alt": "External camera recording of the UAV following a moving UGV during a real outdoor experiment.",
+    "caption": "Real-world UAV-following-UGV experiment from Rafaela Chaffilla’s research, recorded from an external camera.",
+    "credit": "Supplied by Meysam Basiri; experimental work by Rafaela Chaffilla.",
+    "audio": "original source audio retained",
+    "source": {
+      "id": "U04",
+      "file": "UGV following.mp4",
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this real-world following clip for Rafaela’s collaborative aerial–ground warehouse-inspection project.",
+      "context": "User identified this as the outside view of the UAV following the UGV.",
+      "posterFrameSeconds": 2,
+      "posterDerivation": "Unaltered video frame extracted with FFmpeg via the official imageio-ffmpeg package; original MP4 bytes retained."
+    },
+    "sourceHashes": {
+      "media/videos/warehouse-uav-following-external.mp4": "471b606a871bff6423eb843d0887b71336c45b2a08a3f9e783564aebd4e44796",
+      "media/posters/warehouse-uav-following-external.jpg": "ff4890eda6f003ad26f4c5c61638225a870903467c60afbd70592860408dbb32"
+    }
+  },
+  {
+    "id": "u05-warehouse-following-onboard",
+    "title": "UAV following the UGV · onboard camera view",
+    "type": "video",
+    "path": "media/videos/warehouse-uav-following-onboard.mp4",
+    "poster": "media/posters/warehouse-uav-following-onboard.jpg",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 20.031979166666666,
+    "experimentType": "real experiment",
+    "alt": "The UAV’s onboard camera feed shows the fiducial-marker panel on the UGV during a real following experiment.",
+    "caption": "Onboard camera view from the UAV while it follows the UGV in Rafaela Chaffilla’s experiment.",
+    "credit": "Supplied by Meysam Basiri; experimental work by Rafaela Chaffilla.",
+    "audio": "original source audio retained",
+    "source": {
+      "id": "U05",
+      "file": "Following drone camera view.mp4",
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this real-world following clip for Rafaela’s collaborative aerial–ground warehouse-inspection project.",
+      "context": "User identified this as the UAV onboard camera view of following the UGV.",
+      "posterFrameSeconds": 2,
+      "posterDerivation": "Unaltered video frame extracted with FFmpeg via the official imageio-ffmpeg package; original MP4 bytes retained."
+    },
+    "sourceHashes": {
+      "media/videos/warehouse-uav-following-onboard.mp4": "db492c4c93abadaa813499e8cefc073ec665ee52ca6181e8dbd744d8860d2919",
+      "media/posters/warehouse-uav-following-onboard.jpg": "fdf39af5c44b9241c2b6e9fc7281ad0f7dad0455b3a19c7ea2e0466fe28d7fbc"
+    }
   }
 ]

@@ -100,7 +100,10 @@
     "s11-image127",
     "s11-media43",
     "s11-image31",
-    "s11-media50"
+    "s11-media50",
+    "u03-warehouse-platforms",
+    "u04-warehouse-following-external",
+    "u05-warehouse-following-onboard"
   ],
   "catalogueScope": {
     "projects": 23,
@@ -230,6 +233,27 @@
       "url": "https://api.crossref.org/works/",
       "retrieved": "2026-11-10",
       "scope": "Publisher-deposited citation metadata; source references retained per record"
+    },
+    {
+      "id": "U03",
+      "type": "User-supplied warehouse UAV/UGV platform photograph",
+      "date": "2026-11-10",
+      "filename": "Screenshot 2026-11-10 152107.png",
+      "scope": "Rafaela Chaffilla’s collaborative aerial–ground warehouse-inspection project"
+    },
+    {
+      "id": "U04",
+      "type": "User-supplied real-world UAV-following-UGV external video",
+      "date": "2026-11-10",
+      "filename": "UGV following.mp4",
+      "scope": "Rafaela Chaffilla’s collaborative aerial–ground warehouse-inspection project"
+    },
+    {
+      "id": "U05",
+      "type": "User-supplied real-world UAV-following-UGV onboard video",
+      "date": "2026-11-10",
+      "filename": "Following drone camera view.mp4",
+      "scope": "Rafaela Chaffilla’s collaborative aerial–ground warehouse-inspection project"
     }
   ],
   "websiteCounts": {
@@ -238,7 +262,7 @@
     "archiveListings": 6,
     "supervisionRecords": 47,
     "peopleInSupervisionDirectory": 46,
-    "media": 77,
+    "media": 80,
     "projects": 23,
     "contentPages": 27
   },
@@ -277,5 +301,16 @@
     ],
     "mediaPolicy": "Used the supplied curated shortlist, slide-to-project map and complete extracted media manifest. No deck extraction was run.",
     "sourceReview": "docs/PROJECT_CONTENT_REVIEW.md"
+  },
+  "warehouseMediaUpdate": {
+    "date": "2026-11-10",
+    "sourceIds": [
+      "U03",
+      "U04",
+      "U05"
+    ],
+    "originalBytesRetained": true,
+    "posterFrameSeconds": 2,
+    "scope": "Following hardware experiment; platform photograph and external/onboard recordings. No landing or inventory-recognition claim from these clips."
   }
 }

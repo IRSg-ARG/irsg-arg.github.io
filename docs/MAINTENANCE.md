@@ -44,12 +44,14 @@ Copy only selected files and posters into **public/media/**. Add a media record 
 
 - Unique ID, title, path, type, intrinsic dimensions and optional poster.
 - Alt text, caption, credit and experimentType.
-- Original source ID, filename and source slides, or the date and authorization for a directly supplied photograph.
+- Original source ID, filename and source slides, or the date and authorization for directly supplied photographs or videos. Register each new user source in docs/source-index.json additionalSources with a matching ID and date.
 - A SHA-256 for each copied supplied derivative in **sourceHashes**.
 
 On Windows, **Get-FileHash -Algorithm SHA256 -LiteralPath PATH** can compute a digest. Lowercase the digest when recording it. The check script verifies file bytes against these records.
 
 The two photographs supplied directly on 10 November 2026 are U01 (Meysam Basiri portrait) and U02 (custom UAV with onboard 3D LiDAR). Original bytes are retained; display crops are CSS only. The platform photograph links to the prioritization project but is not presented as evidence of that paper’s hardware configuration or results. Trimodal footage remains with the multimodal research direction.
+
+Later that day, U03–U05 added Rafaela Chaffilla’s UAV/UGV platform composite and real following experiment from external and onboard views. Original PNG and MP4 bytes are retained; the video posters are frames at two seconds. These clips belong to the warehouse-inspection project and show following, not shelf imaging or landing. Their original audio is retained under native playback controls. The standalone moving-platform landing study remains separately attributed.
 
 Use native video controls and an accurate visual description. Keep preload at none. The provided review derivatives are silent except the acoustic recordings; if later using audio, describe/caption the actual soundtrack and keep playback under visitor control. Label conceptual, explanatory, simulation and hardware material according to the manifest.
 

@@ -13,7 +13,7 @@
   "publicationIds": [
     "chaffilla2025warehouse"
   ],
-  "primaryMediaId": null,
+  "primaryMediaId": "u03-warehouse-platforms",
   "problem": {
     "heading": "Combine ground endurance with aerial reach.",
     "paragraphs": [
@@ -37,7 +37,7 @@
     {
       "label": "Physical system trials",
       "kind": "hardware",
-      "text": "Real experiments demonstrate UAV following and landing, producing geo-referenced shelf imagery for downstream inventory recognition."
+      "text": "The paper reports physical UAV following and landing trials and geo-referenced shelf imagery. The two supplied videos below document the following experiment from an external camera and the UAV’s onboard camera; they do not depict shelf imaging or landing."
     },
     {
       "label": "Data-capture scope",
@@ -45,7 +45,26 @@
       "text": "End-to-end item identification and enterprise-system integration are outside the paper’s scope."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "id": "u03-warehouse-platforms",
+      "label": "Experimental platforms · UAV and UGV",
+      "caption": "The UGV (left) and UAV (right) used in Rafaela Chaffilla’s collaborative aerial–ground warehouse-inspection experiments.",
+      "description": "The composite photograph shows the ground robot used in the research on the left and the quadrotor used in the experiments on the right. These are platform photographs; the following videos show a separate outdoor hardware experiment."
+    },
+    {
+      "id": "u04-warehouse-following-external",
+      "label": "Real-world following experiment · external view",
+      "caption": "Real-world UAV-following-UGV experiment from Rafaela Chaffilla’s research, recorded from an external camera.",
+      "description": "An external camera shows the moving UGV and the UAV following it on an outdoor sports court. This footage demonstrates the following part of the project."
+    },
+    {
+      "id": "u05-warehouse-following-onboard",
+      "label": "Real-world following experiment · onboard UAV view",
+      "caption": "Onboard camera view from the UAV while it follows the UGV in Rafaela Chaffilla’s experiment.",
+      "description": "A recording of the UAV’s downward-looking camera feed is displayed in a playback interface. The UGV’s fiducial-marker panel is visible during following. This is onboard experimental footage."
+    }
+  ],
   "relatedSlugs": [
     "moving-platform-landing",
     "relative-localization",
@@ -54,10 +73,10 @@
   "sourceSlides": [],
   "sourceReferences": [
     "S09; chaffilla2025warehouse",
-    "Primary publisher article and abstract: https://www.mdpi.com/2504-446X/9/11/792 (reviewed for this draft)"
+    "Primary publisher article and abstract: https://www.mdpi.com/2504-446X/9/11/792 (reviewed for this draft)",
+    "U03–U05: platform composite and two real-world UAV-following-UGV recordings supplied and attributed by Meysam Basiri, 10 November 2026."
   ],
   "editorQuestions": [
-    "No project-specific media is identified in the handoff. This draft is a text-only case study and does not borrow another platform’s footage.",
     "Publisher source confirms simulation and physical following/landing; do not turn the image-capture result into a claim of demonstrated automated end-to-end inventory counting."
   ],
   "type": "catalogue",
