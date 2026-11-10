@@ -1,5 +1,155 @@
 [
   {
+    "id": "caeiro2026mr",
+    "title": "A Unified Mixed Reality Interface for Dynamic Swarm Mission Planning and Control",
+    "authors": [
+      "Miguel Caeiro",
+      "Akshat Singh",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523316",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523316",
+    "theme": "Human–robot interaction",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "mixed-reality-supervision"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.199–204; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "rodrigues2026sensor",
+    "title": "Active Sensor Health Monitoring and Lifelong Spatial Mapping for Resilient Robot Localization",
+    "authors": [
+      "Francisco Rodrigues",
+      "John Lewis",
+      "Alberto Vale",
+      "Pedro Lima",
+      "Joao Santos",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "9th Iberian Robotics Conference (ROBOT2026)",
+    "url": "https://isr.tecnico.ulisboa.pt/publications/active-sensor-health-monitoring-and-lifelong-spatial-mapping-for-resilient-robot-localization/",
+    "entry_type": "inproceedings",
+    "kind": "Conference paper",
+    "status": "accepted",
+    "citationComplete": true,
+    "source_reference": "ISR-Lisboa author publication record, retrieved 10 November 2026: https://isr.tecnico.ulisboa.pt/author/meysam/"
+  },
+  {
+    "id": "niusha2026mapex",
+    "title": "An Empirical Study of MapEx Under Localization Uncertainty: Effects on Ensemble Map Completion and Frontier Selection",
+    "authors": [
+      "Niusha Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "2026 12th International Conference on Mechatronics and Robotics Engineering (ICMRE)",
+    "doi": "10.1109/icmre69538.2026.11533910",
+    "url": "https://doi.org/10.1109/icmre69538.2026.11533910",
+    "theme": "Exploration and mapping",
+    "pages": "87--93",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/icmre69538.2026.11533910",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "mendes2026centralized",
+    "title": "Centralized Multi-UAV Exploration and 3D Reconstruction Using Single-UAV Planners",
+    "authors": [
+      "João Félix Mendes",
+      "Meysam Basiri",
+      "Rodrigo Ventura"
+    ],
+    "year": 2026,
+    "venue": "International Conference on Advanced Robotics and Mechatronics (ICARM)",
+    "doi": null,
+    "url": "https://arxiv.org/abs/2609.40208",
+    "theme": "Exploration and mapping",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "kinodynamic-exploration"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.129–136; S02",
+    "citationComplete": true,
+    "preprint": "https://arxiv.org/abs/2609.40208",
+    "kind": "Conference paper"
+  },
+  {
+    "id": "marques2026connectivity",
+    "title": "Connectivity-Aware Multi-UAV Coverage Path Planning via Simulated Annealing",
+    "authors": [
+      "Inês Marques",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523321",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523321",
+    "theme": "Communication and coordination",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "communication-aware-planning"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.137–142; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "aranha2026lidar",
+    "title": "Cooperative 3D LiDAR-Based Target Tracking and Visibility-Aware Following for Multi-UAV Systems",
+    "authors": [
+      "Hugo Aranha",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 23rd Conference on Robots and Vision",
+    "doi": "10.21428/d82e957c.b66a6957",
+    "url": "https://doi.org/10.21428/d82e957c.b66a6957",
+    "theme": "Target tracking",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "lidar-target-tracking"
+    ],
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.21428/d82e957c.b66a6957",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "niusha2026consensus",
+    "title": "Distributed Kalman Consensus Filtering with Adaptive Uncertainty Weighting for Multi-Object Tracking in Multi-Robot Systems",
+    "authors": [
+      "Niusha Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "2026 12th International Conference on Automation, Robotics and Applications (ICARA)",
+    "doi": "10.1109/icara69401.2026.11480394",
+    "url": "https://doi.org/10.1109/icara69401.2026.11480394",
+    "theme": "Localization and perception",
+    "pages": "160--165",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/icara69401.2026.11480394",
+    "citationComplete": true,
+    "kind": "Conference paper",
+    "preprint": "https://doi.org/10.48550/arXiv.2603.11328"
+  },
+  {
     "id": "devassy2026frontier",
     "title": "Enhancing Multi-Robot Exploration Using Probabilistic Frontier Prioritization With Dirichlet Process Gaussian Mixtures",
     "authors": [
@@ -21,7 +171,9 @@
       "probabilistic-frontier-prioritization"
     ],
     "status": "published",
-    "source_reference": "S05; S01 pp.143–150"
+    "source_reference": "S05; S01 pp.143–150",
+    "citationComplete": true,
+    "kind": "Journal article"
   },
   {
     "id": "mendes2026kinodynamic",
@@ -44,7 +196,9 @@
       "kinodynamic-exploration"
     ],
     "status": "published",
-    "source_reference": "S01 pp.115–122; S02"
+    "source_reference": "S01 pp.115–122; S02",
+    "citationComplete": true,
+    "kind": "Journal article"
   },
   {
     "id": "conceicao2026sparc",
@@ -66,7 +220,145 @@
       "communication-aware-planning"
     ],
     "status": "published",
-    "source_reference": "S02"
+    "source_reference": "S02",
+    "citationComplete": true,
+    "kind": "Journal article"
+  },
+  {
+    "id": "niusha2026quality",
+    "title": "Proactive Feature Quality Assessment for LiDAR-Inertial Odometry Using Physical Signal Analysis",
+    "authors": [
+      "Niusha Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523258",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523258",
+    "theme": "Localization and perception",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "lidar-inertial-odometry"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.185–191; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "nivand2026robust",
+    "title": "Robust Cooperative Localization in Featureless Environments: A Comparative Study of DCL, StCL, CCL, CI, and Standard-CL",
+    "authors": [
+      "Nivand Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "2026 12th International Conference on Automation, Robotics and Applications (ICARA)",
+    "doi": "10.1109/icara69401.2026.11480373",
+    "url": "https://doi.org/10.1109/icara69401.2026.11480373",
+    "theme": "Localization and perception",
+    "pages": "88--93",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/icara69401.2026.11480373",
+    "citationComplete": true,
+    "kind": "Conference paper",
+    "preprint": "https://doi.org/10.48550/arXiv.2603.09886"
+  },
+  {
+    "id": "nivand2026dualimu",
+    "title": "Semi-Cooperative Dual-IMU Relative Localization for UAV-to-UAV Tracking with Sparse 3D LiDAR Detections",
+    "authors": [
+      "Nivand Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523287",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523287",
+    "theme": "Localization and perception",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "relative-localization"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.178–184; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "nishikawa2026recovery",
+    "title": "Two-Stage Recovery Control of a Quadrotor Tailsitter UAV Without Control Surfaces",
+    "authors": [
+      "Rodrigo Nishikawa",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC70216.2026.11523332",
+    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523332",
+    "theme": "Deployment and recovery",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "deployment-recovery"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.123–128; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "nivand2026sparsity",
+    "title": "Unsupervised LiDAR-Based Multi-UAV Detection and Tracking Under Extreme Sparsity with Comparative Data Association Analysis",
+    "authors": [
+      "Nivand Khosravi",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2026,
+    "venue": "2026 12th International Conference on Mechatronics and Robotics Engineering (ICMRE)",
+    "doi": "10.1109/icmre69538.2026.11533899",
+    "url": "https://doi.org/10.1109/icmre69538.2026.11533899",
+    "theme": "Localization and perception",
+    "pages": "330--336",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "relative-localization"
+    ],
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/icmre69538.2026.11533899",
+    "citationComplete": true,
+    "kind": "Conference paper",
+    "preprint": "https://doi.org/10.48550/arXiv.2603.11586"
+  },
+  {
+    "id": "chaffilla2025warehouse",
+    "title": "Collaborative Infrastructure-Free Aerial–Ground Robotic System for Warehouse Inventory Data Capture",
+    "authors": [
+      "Rafaela Chaffilla",
+      "Paulo Alvito",
+      "Meysam Basiri"
+    ],
+    "year": 2025,
+    "venue": "Drones",
+    "doi": "10.3390/drones9110792",
+    "url": "https://doi.org/10.3390/drones9110792",
+    "theme": "Heterogeneous robot teams",
+    "volume": "9",
+    "number": "11",
+    "pages": "792",
+    "entry_type": "article",
+    "related_projects": [
+      "aerial-ground-warehouse"
+    ],
+    "status": "published",
+    "source_reference": "S09",
+    "citationComplete": true,
+    "kind": "Journal article"
   },
   {
     "id": "conceicao2025survey",
@@ -88,7 +380,169 @@
       "communication-aware-planning"
     ],
     "status": "published",
-    "source_reference": "S07"
+    "source_reference": "S07",
+    "citationComplete": true,
+    "kind": "Journal article"
+  },
+  {
+    "id": "vale2025trimodal",
+    "title": "Enhancing UAV Energy Efficiency and Versatility through Trimodal Ground, Hovering, and Fixed-Wing Locomotion Modes",
+    "authors": [
+      "Afonso Vale",
+      "Meysam Basiri",
+      "Frederico Afonso"
+    ],
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/IROS60139.2025.11246401",
+    "url": "https://doi.org/10.1109/IROS60139.2025.11246401",
+    "theme": "Multimodal robots",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "trimodal-uav"
+    ],
+    "status": "published",
+    "source_reference": "S06; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "lewis2025froshe",
+    "title": "Frontier Shepherding: A Bio-inspired Multi-robot Framework for Large-Scale Exploration",
+    "authors": [
+      "John Lewis",
+      "Meysam Basiri",
+      "Pedro U. Lima"
+    ],
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/IROS60139.2025.11246323",
+    "url": "https://doi.org/10.1109/IROS60139.2025.11246323",
+    "theme": "Exploration and mapping",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "frontier-shepherding"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.93–100; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "bento2025information",
+    "title": "Information-Oriented and Energy-Aware Path Planning for Small Unmanned Aerial Vehicles",
+    "authors": [
+      "José Bento",
+      "Meysam Basiri",
+      "Rodrigo Ventura"
+    ],
+    "year": 2025,
+    "venue": "EPIA 2024 proceedings, Lecture Notes in Artificial Intelligence",
+    "doi": "10.1007/978-3-031-73503-5_7",
+    "url": "https://doi.org/10.1007/978-3-031-73503-5_7",
+    "theme": "Deployment and search planning",
+    "volume": "14969",
+    "pages": "78--89",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "energy-aware-search"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.9–20 (image-only pages, visually inspected)",
+    "citationComplete": true,
+    "kind": "Book chapter"
+  },
+  {
+    "id": "nivand2025adaptive",
+    "title": "Lightweight 3D LiDAR-Based UAV Tracking: An Adaptive Extended Kalman Filtering Approach",
+    "authors": [
+      "Nivand Khosravi",
+      "Meysam Basiri",
+      "Rodrigo Ventura"
+    ],
+    "year": 2025,
+    "venue": "19th International Conference on Intelligent Autonomous Systems (IAS)",
+    "doi": null,
+    "url": "https://arxiv.org/abs/2603.09783",
+    "theme": "Localization and perception",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "relative-localization"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.101–114; S02",
+    "citationComplete": true,
+    "preprint": "https://doi.org/10.48550/arXiv.2603.09783",
+    "kind": "Conference paper"
+  },
+  {
+    "id": "liu2025graph",
+    "title": "Multitask Reinforcement Learning for Quadcopter Attitude Stabilization and Tracking using Graph Policy",
+    "authors": [
+      "Yu Tang Liu",
+      "Afonso Vale",
+      "Aamir Ahmad",
+      "Rodrigo Ventura",
+      "Meysam Basiri"
+    ],
+    "year": 2025,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/IROS60139.2025.11247765",
+    "url": "https://doi.org/10.1109/IROS60139.2025.11247765",
+    "theme": "Deployment and recovery",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "deployment-recovery",
+      "rl-attitude-control"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.85–92; S02",
+    "citationComplete": true,
+    "kind": "Preprint",
+    "preprint": "https://doi.org/10.48550/arXiv.2503.08259"
+  },
+  {
+    "id": "matias2025pursuit",
+    "title": "Vision-Based Target Pursuit and Formation Maintenance for UAV Teams using Nonlinear Model Predictive Control",
+    "authors": [
+      "João Matias",
+      "Meysam Basiri",
+      "Rodrigo Ventura"
+    ],
+    "year": 2025,
+    "venue": "European Conference on Mobile Robots (ECMR)",
+    "doi": "10.1109/ECMR65884.2025.11163007",
+    "url": "https://doi.org/10.1109/ECMR65884.2025.11163007",
+    "theme": "Target tracking",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "cooperative-visual-pursuit"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.78–84; S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "ribeiro2024cooperative",
+    "title": "Cooperative 3D Exploration and Mapping using Distributed Multi-Robot Teams",
+    "authors": [
+      "André Ribeiro",
+      "Meysam Basiri"
+    ],
+    "year": 2024,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC61747.2024.10535925",
+    "url": "https://doi.org/10.1109/ICARSC61747.2024.10535925",
+    "theme": "Exploration and mapping",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "distributed-exploration"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.21–26",
+    "citationComplete": true,
+    "kind": "Conference paper"
   },
   {
     "id": "ferreira2024following",
@@ -110,7 +564,277 @@
       "visual-target-following"
     ],
     "status": "published",
-    "source_reference": "S01 pp.33–55"
+    "source_reference": "S01 pp.33–55",
+    "citationComplete": true,
+    "kind": "Journal article"
+  },
+  {
+    "id": "ribeiro2024exploration",
+    "title": "Efficient 3D Exploration with Distributed Multi-UAV Teams: Integrating Frontier-Based and Next-Best-View Planning",
+    "authors": [
+      "André Ribeiro",
+      "Meysam Basiri"
+    ],
+    "year": 2024,
+    "venue": "Drones",
+    "doi": "10.3390/drones8110630",
+    "url": "https://doi.org/10.3390/drones8110630",
+    "theme": "Exploration and mapping",
+    "volume": "8",
+    "number": "11",
+    "pages": "630",
+    "entry_type": "article",
+    "related_projects": [
+      "distributed-exploration"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.56–77; S02",
+    "citationComplete": true,
+    "kind": "Journal article"
+  },
+  {
+    "title": "GEERS: Georeferenced Enhanced EKF Using Point Cloud Registration and Segmentation",
+    "authors": [
+      "Rui Bettencourt",
+      "John Lewis",
+      "Rodrigo Serra",
+      "Meysam Basiri",
+      "Alberto Vale",
+      "Pedro U. Lima"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3349828",
+    "url": "https://doi.org/10.1109/lra.2024.3349828",
+    "volume": "9",
+    "number": "2",
+    "pages": "1803--1810",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/lra.2024.3349828",
+    "citationComplete": true,
+    "id": "archive-geers-georeferenced-enhanced-ekf-using-point-cloud-registration-and-segmentation",
+    "kind": "Journal article"
+  },
+  {
+    "id": "bento2024airdropped",
+    "title": "Information-Oriented and Energy-Aware Path Planning for Multiple Air-Dropped Small Unmanned Aerial Vehicles",
+    "authors": [
+      "José Bento",
+      "Meysam Basiri",
+      "Rodrigo Ventura"
+    ],
+    "year": 2024,
+    "venue": "7th Iberian Robotics Conference (ROBOT)",
+    "doi": "10.1109/ROBOT61475.2024.10796923",
+    "url": "https://doi.org/10.1109/ROBOT61475.2024.10796923",
+    "theme": "Deployment and recovery",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "energy-aware-search"
+    ],
+    "status": "published",
+    "source_reference": "S01 beginning",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "ferreira2024mot",
+    "title": "Leveraging Multi-Object Tracking in Vision-based Target Following for Unmanned Aerial Vehicles",
+    "authors": [
+      "Diogo Ferreira",
+      "Meysam Basiri"
+    ],
+    "year": 2024,
+    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
+    "doi": "10.1109/ICARSC61747.2024.10535936",
+    "url": "https://doi.org/10.1109/ICARSC61747.2024.10535936",
+    "theme": "Target tracking",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "visual-target-following"
+    ],
+    "status": "published",
+    "source_reference": "S01 pp.27–32",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "id": "dias2023bogiecopter",
+    "title": "BogieCopter: A Multi-Modal Aerial-Ground Vehicle for Long-Endurance Inspection Applications",
+    "authors": [
+      "Teodoro Dias",
+      "Meysam Basiri"
+    ],
+    "year": 2023,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/ICRA48891.2023.10161038",
+    "url": "https://doi.org/10.1109/ICRA48891.2023.10161038",
+    "theme": "Multimodal robots",
+    "entry_type": "inproceedings",
+    "related_projects": [
+      "bogiecopter"
+    ],
+    "status": "published",
+    "source_reference": "S04",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Collaborative 3D Scene Reconstruction in Large Outdoor Environments Using a Fleet of Mobile Ground Robots",
+    "authors": [
+      "John Lewis",
+      "Pedro U. Lima",
+      "Meysam Basiri"
+    ],
+    "year": 2023,
+    "venue": "Sensors",
+    "doi": "10.3390/s23010375",
+    "url": "https://doi.org/10.3390/s23010375",
+    "volume": "23",
+    "number": "1",
+    "pages": "375",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.3390/s23010375",
+    "citationComplete": true,
+    "id": "archive-collaborative-3d-scene-reconstruction-in-large-outdoor-environments-using-a-fleet-of-mobil",
+    "kind": "Journal article"
+  },
+  {
+    "title": "Lightweight Micro Aerial Vehicles (MAVs) Application for Indoor Environment Mapping using Ultrasonic Sensors",
+    "authors": [
+      "Maria Inês Conceição",
+      "António Grilo",
+      "Meysam Basiri"
+    ],
+    "year": 2023,
+    "venue": "2023 IEEE International Conference on Omni-layer Intelligent Systems (COINS)",
+    "doi": "10.1109/coins57856.2023.10189202",
+    "url": "https://doi.org/10.1109/coins57856.2023.10189202",
+    "pages": "1--4",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/coins57856.2023.10189202",
+    "citationComplete": true,
+    "id": "archive-lightweight-micro-aerial-vehicles-mavs-application-for-indoor-environment-mapping-using-ul",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Perspective Chapter: European Robotics League – Benchmarking through Smart City Robot Competitions",
+    "authors": [
+      "Matthew Studley",
+      "Sarah Carter",
+      "Francisco J. Perez-Grau",
+      "Antidio Viguria Jiménez",
+      "Gabriele Ferri",
+      "Fausto Ferreira",
+      "Deebul Nair",
+      "Sven Schneider",
+      "Paul G. Plöger",
+      "Pedro U. Lima",
+      "Meysam Basiri",
+      "Gerhard K. Kraetzschmar",
+      "Daniele Nardi",
+      "Lun Wang",
+      "Emanuele Antonioni",
+      "Vincenzo Suriani",
+      "Luca Iocchi"
+    ],
+    "year": 2023,
+    "venue": "Human-Robot Interaction - Perspectives and Applications",
+    "doi": "10.5772/intechopen.108583",
+    "url": "https://doi.org/10.5772/intechopen.108583",
+    "entry_type": "incollection",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.5772/intechopen.108583",
+    "citationComplete": true,
+    "id": "archive-perspective-chapter-european-robotics-league-benchmarking-through-smart-city-robot-competi",
+    "kind": "Book chapter"
+  },
+  {
+    "title": "Tension Estimation and Localization for a Tethered Micro Aerial Robot",
+    "authors": [
+      "Ricardo Martins",
+      "Meysam Basiri"
+    ],
+    "year": 2023,
+    "venue": "arXiv:2302.03551",
+    "doi": "10.48550/arXiv.2302.03551",
+    "url": "https://doi.org/10.48550/arXiv.2302.03551",
+    "entry_type": "misc",
+    "status": "preprint",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": true,
+    "id": "archive-tension-estimation-and-localization-for-a-tethered-micro-aerial-robot",
+    "kind": "Preprint"
+  },
+  {
+    "title": "The Application of UAVs in the Evaluation of Thermal Comfort Levels in Buildings Equipped with Internal Greenhouses",
+    "authors": [
+      "Maria Inês Conceição",
+      "Eusébio Conceição",
+      "António Grilo",
+      "Meysam Basiri",
+      "Hazim Awbi"
+    ],
+    "year": 2023,
+    "venue": "Clean Technologies",
+    "doi": "10.3390/cleantechnol5030055",
+    "url": "https://doi.org/10.3390/cleantechnol5030055",
+    "volume": "5",
+    "number": "3",
+    "pages": "1080--1114",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.3390/cleantechnol5030055",
+    "citationComplete": true,
+    "id": "archive-the-application-of-uavs-in-the-evaluation-of-thermal-comfort-levels-in-buildings-equipped-",
+    "kind": "Journal article"
+  },
+  {
+    "id": "morales2023landing",
+    "title": "Vision-Based Autonomous Following of a Moving Platform and Landing for an Unmanned Aerial Vehicle",
+    "authors": [
+      "Jesús Morales",
+      "Isabel Castelo",
+      "Rodrigo Serra",
+      "Pedro U. Lima",
+      "Meysam Basiri"
+    ],
+    "year": 2023,
+    "venue": "Sensors",
+    "doi": "10.3390/s23020829",
+    "url": "https://doi.org/10.3390/s23020829",
+    "theme": "Heterogeneous robot teams",
+    "volume": "23",
+    "number": "2",
+    "pages": "829",
+    "entry_type": "article",
+    "related_projects": [
+      "moving-platform-landing"
+    ],
+    "status": "published",
+    "source_reference": "S08",
+    "citationComplete": true,
+    "kind": "Journal article"
+  },
+  {
+    "title": "A Bimodal Aerial Robot for Micro Inspection of Flat and Inclined Surfaces",
+    "authors": [
+      "Meysam Basiri",
+      "Miguel Pimental"
+    ],
+    "year": 2022,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "inproceedings",
+    "status": "archive",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": false,
+    "id": "archive-a-bimodal-aerial-robot-for-micro-inspection-of-flat-and-inclined-surfaces",
+    "kind": "Conference paper"
   },
   {
     "id": "pimentel2022bimodal",
@@ -132,126 +856,563 @@
       "bimodal-rolling-flying"
     ],
     "status": "published",
-    "source_reference": "S03; S02"
+    "source_reference": "S03; S02",
+    "citationComplete": true,
+    "kind": "Journal article"
   },
   {
-    "id": "dias2023bogiecopter",
-    "title": "BogieCopter: A Multi-Modal Aerial-Ground Vehicle for Long-Endurance Inspection Applications",
+    "title": "Functionalities, Benchmarking System and Performance Evaluation for a Domestic Service Robot: People Perception, People Following, and Pick and Placing",
     "authors": [
-      "Teodoro Dias",
+      "Meysam Basiri",
+      "João Pereira",
+      "Rui Bettencourt",
+      "Enrico Piazza",
+      "Emanuel Fernandes",
+      "Carlos Azevedo",
+      "Pedro Lima"
+    ],
+    "year": 2022,
+    "venue": "Applied Sciences",
+    "doi": "10.3390/app12104819",
+    "url": "https://doi.org/10.3390/app12104819",
+    "volume": "12",
+    "number": "10",
+    "pages": "4819",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.3390/app12104819",
+    "citationComplete": true,
+    "id": "archive-functionalities-benchmarking-system-and-performance-evaluation-for-a-domestic-service-robo",
+    "kind": "Journal article"
+  },
+  {
+    "title": "Real-Time Acoustic Touch Localization in Human-Robot Interaction based on Steered Response Power",
+    "authors": [
+      "Juan Jose Gamboa-Montero",
+      "Meysam Basiri",
+      "Jose Carlos Castillo",
+      "Sara Marques-Villarroya",
+      "Miguel Angel Salichs"
+    ],
+    "year": 2022,
+    "venue": "2022 IEEE International Conference on Development and Learning (ICDL)",
+    "doi": "10.1109/icdl53763.2022.9962225",
+    "url": "https://doi.org/10.1109/icdl53763.2022.9962225",
+    "pages": "101--106",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/icdl53763.2022.9962225",
+    "citationComplete": true,
+    "id": "archive-real-time-acoustic-touch-localization-in-human-robot-interaction-based-on-steered-response",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "A Multipurpose Mobile Manipulator for Autonomous Firefighting and Construction of Outdoor Structures",
+    "authors": [
+      "Meysam Basiri",
+      "João Gonçalves",
+      "José Rosa",
+      "Rui Bettencourt",
+      "Alberto Vale",
+      "Pedro Lima"
+    ],
+    "year": 2021,
+    "venue": "Field Robotics",
+    "doi": "10.55417/fr.2021004",
+    "url": "https://doi.org/10.55417/fr.2021004",
+    "volume": "1",
+    "pages": "1--25",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.55417/fr.2021004",
+    "citationComplete": true,
+    "id": "archive-a-multipurpose-mobile-manipulator-for-autonomous-firefighting-and-construction-of-outdoor-",
+    "kind": "Journal article"
+  },
+  {
+    "title": "An autonomous mobile manipulator to build outdoor structures consisting of heterogeneous brick patterns",
+    "authors": [
+      "Meysam Basiri",
+      "João Gonçalves",
+      "José Rosa",
+      "Alberto Vale",
+      "Pedro Lima"
+    ],
+    "year": 2021,
+    "venue": "SN Applied Sciences",
+    "doi": "10.1007/s42452-021-04506-7",
+    "url": "https://doi.org/10.1007/s42452-021-04506-7",
+    "volume": "3",
+    "number": "5",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1007/s42452-021-04506-7",
+    "citationComplete": true,
+    "id": "archive-an-autonomous-mobile-manipulator-to-build-outdoor-structures-consisting-of-heterogeneous-b",
+    "kind": "Journal article"
+  },
+  {
+    "title": "Pulsed thermography digital motion stabilization for the unmanned vehicle inspection of solar farms and GFRP wind blades through UAVs and UGVs",
+    "authors": [
+      "Beñat Urtasun",
+      "Pablo López de Uralde",
+      "Karlos Velar",
+      "Eider Gorostegui",
+      "Joonas Neelov",
+      "Steve Wright",
+      "Matthew Studley",
+      "Pedro Lima",
+      "Alberto Vale",
       "Meysam Basiri"
     ],
-    "year": 2023,
-    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
-    "doi": "10.1109/ICRA48891.2023.10161038",
-    "url": "https://doi.org/10.1109/ICRA48891.2023.10161038",
-    "theme": "Multimodal robots",
+    "year": 2021,
+    "venue": "Thermosense: Thermal Infrared Applications XLIII",
+    "doi": "10.1117/12.2585902",
+    "url": "https://doi.org/10.1117/12.2585902",
+    "pages": "5",
     "entry_type": "inproceedings",
-    "related_projects": [
-      "bogiecopter"
-    ],
     "status": "published",
-    "source_reference": "S04"
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1117/12.2585902",
+    "citationComplete": true,
+    "id": "archive-pulsed-thermography-digital-motion-stabilization-for-the-unmanned-vehicle-inspection-of-so",
+    "kind": "Conference paper"
   },
   {
-    "id": "vale2025trimodal",
-    "title": "Enhancing UAV Energy Efficiency and Versatility through Trimodal Ground, Hovering, and Fixed-Wing Locomotion Modes",
+    "title": "An autonomous mobile manipulator to build outdoor structures consisting of heterogeneous brick patterns",
     "authors": [
-      "Afonso Vale",
       "Meysam Basiri",
-      "Frederico Afonso"
+      "Joao Goncalves",
+      "Jose Eduardo Rosa",
+      "Alberto vale",
+      "Pedro urbano lima"
     ],
-    "year": 2025,
+    "year": 2020,
+    "venue": "Mohammad Bin Zayed International Robotics Competition (MBZIRC) Symposium",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "inproceedings",
+    "status": "archive",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": false,
+    "id": "archive-an-autonomous-mobile-manipulator-to-build-outdoor-structures-consisting-of-heterogeneous-b-symposium",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Benchmarking Functionalities of Domestic Service Robots Through Scientific Competitions",
+    "authors": [
+      "Meysam Basiri",
+      "Enrico Piazza",
+      "Matteo Matteucci",
+      "Pedro Lima"
+    ],
+    "year": 2019,
+    "venue": "KI - Künstliche Intelligenz",
+    "doi": "10.1007/s13218-019-00619-9",
+    "url": "https://doi.org/10.1007/s13218-019-00619-9",
+    "volume": "33",
+    "number": "4",
+    "pages": "357--367",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1007/s13218-019-00619-9",
+    "citationComplete": true,
+    "id": "archive-benchmarking-functionalities-of-domestic-service-robots-through-scientific-competitions",
+    "kind": "Journal article"
+  },
+  {
+    "id": "rosa2019audiovisual",
+    "title": "Cooperative Audio-Visual System for Localizing Small Aerial Robots",
+    "authors": [
+      "José Rosa",
+      "Meysam Basiri"
+    ],
+    "year": 2019,
     "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-    "doi": "10.1109/IROS60139.2025.11246401",
-    "url": "https://doi.org/10.1109/IROS60139.2025.11246401",
-    "theme": "Multimodal robots",
+    "doi": "10.1109/IROS40897.2019.8968075",
+    "url": "https://doi.org/10.1109/IROS40897.2019.8968075",
+    "theme": "Localization and perception",
     "entry_type": "inproceedings",
-    "related_projects": [
-      "trimodal-uav"
-    ],
     "status": "published",
-    "source_reference": "S06; S02"
+    "source_reference": "S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
   },
   {
-    "id": "lewis2025froshe",
-    "title": "Frontier Shepherding: A Bio-inspired Multi-robot Framework for Large-Scale Exploration",
+    "title": "Rulebook of the SCIROC smart city service robot challenge, 2019",
     "authors": [
-      "John Lewis",
+      "Meysam Basiri"
+    ],
+    "year": 2019,
+    "venue": "Research rulebook",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "techreport",
+    "status": "published",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": false,
+    "id": "archive-rulebook-of-the-sciroc-smart-city-service-robot-challenge-2019",
+    "kind": "Report & rulebook"
+  },
+  {
+    "title": "Feature Based Potential Field for Low-Level Active Visual Navigation",
+    "authors": [
+      "Rômulo T. Rodrigues",
       "Meysam Basiri",
+      "A. Pedro Aguiar",
+      "Pedro Miraldo"
+    ],
+    "year": 2018,
+    "venue": "Advances in Intelligent Systems and Computing",
+    "doi": "10.1007/978-3-319-70833-1_64",
+    "url": "https://doi.org/10.1007/978-3-319-70833-1_64",
+    "pages": "791--800",
+    "entry_type": "incollection",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1007/978-3-319-70833-1_64",
+    "citationComplete": true,
+    "id": "archive-feature-based-potential-field-for-low-level-active-visual-navigation",
+    "kind": "Book chapter"
+  },
+  {
+    "id": "basiri2018emergency",
+    "title": "Localization of emergency acoustic sources by micro aerial vehicles",
+    "authors": [
+      "Meysam Basiri",
+      "Felix Schill",
+      "Pedro U. Lima",
+      "Dario Floreano"
+    ],
+    "year": 2018,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.21733",
+    "url": "https://doi.org/10.1002/rob.21733",
+    "theme": "Target localization",
+    "volume": "35",
+    "number": "2",
+    "pages": "187--201",
+    "entry_type": "article",
+    "related_projects": [
+      "acoustic-target-localization"
+    ],
+    "status": "published",
+    "source_reference": "S02; https://www.cienciavitae.pt/A91B-D23C-4524",
+    "citationComplete": true,
+    "kind": "Journal article"
+  },
+  {
+    "title": "Low-Level Active Visual Navigation: Increasing Robustness of Vision-Based Localization Using Potential Fields",
+    "authors": [
+      "Romulo T. Rodrigues",
+      "Meysam Basiri",
+      "A. Pedro Aguiar",
+      "Pedro Miraldo"
+    ],
+    "year": 2018,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2018.2809628",
+    "url": "https://doi.org/10.1109/lra.2018.2809628",
+    "volume": "3",
+    "number": "3",
+    "pages": "2079--2086",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/lra.2018.2809628",
+    "citationComplete": true,
+    "id": "archive-low-level-active-visual-navigation-increasing-robustness-of-vision-based-localization-usin",
+    "kind": "Journal article"
+  },
+  {
+    "title": "Rulebook of the ERL Consumer Service Robots 2018-2019",
+    "authors": [
+      "Meysam Basiri"
+    ],
+    "year": 2018,
+    "venue": "Research rulebook",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "techreport",
+    "status": "published",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": false,
+    "id": "archive-rulebook-of-the-erl-consumer-service-robots-2018-2019",
+    "kind": "Report & rulebook"
+  },
+  {
+    "title": "Dynamic Localization of Ambiguous Sounds by Drones",
+    "authors": [
+      "Meysam Basiri"
+    ],
+    "year": 2017,
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": false,
+    "id": "archive-dynamic-localization-of-ambiguous-sounds-by-drones",
+    "kind": "Poster"
+  },
+  {
+    "title": "A Domestic Assistive Robot Developed Through Robot Competitions",
+    "authors": [
+      "Rodrigo Ventura",
+      "Meysam Basiri",
+      "André Mateus",
+      "João Garcia",
+      "Pedro Miraldo",
+      "Pedro Santos",
       "Pedro U. Lima"
     ],
-    "year": 2025,
-    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-    "doi": "10.1109/IROS60139.2025.11246323",
-    "url": "https://doi.org/10.1109/IROS60139.2025.11246323",
-    "theme": "Exploration and mapping",
+    "year": 2016,
+    "venue": "IJCAI 2016 Workshop on Autonomous Mobile Service Robots",
+    "doi": null,
+    "url": "https://isr.tecnico.ulisboa.pt/wp-content/uploads/2016/07/Ventura16a.pdf",
     "entry_type": "inproceedings",
-    "related_projects": [
-      "frontier-shepherding"
-    ],
     "status": "published",
-    "source_reference": "S01 pp.93–100; S02"
+    "source_reference": "Published paper title page at ISR-Lisboa",
+    "citationComplete": true,
+    "id": "archive-a-domestic-assistive-robot-developed-through-robotic-competitions",
+    "kind": "Conference paper"
   },
   {
-    "id": "caeiro2026mr",
-    "title": "A Unified Mixed Reality Interface for Dynamic Swarm Mission Planning and Control",
+    "id": "basiri2016bearing",
+    "title": "On-Board Relative Bearing Estimation for Teams of Drones Using Sound",
     "authors": [
-      "Miguel Caeiro",
-      "Akshat Singh",
-      "Rodrigo Ventura",
-      "Meysam Basiri"
+      "Meysam Basiri",
+      "Felix Schill",
+      "Pedro U. Lima",
+      "Dario Floreano"
     ],
-    "year": 2026,
-    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
-    "doi": "10.1109/ICARSC70216.2026.11523316",
-    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523316",
-    "theme": "Human–robot interaction",
-    "entry_type": "inproceedings",
+    "year": 2016,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/LRA.2016.2527833",
+    "url": "https://doi.org/10.1109/LRA.2016.2527833",
+    "theme": "Localization and perception",
+    "volume": "1",
+    "number": "2",
+    "pages": "820--827",
+    "entry_type": "article",
     "related_projects": [
-      "mixed-reality-supervision"
+      "acoustic-relative-positioning"
     ],
     "status": "published",
-    "source_reference": "S01 pp.199–204; S02"
+    "source_reference": "S02; https://www.cienciavitae.pt/A91B-D23C-4524",
+    "citationComplete": true,
+    "kind": "Journal article"
   },
   {
-    "id": "niusha2026quality",
-    "title": "Proactive Feature Quality Assessment for LiDAR-Inertial Odometry Using Physical Signal Analysis",
+    "title": "Rulebook of the European Robotics League Domestic Service Robots 2016-2017",
     "authors": [
-      "Niusha Khosravi",
-      "Rodrigo Ventura",
       "Meysam Basiri"
     ],
-    "year": 2026,
-    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
-    "doi": "10.1109/ICARSC70216.2026.11523258",
-    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523258",
+    "year": 2016,
+    "venue": "Research rulebook",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "techreport",
+    "status": "published",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": false,
+    "id": "archive-rulebook-of-the-european-robotics-league-domestic-service-robots-2016-2017",
+    "kind": "Report & rulebook"
+  },
+  {
+    "title": "SocRob@Home: Team Description Paper for RoboCup@Home 2016",
+    "authors": [
+      "Rodrigo Ventura",
+      "André Mateus",
+      "João Garcia",
+      "Meysam Basiri",
+      "Pedro Miraldo",
+      "Pedro Santos",
+      "Pedro U. Lima"
+    ],
+    "year": 2016,
+    "venue": "RoboCup@Home 2016",
+    "doi": null,
+    "url": "https://2016.robocup.org/web/images/robocup_2016_athome_tdp_socrob_at_home.pdf",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Author-supplied team description paper at RoboCup 2016 official archive",
+    "citationComplete": true,
+    "id": "archive-socrob-home-team-description-paper-for-robocup-home-2016",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Audio-based Positioning and Target Localization for Swarms of Micro Aerial Vehicles",
+    "authors": [
+      "Meysam Basiri"
+    ],
+    "year": 2015,
+    "venue": "École Polytechnique Fédérale de Lausanne",
+    "doi": "10.5075/epfl-thesis-6508",
+    "url": "https://doi.org/10.5075/epfl-thesis-6508",
+    "entry_type": "phdthesis",
+    "status": "published",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": true,
+    "id": "archive-audio-based-positioning-and-target-localization-for-swarms-of-micro-aerial-vehicles",
+    "kind": "Thesis"
+  },
+  {
+    "title": "Distributed formation control of fixed wing micro aerial vehicles for area coverage",
+    "authors": [
+      "Maja Varga",
+      "Meysam Basiri",
+      "Gregoire Heitz",
+      "Dario Floreano"
+    ],
+    "year": 2015,
+    "venue": "2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros.2015.7353444",
+    "url": "https://doi.org/10.1109/iros.2015.7353444",
+    "pages": "669--674",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/iros.2015.7353444",
+    "citationComplete": true,
+    "id": "archive-distributed-formation-control-of-fixed-wing-micro-aerial-vehicles-for-area-coverage",
+    "kind": "Conference paper"
+  },
+  {
+    "id": "basiri2014audio",
+    "title": "Audio-based localization for swarms of micro air vehicles",
+    "authors": [
+      "Meysam Basiri",
+      "Felix Schill",
+      "Dario Floreano",
+      "Pedro U. Lima"
+    ],
+    "year": 2014,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/ICRA.2014.6907551",
+    "url": "https://doi.org/10.1109/ICRA.2014.6907551",
     "theme": "Localization and perception",
     "entry_type": "inproceedings",
     "related_projects": [
-      "lidar-inertial-odometry"
+      "acoustic-relative-positioning"
     ],
     "status": "published",
-    "source_reference": "S01 pp.185–191; S02"
+    "source_reference": "S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
   },
   {
-    "id": "nishikawa2026recovery",
-    "title": "Two-Stage Recovery Control of a Quadrotor Tailsitter UAV Without Control Surfaces",
+    "id": "basiri2013relative",
+    "title": "Audio-based Relative Positioning System for Multiple Micro Air Vehicle Systems",
     "authors": [
-      "Rodrigo Nishikawa",
-      "Rodrigo Ventura",
-      "Meysam Basiri"
+      "Meysam Basiri",
+      "Felix Schill",
+      "Dario Floreano",
+      "Pedro U. Lima"
     ],
-    "year": 2026,
-    "venue": "IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)",
-    "doi": "10.1109/ICARSC70216.2026.11523332",
-    "url": "https://doi.org/10.1109/ICARSC70216.2026.11523332",
-    "theme": "Deployment and recovery",
+    "year": 2013,
+    "venue": "Robotics: Science and Systems (RSS)",
+    "doi": "10.15607/RSS.2013.IX.002",
+    "url": "https://doi.org/10.15607/RSS.2013.IX.002",
+    "theme": "Localization and perception",
     "entry_type": "inproceedings",
     "related_projects": [
-      "deployment-recovery"
+      "acoustic-relative-positioning"
     ],
     "status": "published",
-    "source_reference": "S01 pp.123–128; S02"
+    "source_reference": "S02",
+    "citationComplete": true,
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Robust acoustic source localization of emergency signals from Micro Air Vehicles",
+    "authors": [
+      "Meysam Basiri",
+      "Felix Schill",
+      "Pedro U. Lima",
+      "Dario Floreano"
+    ],
+    "year": 2012,
+    "venue": "2012 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    "doi": "10.1109/iros.2012.6385608",
+    "url": "https://doi.org/10.1109/iros.2012.6385608",
+    "pages": "4737--4742",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/iros.2012.6385608",
+    "citationComplete": true,
+    "id": "archive-robust-acoustic-source-localization-of-emergency-signals-from-micro-air-vehicles",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Bearing-only triangular formation control on the plane and the sphere",
+    "authors": [
+      "Adrian N. Bishop",
+      "Meysam Basiri"
+    ],
+    "year": 2010,
+    "venue": "18th Mediterranean Conference on Control and Automation, MED'10",
+    "doi": "10.1109/med.2010.5547774",
+    "url": "https://doi.org/10.1109/med.2010.5547774",
+    "pages": "790--795",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/med.2010.5547774",
+    "citationComplete": true,
+    "id": "archive-bearing-only-triangular-formation-control-on-the-plane-and-the-sphere",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Distributed control of triangular formations with angle-only constraints",
+    "authors": [
+      "Meysam Basiri",
+      "Adrian N. Bishop",
+      "Patric Jensfelt"
+    ],
+    "year": 2010,
+    "venue": "Systems &amp; Control Letters",
+    "doi": "10.1016/j.sysconle.2009.12.010",
+    "url": "https://doi.org/10.1016/j.sysconle.2009.12.010",
+    "volume": "59",
+    "number": "2",
+    "pages": "147--154",
+    "entry_type": "article",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1016/j.sysconle.2009.12.010",
+    "citationComplete": true,
+    "id": "archive-distributed-control-of-triangular-formations-with-angle-only-constraints",
+    "kind": "Journal article"
+  },
+  {
+    "title": "Distributed control of triangular sensor formations with angle-only constraints",
+    "authors": [
+      "Meysam Basiri",
+      "Adrian N. Bishop",
+      "Patric Jensfelt"
+    ],
+    "year": 2009,
+    "venue": "2009 International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP)",
+    "doi": "10.1109/issnip.2009.5416849",
+    "url": "https://doi.org/10.1109/issnip.2009.5416849",
+    "pages": "121--126",
+    "entry_type": "inproceedings",
+    "status": "published",
+    "source_reference": "Publisher-deposited Crossref metadata, retrieved 10 November 2026: https://api.crossref.org/works/10.1109/issnip.2009.5416849",
+    "citationComplete": true,
+    "id": "archive-distributed-control-of-triangular-sensor-formations-with-angle-only-constraints",
+    "kind": "Conference paper"
+  },
+  {
+    "title": "Distributed Formation Control of Multiple Agents with Angle-Only Constraints",
+    "authors": [
+      "Meysam Basiri"
+    ],
+    "year": 2009,
+    "venue": "KTH Royal Institute of Technology",
+    "doi": null,
+    "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+    "entry_type": "mastersthesis",
+    "status": "published",
+    "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524; retrieved 10 November 2026",
+    "citationComplete": true,
+    "id": "archive-distributed-formation-control-of-multiple-agents-with-angle-only-constraints",
+    "kind": "Thesis"
   }
 ]

@@ -426,5 +426,403 @@
     "sourceHashes": {
       "media/logos/tecnico-lisboa.webp": "cd2eb549e4e689da3a0be9681a2f21987194a20d7edb3b98f9d7c2cce01ba81d"
     }
+  },
+  {
+    "id": "u01-meysam-portrait",
+    "title": "Meysam Basiri",
+    "type": "image",
+    "path": "media/people/meysam-basiri.jpg",
+    "poster": null,
+    "width": 660,
+    "height": 963,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Meysam Basiri",
+    "caption": "Meysam Basiri, research lead.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "U01",
+      "file": "MeysamBasiri-e1580906461448.jpg",
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this portrait for the website."
+    },
+    "sourceHashes": {
+      "media/people/meysam-basiri.jpg": "931a866fa3aaea3019135b411cda0db38287a8df1ecf5ecc7cd04a09c01b8a69"
+    }
+  },
+  {
+    "id": "u02-lidar-drone",
+    "title": "Custom exploration UAV with onboard 3D LiDAR",
+    "type": "image",
+    "path": "media/images/custom-lidar-drone.jpg",
+    "poster": null,
+    "width": 1280,
+    "height": 948,
+    "durationSeconds": null,
+    "experimentType": "research photograph",
+    "alt": "The group’s custom quadrotor carrying onboard 3D LiDAR in outdoor flight",
+    "caption": "Custom-built UAV with onboard 3D LiDAR, used in exploration and perception research with John Lewis Devassy, Nivand Khosravi and Niusha Khosravi.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "U02",
+      "file": "photo_6023633732645883723_y.jpg",
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this drone photograph and platform description for the website.",
+      "context": "Platform photograph; not evidence of a specific paper’s results."
+    },
+    "sourceHashes": {
+      "media/images/custom-lidar-drone.jpg": "7abd6d11c917e2d7d18456f5c6242c9afc83cd6db17c9d40a78c001fb46f9700"
+    }
+  },
+  {
+    "id": "s11-image27",
+    "title": "Rodrigo Ventura",
+    "type": "image",
+    "path": "media/people/rodrigo-ventura.webp",
+    "poster": null,
+    "width": 768,
+    "height": 1073,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Rodrigo Ventura",
+    "caption": "Rodrigo Ventura. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image27.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/rodrigo-ventura.webp": "78586acdc2dd471dfe35655d631eafc30d86ea4e27fc0368c912422ac4383baf"
+    }
+  },
+  {
+    "id": "s11-image15",
+    "title": "Sofia Simões",
+    "type": "image",
+    "path": "media/people/sofia-simoes.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Sofia Simões",
+    "caption": "Sofia Simões. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image15.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/sofia-simoes.webp": "22a8cee7e0ef8386bd1c0259115e4cd36ae91ba64d0e38e7991de23dff457b23"
+    }
+  },
+  {
+    "id": "s11-image21",
+    "title": "Diogo Nunes",
+    "type": "image",
+    "path": "media/people/diogo-nunes.webp",
+    "poster": null,
+    "width": 800,
+    "height": 800,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Diogo Nunes",
+    "caption": "Diogo Nunes. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image21.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/diogo-nunes.webp": "13f2679a3a02a59af82144b255887ba29a5d79fe7065a352296b98c1b2483138"
+    }
+  },
+  {
+    "id": "s11-image24",
+    "title": "Miguel Caeiro",
+    "type": "image",
+    "path": "media/people/miguel-caeiro.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Miguel Caeiro",
+    "caption": "Miguel Caeiro. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image24.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/miguel-caeiro.webp": "e9cd5ecae898b3ff73aa81aec846ef1a10cc75ee1781ae4e72007feb58970ab4"
+    }
+  },
+  {
+    "id": "s11-image20",
+    "title": "João Matias",
+    "type": "image",
+    "path": "media/people/joao-matias.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of João Matias",
+    "caption": "João Matias. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image20.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/joao-matias.webp": "bc588e2819f85d5b58f4b2d08f9e746631c67e955eb4a61c4a3ad29e8eccef10"
+    }
+  },
+  {
+    "id": "s11-image16",
+    "title": "José Bento",
+    "type": "image",
+    "path": "media/people/jose-bento.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of José Bento",
+    "caption": "José Bento. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image16.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/jose-bento.webp": "b27136ac38221ab24b6775f3ab2a649a780e693589539dd7c99b111f4048a90a"
+    }
+  },
+  {
+    "id": "s11-image22",
+    "title": "Hugo Aranha",
+    "type": "image",
+    "path": "media/people/hugo-aranha.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Hugo Aranha",
+    "caption": "Hugo Aranha. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image22.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/hugo-aranha.webp": "911d4da6e4c3d9d8b393e6f3131ee220045a7fd2ee3ed6b551a0e700d89e1b3b"
+    }
+  },
+  {
+    "id": "s11-image17",
+    "title": "André Ribeiro",
+    "type": "image",
+    "path": "media/people/andre-ribeiro.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of André Ribeiro",
+    "caption": "André Ribeiro. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image17.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/andre-ribeiro.webp": "e241df13ba03d85cc8e9bd20ea549ab0ec8d3d4ef7222e2e600ac98d0cb6c24a"
+    }
+  },
+  {
+    "id": "s11-image18",
+    "title": "Afonso Vale",
+    "type": "image",
+    "path": "media/people/afonso-vale.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Afonso Vale",
+    "caption": "Afonso Vale. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image18.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/afonso-vale.webp": "8ef8ab036d98a96732d4612d9313ae46642a7f187678a2c2f9f2924a61627866"
+    }
+  },
+  {
+    "id": "s11-image19",
+    "title": "Diogo Ferreira",
+    "type": "image",
+    "path": "media/people/diogo-ferreira.webp",
+    "poster": null,
+    "width": 686,
+    "height": 686,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Diogo Ferreira",
+    "caption": "Diogo Ferreira. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image19.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/diogo-ferreira.webp": "5998c3038fc10caef55f2f83ce063c975c309304f4112bc38028527ca525c345"
+    }
+  },
+  {
+    "id": "s11-image14",
+    "title": "Rodrigo Nishikawa",
+    "type": "image",
+    "path": "media/people/rodrigo-nishikawa.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Rodrigo Nishikawa",
+    "caption": "Rodrigo Nishikawa. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image14.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/rodrigo-nishikawa.webp": "ab409a19ff8c5e66e765d321299f3b3ccb2e11ed67c0573641961c0cec350008"
+    }
+  },
+  {
+    "id": "s11-image23",
+    "title": "Lorenzo Giordano",
+    "type": "image",
+    "path": "media/people/lorenzo-giordano.webp",
+    "poster": null,
+    "width": 100,
+    "height": 100,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Lorenzo Giordano",
+    "caption": "Lorenzo Giordano. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image23.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/lorenzo-giordano.webp": "f1c37e1845fcee53570058d7c3d49eae2e953ba82cca85ab842bacdcf5862341"
+    }
+  },
+  {
+    "id": "s11-image26",
+    "title": "Teodoro Dias",
+    "type": "image",
+    "path": "media/people/teodoro-dias.webp",
+    "poster": null,
+    "width": 800,
+    "height": 800,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Teodoro Dias",
+    "caption": "Teodoro Dias. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image26.png",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/teodoro-dias.webp": "c6d1d0f5edd7622db12124020b168c0a0a97cff01238a11baaecbca1af9e1fda"
+    }
   }
 ]

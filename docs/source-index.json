@@ -1,5 +1,5 @@
 {
-  "reviewedOn": "2026-11-09",
+  "reviewedOn": "2026-11-10",
   "sourceDeck": {
     "sourceId": "S11",
     "filename": "ISR_Get_Together_Meysam Basiri_b.pptx",
@@ -26,7 +26,6 @@
   "selectedMediaIds": [
     "s11-image156",
     "s11-image118",
-    "s11-image87",
     "s11-media14",
     "s11-media30",
     "s11-media31",
@@ -39,7 +38,23 @@
     "s11-image32",
     "s11-image7",
     "s11-image8",
-    "s11-image9"
+    "s11-image9",
+    "s11-image87",
+    "u01-meysam-portrait",
+    "u02-lidar-drone",
+    "s11-image27",
+    "s11-image15",
+    "s11-image21",
+    "s11-image24",
+    "s11-image20",
+    "s11-image16",
+    "s11-image22",
+    "s11-image17",
+    "s11-image18",
+    "s11-image19",
+    "s11-image14",
+    "s11-image23",
+    "s11-image26"
   ],
   "catalogueScope": {
     "projects": 23,
@@ -48,14 +63,14 @@
   },
   "publicRepositoryRead": {
     "organization": "IRSg-ARG",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-10",
     "repositories": [
       "UAV_3d_reconstruction",
       "centralized_multi_robot_voxblox",
       "traj_generation",
       "uav_gazebo_environments"
     ],
-    "websiteRepositoryVisible": false
+    "websiteRepositoryVisible": true
   },
   "scientificPrecedence": "Published-paper findings summarized in the information sheet override conflicting presentation shorthand.",
   "excluded": [
@@ -73,5 +88,110 @@
     "basePath": "/",
     "accessConfirmedOn": "2026-11-09",
     "initialCommit": "585bdb0bb88ae3f0de1cc225379013ad58eaf868"
+  },
+  "publicationIds": [
+    "caeiro2026mr",
+    "rodrigues2026sensor",
+    "niusha2026mapex",
+    "mendes2026centralized",
+    "marques2026connectivity",
+    "aranha2026lidar",
+    "niusha2026consensus",
+    "devassy2026frontier",
+    "mendes2026kinodynamic",
+    "conceicao2026sparc",
+    "niusha2026quality",
+    "nivand2026robust",
+    "nivand2026dualimu",
+    "nishikawa2026recovery",
+    "nivand2026sparsity",
+    "chaffilla2025warehouse",
+    "conceicao2025survey",
+    "vale2025trimodal",
+    "lewis2025froshe",
+    "bento2025information",
+    "nivand2025adaptive",
+    "liu2025graph",
+    "matias2025pursuit",
+    "ribeiro2024cooperative",
+    "ferreira2024following",
+    "ribeiro2024exploration",
+    "archive-geers-georeferenced-enhanced-ekf-using-point-cloud-registration-and-segmentation",
+    "bento2024airdropped",
+    "ferreira2024mot",
+    "dias2023bogiecopter",
+    "archive-collaborative-3d-scene-reconstruction-in-large-outdoor-environments-using-a-fleet-of-mobil",
+    "archive-lightweight-micro-aerial-vehicles-mavs-application-for-indoor-environment-mapping-using-ul",
+    "archive-perspective-chapter-european-robotics-league-benchmarking-through-smart-city-robot-competi",
+    "archive-tension-estimation-and-localization-for-a-tethered-micro-aerial-robot",
+    "archive-the-application-of-uavs-in-the-evaluation-of-thermal-comfort-levels-in-buildings-equipped-",
+    "morales2023landing",
+    "archive-a-bimodal-aerial-robot-for-micro-inspection-of-flat-and-inclined-surfaces",
+    "pimentel2022bimodal",
+    "archive-functionalities-benchmarking-system-and-performance-evaluation-for-a-domestic-service-robo",
+    "archive-real-time-acoustic-touch-localization-in-human-robot-interaction-based-on-steered-response",
+    "archive-a-multipurpose-mobile-manipulator-for-autonomous-firefighting-and-construction-of-outdoor-",
+    "archive-an-autonomous-mobile-manipulator-to-build-outdoor-structures-consisting-of-heterogeneous-b",
+    "archive-pulsed-thermography-digital-motion-stabilization-for-the-unmanned-vehicle-inspection-of-so",
+    "archive-an-autonomous-mobile-manipulator-to-build-outdoor-structures-consisting-of-heterogeneous-b-symposium",
+    "archive-benchmarking-functionalities-of-domestic-service-robots-through-scientific-competitions",
+    "rosa2019audiovisual",
+    "archive-rulebook-of-the-sciroc-smart-city-service-robot-challenge-2019",
+    "archive-feature-based-potential-field-for-low-level-active-visual-navigation",
+    "basiri2018emergency",
+    "archive-low-level-active-visual-navigation-increasing-robustness-of-vision-based-localization-usin",
+    "archive-rulebook-of-the-erl-consumer-service-robots-2018-2019",
+    "archive-dynamic-localization-of-ambiguous-sounds-by-drones",
+    "archive-a-domestic-assistive-robot-developed-through-robotic-competitions",
+    "basiri2016bearing",
+    "archive-rulebook-of-the-european-robotics-league-domestic-service-robots-2016-2017",
+    "archive-socrob-home-team-description-paper-for-robocup-home-2016",
+    "archive-audio-based-positioning-and-target-localization-for-swarms-of-micro-aerial-vehicles",
+    "archive-distributed-formation-control-of-fixed-wing-micro-aerial-vehicles-for-area-coverage",
+    "basiri2014audio",
+    "basiri2013relative",
+    "archive-robust-acoustic-source-localization-of-emergency-signals-from-micro-air-vehicles",
+    "archive-bearing-only-triangular-formation-control-on-the-plane-and-the-sphere",
+    "archive-distributed-control-of-triangular-formations-with-angle-only-constraints",
+    "archive-distributed-control-of-triangular-sensor-formations-with-angle-only-constraints",
+    "archive-distributed-formation-control-of-multiple-agents-with-angle-only-constraints"
+  ],
+  "additionalSources": [
+    {
+      "id": "U01",
+      "type": "User-supplied portrait",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "U02",
+      "type": "User-supplied custom LiDAR UAV photograph and description",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "CV-PUBLIC",
+      "url": "https://www.cienciavitae.pt/A91B-D23C-4524",
+      "retrieved": "2026-11-10",
+      "scope": "Public supervision and publication records; no automatic refresh"
+    },
+    {
+      "id": "ISR-PUBLIC",
+      "url": "https://isr.tecnico.ulisboa.pt/author/meysam/",
+      "retrieved": "2026-11-10",
+      "scope": "Institutional publications"
+    },
+    {
+      "id": "PUBLISHER",
+      "url": "https://api.crossref.org/works/",
+      "retrieved": "2026-11-10",
+      "scope": "Publisher-deposited citation metadata; source references retained per record"
+    }
+  ],
+  "websiteCounts": {
+    "publications": 65,
+    "verifiedCitationExports": 59,
+    "archiveListings": 6,
+    "supervisionRecords": 45,
+    "peopleInSupervisionDirectory": 44,
+    "media": 31
   }
 }

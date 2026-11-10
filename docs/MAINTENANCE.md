@@ -17,7 +17,9 @@ Review the affected page at desktop and mobile sizes, then commit the source. A 
 4. Add its ID to **publicationIds** in **content/home.json** if it should appear on the homepage, or to a research theme's **publications** list.
 5. If changing the homepage selection, update **public/citations/selected-publications.bib** to contain that same selection.
 
-Only ready records are included in this initial source selection. The handoff's 35-entry catalogue is a seed rather than a complete bibliography. Verify unresolved entries before adding them publicly. Do not copy publisher PDFs into public media unless an appropriate author-approved public version is supplied.
+The publications page discovers all records automatically and groups them by year. Set **kind** to Journal article, Conference paper, Book chapter, Preprint, Thesis, Poster, or Report & rulebook. Set **status** to published, accepted, preprint or archive. A missing DOI is allowed when an authoritative record or preprint URL is supplied. Keep a separate **preprint** link when there is also a published version. Add verified entries to **public/citations/all-publications.bib**.
+
+Six older archive listings have **citationComplete: false** and link to their source without offering an unverified BibTeX entry. Confirm the complete citation before changing that field. Sources reviewed for the expanded bibliography are recorded per entry. Do not copy publisher PDFs into public media unless an appropriate author-approved public version is supplied.
 
 ## Add or update a person
 
@@ -26,7 +28,13 @@ Only ready records are included in this initial source selection. The handoff's 
 3. If no verified portrait is supplied, set **portrait** to null and supply neutral **initials**.
 4. Add the person's ID to **contributorIds** in **content/home.json**, or to the relevant project's **authorIds** in publication order.
 
-The homepage displays research associations rather than an unconfirmed current employment/enrollment roster. Confirm current, alumni and collaborator classifications before creating a full people directory. A coauthor is not automatically a current member. The Miguel Pimentel portrait from the handoff remains withheld pending identity confirmation.
+The homepage displays research associations. Rodrigo Ventura is explicitly identified as a key collaborator. A coauthor is not automatically a current member. The Miguel Pimentel portrait from the handoff remains withheld pending identity confirmation.
+
+## Maintain the student directory
+
+Edit **content/students.json**. Each supervision record has a unique **id**, stable **personId**, preferred **name**, **degree** (PhD, Master, Bachelor or Research project), **status** (current or previous), optional **period**, **topic**, supervision role and source reference. Portraits use media IDs. The page groups records automatically; search and filters work without a service or database. A person can have distinct Master’s and PhD records.
+
+The current roster combines the public CIÊNCIAVITAE supervision history, the supplied presentation and user corrections from 10 November 2026. The user will review possible omissions later. Inês Marques is listed under previous Bachelor’s supervision in 2026, as explicitly requested; her current Master’s abroad is not attributed to this group. Do not infer degrees from publication authorship. Records without a confirmed degree stay under research placements and projects. Update the source date and confirm current status each term.
 
 ## Add research media
 
@@ -36,10 +44,12 @@ Copy only selected files and posters into **public/media/**. Add a media record 
 
 - Unique ID, title, path, type, intrinsic dimensions and optional poster.
 - Alt text, caption, credit and experimentType.
-- Original source ID, filename and source slides.
+- Original source ID, filename and source slides, or the date and authorization for a directly supplied photograph.
 - A SHA-256 for each copied supplied derivative in **sourceHashes**.
 
 On Windows, **Get-FileHash -Algorithm SHA256 -LiteralPath PATH** can compute a digest. Lowercase the digest when recording it. The check script verifies file bytes against these records.
+
+The two photographs supplied directly on 10 November 2026 are U01 (Meysam Basiri portrait) and U02 (custom UAV with onboard 3D LiDAR). Original bytes are retained; display crops are CSS only. The platform photograph links to the prioritization project but is not presented as evidence of that paper’s hardware configuration or results. Trimodal footage remains with the multimodal research direction.
 
 Use native video controls and an accurate visual description. Keep preload at none. The provided review derivatives are silent except the acoustic recordings; if later using audio, describe/caption the actual soundtrack and keep playback under visitor control. Label conceptual, explanatory, simulation and hardware material according to the manifest.
 

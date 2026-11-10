@@ -38,6 +38,29 @@ document.querySelectorAll('[data-copy-target]').forEach(button=>button.addEventL
     if(status)status.textContent='Citation selected. Use your copy shortcut or download the BibTeX file.';
   }
 }));
+/* Directory content remains visible without JavaScript. Search is an enhancement. */
+document.querySelectorAll('[data-directory]').forEach(directory=>{
+  const search=directory.querySelector('[data-search]');
+  const filters=[...directory.querySelectorAll('[data-filter]')];
+  const items=[...directory.querySelectorAll('[data-directory-item]')];
+  const normalize=value=>String(value).normalize('NFD').replace(/\p{M}/gu,'').toLowerCase();
+  const isPublication=items.some(item=>item.classList.contains('publication'));
+  const update=()=>{
+    const terms=normalize(search?.value||'').trim().split(/\s+/).filter(Boolean);
+    let visible=0;
+    items.forEach(item=>{
+      const matches=terms.every(term=>normalize(item.dataset.searchText).includes(term))&&filters.every(filter=>!filter.value||item.dataset[filter.dataset.filter]===filter.value);
+      item.hidden=!matches;if(matches)visible++;
+    });
+    directory.querySelectorAll('[data-directory-section]').forEach(section=>{section.hidden=![...section.querySelectorAll('[data-directory-item]')].some(item=>!item.hidden);});
+    const count=directory.querySelector('[data-result-count]');
+    if(count)count.textContent=visible+(visible===items.length?'':' of '+items.length)+(isPublication?' publication':' supervision record')+(items.length===1?'':'s');
+    const empty=directory.querySelector('[data-empty]');if(empty)empty.hidden=visible>0;
+    directory.querySelectorAll('.year-jump a').forEach(anchor=>{const section=document.getElementById(anchor.hash.slice(1));anchor.hidden=!!section?.hidden;});
+  };
+  directory.querySelectorAll('[data-enhanced-controls]').forEach(control=>{control.hidden=false;});
+  search?.addEventListener('input',update);filters.forEach(filter=>filter.addEventListener('change',update));update();
+});
 /* Direct file previews use index.html; published pages keep directory URLs. */
 if(location.protocol==='file:')document.querySelectorAll('a[href]').forEach(link=>{
   const raw=link.getAttribute('href');

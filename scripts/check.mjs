@@ -55,7 +55,7 @@ for(const [file,html] of pages){
 }
 for(const m of media){
   assert(!/review-only/.test(m.path),'Withheld asset selected: '+m.id);
-  assert(m.source?.id==='S11','Missing source provenance: '+m.id);
+  assert(m.source?.id==='S11'||(['U01','U02'].includes(m.source?.id)&&m.source.suppliedOn==='2026-11-10'&&m.source.authorization),'Missing source provenance: '+m.id);
   for(const file of [m.path,m.poster].filter(Boolean))assert(fs.existsSync(path.join(directory,file)),'Missing media: '+file);
   for(const [file,digest] of Object.entries(m.sourceHashes||{})){
     const target=path.join(directory,file);
@@ -63,10 +63,12 @@ for(const m of media){
   }
 }
 const unique=new Set();
+assert(new Set(pubs.map(p=>p.id)).size===pubs.length,'Duplicate publication IDs');
 for(const p of pubs){
-  assert(!unique.has(p.doi),'Duplicate DOI: '+p.doi);unique.add(p.doi);
-  assert(p.status==='published'&&p.authors.length>0,'Publication not ready: '+p.id);
-  assert(p.url==='https://doi.org/'+p.doi,'DOI URL mismatch: '+p.id);
+  if(p.doi){const normalized=p.doi.toLowerCase();assert(!unique.has(normalized),'Duplicate DOI: '+p.doi);unique.add(normalized);assert(p.url==='https://doi.org/'+p.doi,'DOI URL mismatch: '+p.id);}
+  assert(['published','accepted','preprint','archive'].includes(p.status)&&p.authors.length>0&&p.title&&p.year&&p.venue&&p.source_reference,'Publication not ready: '+p.id);
+  assert(/^https:\/\//.test(p.url),'Publication record needs a source link: '+p.id);
+  if(p.citationComplete===false)continue;
   const bib=fs.readFileSync(path.join(directory,'citations',p.id+'.bib'),'utf8');
   assert(bib.includes(p.title),'BibTeX title differs: '+p.id);
   assert(bib.includes(p.authors.join(' and ')),'BibTeX author order differs: '+p.id);
@@ -81,8 +83,17 @@ const hardware=project.results.find(r=>r.id==='hardware');
 assert(hardware?.evaluation==='outdoor hardware'&&hardware.teamSize===2&&JSON.stringify(hardware.value)==='[77,83,85]','Hardware evidence changed');
 const sitemap=fs.readFileSync(path.join(directory,'sitemap.xml'),'utf8');
 assert(sitemap.includes(origin+base+'/research/probabilistic-frontier-prioritization/'),'Sitemap base-path mismatch');
+for(const route of ['publications/','students/'])assert(sitemap.includes(origin+base+'/'+route),'Directory missing from sitemap: '+route);
+const studentRecords=read('content/students.json').records;
+assert(new Set(studentRecords.map(s=>s.id)).size===studentRecords.length,'Duplicate supervision records');
+assert(studentRecords.every(s=>s.name&&s.topic&&s.source_reference&&['current','previous'].includes(s.status)),'Supervision record missing provenance or status');
+const ines=studentRecords.find(s=>s.personId==='ines-marques');
+assert(ines?.degree==='Bachelor'&&ines.status==='previous'&&ines.period==='2026','Inês Marques attribution differs from user correction');
+const homeHtml=pages.get(path.join(directory,'index.html'));
+assert(!homeHtml.includes('the later planner comparison is simulated'),'Removed homepage caption phrase returned');
+assert(homeHtml.includes('custom-lidar-drone.jpg')&&homeHtml.includes('Rodrigo Ventura')&&homeHtml.includes('meysam-basiri.jpg'),'Requested homepage people or media missing');
 for(const file of files){assert(fs.statSync(file).size<100*1024*1024,'File exceeds ordinary GitHub limit: '+file);assert(!/\.(pptx|docx|zip|pdf)$/i.test(file),'Research original in deployable output: '+file);}
 if(failures.length){for(const failure of failures)console.error('FAIL '+failure);process.exit(1);}
-console.log('PASS '+htmlFiles.length+' HTML documents; '+linksChecked+' internal links and assets; '+pubs.length+' exact citations; '+media.length+' source-attributed media records.');
+console.log('PASS '+htmlFiles.length+' HTML documents; '+linksChecked+' internal links and assets; '+pubs.filter(p=>p.citationComplete!==false).length+' exact citations + '+pubs.filter(p=>p.citationComplete===false).length+' linked archive records; '+studentRecords.length+' supervision records; '+media.length+' source-attributed media records.');
 console.log('PASS simulation/hardware separation, controlled video loading, alt text, heading/ARIA references, and '+(base||'/')+' base path.');
 console.log('Static output: '+(files.reduce((sum,f)=>sum+fs.statSync(f).size,0)/1024/1024).toFixed(2)+' MiB. No external packages required.');

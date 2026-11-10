@@ -16,18 +16,20 @@ node scripts/check.mjs
 node scripts/serve.mjs
 ~~~
 
-Open **http://127.0.0.1:4173/**. Stop the preview with Ctrl+C.
+Open **http://localhost:4173/**. Stop the preview with Ctrl+C.
 
 No package installation is required. The builder uses only Node's standard library. There are no runtime dependencies, third-party analytics, external fonts, application backend or account system. An npm lockfile is unnecessary because no dependencies are installed. Optional npm scripts mirror the commands above.
 
 ## Included pages and behavior
 
-- Homepage: real trimodal-UAV photography, a controllable field-test film, featured exploration project, seven research directions with expandable details, four selected publications, research contributors and contact.
+- Homepage: the group’s custom UAV with onboard 3D LiDAR, featured exploration project, seven research directions, four selected publications, Meysam Basiri’s portrait, research contributors including key collaborator Rodrigo Ventura, and contact. The trimodal field-test film is available within the multimodal research direction.
 - **/research/probabilistic-frontier-prioritization/**: overview, method, two explanatory animations, experimental footage, separately labelled simulation and hardware results, complete authorship, paper and supplementary-video links, and BibTeX download/copy.
+- **/students/**: current and previous supervision, including PhD, Master’s, Bachelor’s and research placements; search by name or topic and filter by status or programme.
+- **/publications/**: bibliography grouped by year, with search, publication-type filters, publisher/preprint links, individual verified citations and a bibliography download.
 - A useful 404 page, robots.txt and sitemap.xml.
 - Responsive layouts, keyboard navigation, visible focus, a skip link, native video controls, silent-video descriptions, and reduced-motion support.
 
-Research, publications, people, join and contact navigation uses functioning homepage sections while the wider sitemap is developed. There are no empty project destinations.
+Publication navigation opens the bibliography. Research and people navigation reaches the corresponding homepage sections; students and alumni are linked from the people section and every footer. There are no empty destinations.
 
 ## Structure
 
@@ -37,10 +39,11 @@ Research, publications, people, join and contact navigation uses functioning hom
 | content/home.json | Homepage copy, themes, selected publication/person IDs |
 | content/projects/*.json | Project narrative, evaluation context, results, researchers and related work |
 | content/people.json | Names, portraits and research associations |
-| content/publications.json | Exact selected metadata and ordered authors |
+| content/students.json | Individual supervision records, degree, status, period, topic and provenance |
+| content/publications.json | Published metadata and ordered authors, plus clearly identified archive records |
 | content/media.json | Selected assets, descriptions, scientific labels, source slides and source-file hashes |
 | public/media/ | Only the research media used by this version |
-| public/citations/ | Unmodified original BibTeX entries selected from the handoff |
+| public/citations/ | Matching verified BibTeX entries, homepage selection and complete available citation export |
 | src/templates/ | Shared semantic page templates |
 | src/styles.css and src/site.js | Layout and small progressive enhancements |
 | scripts/ | Build, validation and local preview |
@@ -48,7 +51,7 @@ Research, publications, people, join and contact navigation uses functioning hom
 | dist/ | Generated output; ignored by Git |
 | docs/ | Deployment, maintenance and compact source index |
 
-The separate **CONTENT_AUDIT.md** delivery records editorial decisions, unresolved content questions and the expansion plan. It remains outside the website repository.
+The delivery’s separate **CONTENT_AUDIT.md** records the original extraction audit. Current unresolved questions are tracked in **docs/CONTENT_QUESTIONS.md**. The roster can be extended when the author reviews possible missing students.
 
 ## Publish and maintain
 

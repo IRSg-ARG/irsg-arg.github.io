@@ -9,8 +9,7 @@
       "conditions."
     ],
     "summary": "We develop aerial robots and multi-drone systems for missions where information, energy and connectivity are limited.",
-    "mediaId": "s11-image156",
-    "filmId": "s11-media14"
+    "mediaId": "u02-lidar-drone"
   },
   "introduction": {
     "heading": "From the robot to the team.",
@@ -105,7 +104,8 @@
     "niusha-khosravi",
     "maria-ines-conceicao",
     "joao-felix-mendes",
-    "akshat-singh"
+    "akshat-singh",
+    "rodrigo-ventura"
   ],
   "people": {
     "heading": "Research is a team effort.",
@@ -114,5 +114,6 @@
   "join": {
     "heading": "Build the next experiment with us.",
     "text": "Interested in a research thesis or a collaboration? Tell us about your interests in aerial robotics, the problem you want to explore, and your relevant experience."
-  }
+  },
+  "fieldFilmId": "s11-media14"
 }
