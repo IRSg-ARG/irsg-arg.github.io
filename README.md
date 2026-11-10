@@ -22,7 +22,7 @@ No package installation is required. The builder uses only Node's standard libra
 
 ## Included pages and behavior
 
-- Homepage: the group’s custom UAV with onboard 3D LiDAR, featured exploration project, seven research directions, four selected publications, Meysam Basiri’s portrait, research contributors including key collaborator Rodrigo Ventura, and contact. The trimodal field-test film is available within the multimodal research direction.
+- Homepage: the group’s custom UAV with onboard 3D LiDAR, featured exploration project, seven research directions, four selected publications, Meysam Basiri’s portrait, selected research contributors including key collaborator Rodrigo Ventura and collaborator Pedro U. Lima, and contact. The trimodal field-test film is available within the multimodal research direction.
 - **/research/probabilistic-frontier-prioritization/**: overview, method, two explanatory animations, experimental footage, separately labelled simulation and hardware results, complete authorship, paper and supplementary-video links, and BibTeX download/copy.
 - **/students/**: current and previous supervision, including PhD, Master’s, Bachelor’s and research placements; search by name or topic and filter by status or programme.
 - **/publications/**: bibliography grouped by year, with search, publication-type filters, publisher/preprint links, individual verified citations and a bibliography download.

@@ -38,11 +38,12 @@
   {
     "id": "pedro-u-lima",
     "name": "Pedro U. Lima",
-    "displayContext": "Research contributor",
+    "displayContext": "Collaborator",
     "interest": "Cooperative aerial exploration",
     "portrait": "s11-image28",
     "profile": null,
-    "source_reference": "S11, acknowledgment slides 2 and 55; portrait association supplied by author"
+    "source_reference": "User confirmed collaborator and Full Professor at IST, 10 November 2026; S11 portrait mapping.",
+    "appointment": "Full Professor, IST"
   },
   {
     "id": "mario-figueiredo",
@@ -87,6 +88,7 @@
     "interest": "Aerial robotics & cooperative autonomy",
     "portrait": "s11-image27",
     "profile": "https://isr.tecnico.ulisboa.pt/author/rodrigo/",
-    "source_reference": "User confirmed key collaborator, 10 November 2026; S11 portrait mapping."
+    "source_reference": "User confirmed key collaborator and Associate Professor at IST, 10 November 2026; S11 portrait mapping.",
+    "appointment": "Associate Professor, IST"
   }
 ]

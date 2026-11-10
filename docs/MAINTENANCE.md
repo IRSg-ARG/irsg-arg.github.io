@@ -28,11 +28,11 @@ Six older archive listings have **citationComplete: false** and link to their so
 3. If no verified portrait is supplied, set **portrait** to null and supply neutral **initials**.
 4. Add the person's ID to **contributorIds** in **content/home.json**, or to the relevant project's **authorIds** in publication order.
 
-The homepage displays research associations. Rodrigo Ventura is explicitly identified as a key collaborator. A coauthor is not automatically a current member. The Miguel Pimentel portrait from the handoff remains withheld pending identity confirmation.
+The homepage displays selected research associations. Collaborator records use displayContext Key collaborator or Collaborator and an appointment field for their academic title. Rodrigo Ventura and Pedro U. Lima appear in a separate two-column collaborator row. A coauthor is not automatically a current member. The Miguel Pimentel portrait from the handoff remains withheld pending identity confirmation.
 
 ## Maintain the student directory
 
-Edit **content/students.json**. Each supervision record has a unique **id**, stable **personId**, preferred **name**, **degree** (PhD, Master, Bachelor or Research project), **status** (current or previous), optional **period**, **topic**, supervision role and source reference. Portraits use media IDs. The page groups records automatically; search and filters work without a service or database. A person can have distinct Master’s and PhD records.
+Edit **content/students.json**. Each supervision record has a unique **id**, stable **personId**, preferred **name**, **degree** (PhD, Master, Bachelor or Research project), **status** (current or previous), optional **period**, **topic**, supervision role and source reference. Optional **programmeLabel** can identify a visiting PhD student while preserving the PhD filter; **completionNote** can record graduation. Portraits use media IDs. The page groups records automatically; search and filters work without a service or database. A person can have distinct Master’s and PhD records. A linked **publicationId** displays the paper’s conference and year automatically.
 
 The current roster combines the public CIÊNCIAVITAE supervision history, the supplied presentation and user corrections from 10 November 2026. The user will review possible omissions later. Inês Marques is listed under previous Bachelor’s supervision in 2026, as explicitly requested; her current Master’s abroad is not attributed to this group. Do not infer degrees from publication authorship. Records without a confirmed degree stay under research placements and projects. Update the source date and confirm current status each term.
 

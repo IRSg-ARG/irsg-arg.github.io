@@ -8,14 +8,15 @@
       "name": "Sofia Simões",
       "fullName": "Sofia Veríssimo Simões",
       "degree": "Master",
-      "status": "current",
-      "period": "2026–present",
+      "status": "previous",
+      "period": "2026",
       "topic": "Fast Stabilization and Robust Control of Micro Quadrotors for In-Flight Launch from a Mothership Aircraft",
       "supervision": "Co-supervised by Meysam Basiri",
       "institution": "KTH Royal Institute of Technology Centre for Autonomous Systems, Suécia",
       "portrait": "s11-image15",
-      "source_reference": "https://www.cienciavitae.pt/A91B-D23C-4524",
-      "source_checked": "2026-11-10"
+      "source_reference": "User confirmed graduation before summer 2026, on 10 November 2026; original thesis topic and co-supervision from public academic profile.",
+      "source_checked": "2026-11-10",
+      "completionNote": "Graduated before summer 2026."
     },
     {
       "id": "diogo-nunes-2025",
@@ -673,6 +674,34 @@
       "portrait": null,
       "publicationId": "marques2026connectivity",
       "source_reference": "User confirmed Bachelor-level supervision and requested ICARSC publication year on 10 November 2026. Now pursuing a Master’s degree abroad; not listed as a current supervisee."
+    },
+    {
+      "id": "manuel-brito",
+      "personId": "manuel-brito",
+      "name": "Manuel Brito",
+      "degree": "Master",
+      "status": "current",
+      "period": null,
+      "topic": "Unified Quaternion-Based INDI Attitude Control for a Quadrotor Tailsitter",
+      "supervision": "Supervised by Meysam Basiri",
+      "institution": null,
+      "portrait": null,
+      "source_reference": "User supplied current Master’s student and exact thesis title, 10 November 2026."
+    },
+    {
+      "id": "yu-tang-liu-visiting",
+      "personId": "yu-tang-liu",
+      "name": "Yu Tang Liu",
+      "degree": "PhD",
+      "programmeLabel": "Visiting PhD",
+      "status": "previous",
+      "period": "Year leading to IROS 2025",
+      "topic": "Multitask Reinforcement Learning for Quadcopter Attitude Stabilization and Tracking using Graph Policy",
+      "supervision": "Supervised by Meysam Basiri",
+      "institution": null,
+      "portrait": "s11-image13",
+      "publicationId": "liu2025graph",
+      "source_reference": "User confirmed previous visiting PhD supervision during the year leading to his publication, 10 November 2026; published IROS paper dated 2025. Exact visit dates not supplied."
     }
   ]
 }

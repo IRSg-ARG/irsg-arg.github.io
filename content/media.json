@@ -461,7 +461,7 @@
     "durationSeconds": null,
     "experimentType": "research photograph",
     "alt": "The group’s custom quadrotor carrying onboard 3D LiDAR in outdoor flight",
-    "caption": "Custom-built UAV with onboard 3D LiDAR, used in exploration and perception research with John Lewis Devassy, Nivand Khosravi and Niusha Khosravi.",
+    "caption": "Custom-built UAV with onboard 3D LiDAR, used as a research platform for exploration and perception projects.",
     "credit": "Supplied by Meysam Basiri for the group website.",
     "source": {
       "id": "U02",
@@ -823,6 +823,33 @@
     },
     "sourceHashes": {
       "media/people/teodoro-dias.webp": "c6d1d0f5edd7622db12124020b168c0a0a97cff01238a11baaecbca1af9e1fda"
+    }
+  },
+  {
+    "id": "s11-image13",
+    "title": "Yu Tang Liu",
+    "type": "image",
+    "path": "media/people/yu-tang-liu.webp",
+    "poster": null,
+    "width": 225,
+    "height": 225,
+    "durationSeconds": null,
+    "experimentType": "portrait",
+    "alt": "Portrait of Yu Tang Liu",
+    "caption": "Yu Tang Liu. Portrait labelled in the supplied acknowledgments.",
+    "credit": "Supplied by Meysam Basiri from the group research presentation.",
+    "source": {
+      "id": "S11",
+      "presentation": "ISR_Get_Together_Meysam Basiri_b.pptx",
+      "file": "image13.jpeg",
+      "slides": [
+        2,
+        55
+      ],
+      "derivedPoster": false
+    },
+    "sourceHashes": {
+      "media/people/yu-tang-liu.webp": "ea1d281dc11a76b745ce20bc197185083b0f78016fbccd7094f9b0d857f33446"
     }
   }
 ]

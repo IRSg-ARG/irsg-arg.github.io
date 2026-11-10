@@ -79,8 +79,9 @@ function publication(p,route,directory=false){
 }
 function personCard(id,route,author=false){
   const p=personById(id);
+  const collaborator=p.displayContext.toLowerCase().endsWith('collaborator');
   const portrait=p.portrait?image(p.portrait,route,{alt:'Portrait of '+p.name}):'<div class="initials" aria-hidden="true">'+h(p.initials||p.name.split(' ').map(s=>s[0]).slice(0,2).join(''))+'</div>';
-  return '<article class="'+(author?'author-card':'person-card'+(p.displayContext==='Key collaborator'?' is-collaborator':''))+'"'+(author?' id="author-'+h(p.id)+'"':'')+'>'+portrait+'<div>'+(p.displayContext==='Key collaborator'&&!author?'<p class="collaborator-label">KEY COLLABORATOR</p>':'')+'<h3>'+h(p.name)+'</h3><p>'+h(author?'Publication author':p.interest)+'</p></div></article>';
+  return '<article class="'+(author?'author-card':'person-card'+(collaborator?' is-collaborator':''))+'"'+(author?' id="author-'+h(p.id)+'"':'')+'>'+portrait+'<div>'+(collaborator&&!author?'<p class="collaborator-label">'+h(p.displayContext.toUpperCase())+'</p>':'')+'<h3>'+h(p.name)+'</h3><p>'+h(author?'Publication author':p.appointment||p.interest)+'</p></div></article>';
 }
 function page(route,title,description,body,options={}){
   const og=mediaById(options.mediaId||home.hero.mediaId);
@@ -105,7 +106,8 @@ const homeBody=template('home',{
   PUBLICATIONS:home.publicationIds.map(id=>publication(pubById(id),'')).join(''),SELECTED_BIB:h(link('','citations/selected-publications.bib')),
   PEOPLE_HEADING:h(home.people.heading),PEOPLE_TEXT:h(home.people.text),STUDENTS_LINK:h(link('','students/')),PUBLICATIONS_LINK:h(link('','publications/')),
   LEAD:'<article class="lead-card">'+image(lead.portrait,'',{alt:'Portrait of Meysam Basiri'})+'<h3>'+h(lead.name)+'</h3><p class="lead-role">Research lead</p><p>'+h(lead.interest)+'<br>'+h(site.institute)+'</p><a class="text-link" href="'+h(lead.profile)+'">Profile on ORCID ↗</a><a class="text-link" href="'+h(link('','students/'))+'">Students & alumni →</a></article>',
-  PEOPLE:home.contributorIds.map(id=>personCard(id,'')).join(''),JOIN:join(),FLIGHT_VIDEO:video(home.fieldFilmId,'','Real field tests of the trimodal UAV')
+  PEOPLE:home.contributorIds.filter(id=>!personById(id).displayContext.toLowerCase().endsWith('collaborator')).map(id=>personCard(id,'')).join(''),
+  COLLABORATORS:home.contributorIds.filter(id=>personById(id).displayContext.toLowerCase().endsWith('collaborator')).map(id=>personCard(id,'')).join(''),JOIN:join(),FLIGHT_VIDEO:video(home.fieldFilmId,'','Real field tests of the trimodal UAV')
 });
 fs.writeFileSync(path.join(output,'index.html'),page('',site.name+' | ISR-Lisboa',home.description,homeBody));
 const routes=[''];
@@ -164,9 +166,11 @@ writeDirectory(publicationRoute,'Publications','Publications by Meysam Basiri an
 }));
 function studentCard(s,route){
   const portrait=s.portrait?image(s.portrait,route,{alt:'Portrait of '+s.name}):'<div class="initials" aria-hidden="true">'+h(s.name.split(' ').map(n=>n[0]).filter(Boolean).slice(0,2).join(''))+'</div>';
-  const searchable=[s.name,s.fullName,s.topic,s.degree,s.period,s.institution].filter(Boolean).join(' ');
-  const related=s.publicationId?'<a class="text-link" href="'+h(pubById(s.publicationId).url)+'">ICARSC '+h(pubById(s.publicationId).year)+' paper ↗</a>':'';
-  return '<article class="student-card" data-directory-item data-status="'+h(s.status)+'" data-degree="'+h(s.degree)+'" data-search-text="'+h(searchable)+'"><div class="student-identity">'+portrait+'<div><p class="student-meta">'+h(s.degree==='Research project'?'Research project':s.degree==='Master'?'Master’s':s.degree==='Bachelor'?'Bachelor’s':'PhD')+(s.period?' · '+h(s.period):'')+'</p><h4>'+h(s.name)+'</h4><p class="student-role">'+h(s.supervision)+'</p></div></div><p class="student-topic">'+h(s.topic)+'</p>'+(s.institution?'<p class="student-institution">'+h(s.institution)+'</p>':'')+related+'</article>';
+  const searchable=[s.name,s.fullName,s.topic,s.degree,s.programmeLabel,s.period,s.institution,s.completionNote].filter(Boolean).join(' ');
+  const paper=s.publicationId?pubById(s.publicationId):null;
+  const paperLabel=paper?(paper.venue.match(/\(([^)]+)\)/)?.[1]||'Publication')+' '+paper.year+' paper ↗':'';
+  const related=paper?'<a class="text-link" href="'+h(paper.url)+'">'+h(paperLabel)+'</a>':'';
+  return '<article class="student-card" data-directory-item data-status="'+h(s.status)+'" data-degree="'+h(s.degree)+'" data-search-text="'+h(searchable)+'"><div class="student-identity">'+portrait+'<div><p class="student-meta">'+h(s.programmeLabel||(s.degree==='Research project'?'Research project':s.degree==='Master'?'Master’s':s.degree==='Bachelor'?'Bachelor’s':'PhD'))+(s.period?' · '+h(s.period):'')+'</p><h4>'+h(s.name)+'</h4><p class="student-role">'+h(s.supervision)+'</p></div></div><p class="student-topic">'+h(s.topic)+'</p>'+(s.institution?'<p class="student-institution">'+h(s.institution)+'</p>':'')+(s.completionNote?'<p class="student-outcome">'+h(s.completionNote)+'</p>':'')+related+'</article>';
 }
 const studentRoute='students/';
 const studentGroups=[
