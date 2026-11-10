@@ -27,6 +27,7 @@ No package installation is required. The builder uses only Node's standard libra
 - **/students/**: current and previous supervision, including PhD, Master’s, Bachelor’s and research placements; search by name or topic and filter by status or programme.
 - **/publications/**: bibliography grouped by year, with search, publication-type filters, publisher/preprint links, individual verified citations and a bibliography download.
 - **/research/**: searchable project index grouped by research theme and publication status. All 23 catalogue projects have working pages, including two explicitly marked as research in progress.
+- **/platforms/**: a compact showcase of the group’s aerial platform design, build and integration experience. All 14 platform images from the newly supplied slide are included, with descriptive captions, image links, related research and collaboration contact. It is linked from the main navigation and homepage introduction.
 - The additional project pages explain their problem, approach, evidence, contributors and exact publications. The warehouse project includes the user-supplied UAV/UGV photograph and real following experiment from external and onboard views. Moving-platform landing remains a text-led case study where no dedicated media was supplied.
 - A useful 404 page, robots.txt and sitemap.xml.
 - Responsive layouts, keyboard navigation, visible focus, a skip link, native video controls, silent-video descriptions, and reduced-motion support.
@@ -41,6 +42,7 @@ Research navigation opens the complete project index; the homepage research dire
 | content/home.json | Homepage copy, themes, selected publication/person IDs |
 | content/projects/*.json | Project narrative, evidence categories, media, contributors, publications and related projects |
 | content/research.json | Research groups for the searchable project index |
+| content/platforms.json | Platform gallery, captions, research links and collaboration copy |
 | content/people.json | Names, portraits and research associations |
 | content/students.json | Individual supervision records, degree, status, period, topic and provenance |
 | content/publications.json | Published metadata and ordered authors, plus clearly identified archive records |

@@ -19,3 +19,7 @@ Resolved in the follow-up corrections: Sofia Simões graduated before summer 202
 All 23 projects in the handoff catalogue now have pages. See PROJECT_CONTENT_REVIEW.md for source-specific decisions: provisional marginal-gain metrics remain omitted, mixed-reality waypoint tasking is treated as ongoing follow-up, and simulation/hardware evidence remains separate.
 
 Manuel Brito’s current thesis title is recorded in the student directory. A dedicated project brief, approach/evidence and approved media are still needed before extending it into a project case study.
+
+## Aerial platforms page
+
+All 14 platform images from the newly supplied platforms.pptx are included. Preferred names and custom-integration details for the unnamed configurations can be added later. Two embedded alternative-text fields refer to F450 and QAV250 commercial airframes; current public captions describe the pictures without claiming that every base airframe is an original group design. The user was asked for preferred attribution. This does not block the gallery or the user-confirmed account of design/build experience.

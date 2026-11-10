@@ -2188,5 +2188,523 @@
       "media/videos/warehouse-uav-following-onboard.mp4": "db492c4c93abadaa813499e8cefc073ec665ee52ca6181e8dbd744d8860d2919",
       "media/posters/warehouse-uav-following-onboard.jpg": "fdf39af5c44b9241c2b6e9fc7281ad0f7dad0455b3a19c7ea2e0466fe28d7fbc"
     }
+  },
+  {
+    "id": "s12-platform-01",
+    "title": "RGB-D sensing platform",
+    "type": "image",
+    "path": "media/platforms/platform-01.webp",
+    "poster": null,
+    "width": 1280,
+    "height": 960,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A research quadrotor in flight with a forward-facing camera bar and onboard electronics.",
+    "caption": "RGB-D sensing platform.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image2.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "4c5523a47b6568b16c71954ce34efb6843da3f10608550b5839ea89d6696e7b9",
+      "originalWidth": 1280,
+      "originalHeight": 960,
+      "framingBox": [
+        0,
+        0,
+        1280,
+        960
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-01.webp": "3f029f421f8e50f09ed111648ef30049a3d78697ddcd6bcd58b8998bee153179"
+    }
+  },
+  {
+    "id": "s12-platform-02",
+    "title": "Sensor-equipped quadrotor",
+    "type": "image",
+    "path": "media/platforms/platform-02.webp",
+    "poster": null,
+    "width": 1140,
+    "height": 732,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A quadrotor in outdoor flight with a custom arrangement of onboard sensors and electronics.",
+    "caption": "Sensor-equipped quadrotor.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image3.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "4a87e44ebf18604fc74e6cd0e3828a0074a632baaf954ac5d12e1932199ec737",
+      "originalWidth": 1280,
+      "originalHeight": 960,
+      "framingBox": [
+        0,
+        0,
+        1140,
+        732
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-02.webp": "11bf187b4c3b66d51613fa562481ced27bb4693b045144a13b2e79d233a0af04"
+    }
+  },
+  {
+    "id": "s12-platform-03",
+    "title": "3D LiDAR exploration platform",
+    "type": "image",
+    "path": "media/platforms/platform-03.webp",
+    "poster": null,
+    "width": 1280,
+    "height": 960,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "The group’s custom exploration quadrotor with onboard 3D LiDAR.",
+    "caption": "3D LiDAR exploration platform.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image4.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "aa3c7eb4d7fce82585f85f129fff640643a8558728b4b8b86d871fbb4b86df9f",
+      "originalWidth": 1280,
+      "originalHeight": 960,
+      "framingBox": [
+        0,
+        0,
+        1280,
+        960
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-03.webp": "2fa8a65fd8bbc9eb18fdd151e3fe17ff5a786dc68b138a566100e2ad9f2c0ed2"
+    }
+  },
+  {
+    "id": "s12-platform-04",
+    "title": "Rolling–flying vehicle in flight",
+    "type": "image",
+    "path": "media/platforms/platform-04.webp",
+    "poster": null,
+    "width": 261,
+    "height": 161,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "An aerial vehicle with two large passive wheels during an outdoor flight test.",
+    "caption": "Rolling–flying vehicle in flight.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image5.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "8ec06d585e2f00740d66f95106c9a904f3aafee5f9bba58f464e60274f933cd3",
+      "originalWidth": 461,
+      "originalHeight": 224,
+      "framingBox": [
+        103,
+        38,
+        364,
+        199
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-04.webp": "24bea25def6c6396ee1a9bf3deda76c12a8dc744fe4211476a9e34946c73d467"
+    }
+  },
+  {
+    "id": "s12-platform-05",
+    "title": "Quadrotor flight-test configuration",
+    "type": "image",
+    "path": "media/platforms/platform-05.webp",
+    "poster": null,
+    "width": 1210,
+    "height": 1200,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A quadrotor with blue motor mounts and extended landing legs in flight.",
+    "caption": "Quadrotor flight-test configuration.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image6.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "e67b8a4e54a4620ff5f84b7fc66b801d8b7ec43ec6e69817967821b9fad77429",
+      "originalWidth": 3000,
+      "originalHeight": 4000,
+      "framingBox": [
+        0,
+        333,
+        3000,
+        3308
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-05.webp": "300f9d3ee0f869b1521ec1a1f5cc4c7c02587d62edd433df4d868de12a9da0d2"
+    }
+  },
+  {
+    "id": "s12-platform-06",
+    "title": "Compact quadrotor configuration",
+    "type": "image",
+    "path": "media/platforms/platform-06.webp",
+    "poster": null,
+    "width": 1600,
+    "height": 1194,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A compact aerial platform with an open frame and vertical supports during flight.",
+    "caption": "Compact quadrotor configuration.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image7.jpg",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "968cc10c0a9aac3cdfc65bc66bb04b832c6f4e08a1c86004d9097a23ca13c6bc",
+      "originalWidth": 4000,
+      "originalHeight": 3000,
+      "framingBox": [
+        1255,
+        843,
+        3383,
+        2431
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-06.webp": "15354f11b21b362d2fcc073296cd8eb9055faf3cc1c9beb9755487e64a8594d3"
+    }
+  },
+  {
+    "id": "s12-platform-07",
+    "title": "Quadrotor flight test",
+    "type": "image",
+    "path": "media/platforms/platform-07.webp",
+    "poster": null,
+    "width": 699,
+    "height": 522,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A research quadrotor with red and white structural parts during an outdoor flight test.",
+    "caption": "Quadrotor flight test.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image8.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "f7e60584f3732e302aec429a3e6c6dad49ef3a945693e08d378398ca4dcd05ce",
+      "originalWidth": 1280,
+      "originalHeight": 721,
+      "framingBox": [
+        4,
+        0,
+        703,
+        522
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-07.webp": "611f7ca377a00e538584246bf5ca0867cc47f159e421b15fa194ca0d1c880659"
+    }
+  },
+  {
+    "id": "s12-platform-08",
+    "title": "Wing-equipped aerial platform",
+    "type": "image",
+    "path": "media/platforms/platform-08.webp",
+    "poster": null,
+    "width": 1600,
+    "height": 1105,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "An aerial platform with wings attached to the quadrotor structure.",
+    "caption": "Wing-equipped aerial platform.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image9.jpg",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "741f9cdb40106b60619ea755c453d91829efbafdb9711b36e615ec68affc1b9c",
+      "originalWidth": 4000,
+      "originalHeight": 2252,
+      "framingBox": [
+        525,
+        385,
+        3194,
+        2228
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-08.webp": "102adcc69fddbbfefa26955b73fa66c471b93e8178cc1e09c5537a0848d5d7eb"
+    }
+  },
+  {
+    "id": "s12-platform-09",
+    "title": "Trimodal UAV in flight",
+    "type": "image",
+    "path": "media/platforms/platform-09.webp",
+    "poster": null,
+    "width": 1600,
+    "height": 892,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "The trimodal aerial vehicle with its wing and flight hardware during an outdoor test.",
+    "caption": "Trimodal UAV in flight.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image10.jpg",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "2738726e50c26a248737f5c52a4e0a16c9aee8f281a25bfd071f65fcaa8731d9",
+      "originalWidth": 4000,
+      "originalHeight": 2252,
+      "framingBox": [
+        65,
+        0,
+        3743,
+        2050
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-09.webp": "44eee2817418ded60231e1a8ba40b6db014f75f6dcf8e73f4b7ae7dbdcd49b2a"
+    }
+  },
+  {
+    "id": "s12-platform-10",
+    "title": "Quadrotor flight configurations",
+    "type": "image",
+    "path": "media/platforms/platform-10.webp",
+    "poster": null,
+    "width": 466,
+    "height": 466,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "Two flight views of a quadrotor airframe included in the supplied platform slide.",
+    "caption": "Quadrotor flight configurations.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image11.jpg",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "c72e28adaaf57ce878f4b6cac01533f15bed96df7f1bc37604c453f4f8a32a5c",
+      "originalWidth": 466,
+      "originalHeight": 466,
+      "framingBox": [
+        0,
+        0,
+        466,
+        466
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-10.webp": "1f74e6173d5e1714958442f4fdd8c97d7cbea1fb49af952ad6766a7bf143a689"
+    }
+  },
+  {
+    "id": "s12-platform-11",
+    "title": "Platforms for cooperative sensing",
+    "type": "image",
+    "path": "media/platforms/platform-11.webp",
+    "poster": null,
+    "width": 1280,
+    "height": 960,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "Two research quadrotors with onboard sensing and computing hardware on a laboratory bench.",
+    "caption": "Platforms for cooperative sensing.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image12.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "7f580ffd29349ddfcdd71695f828a6d4d665cb9ef50673eec30cfb11410f1d18",
+      "originalWidth": 1280,
+      "originalHeight": 960,
+      "framingBox": [
+        0,
+        0,
+        1280,
+        960
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-11.webp": "f40b1f18ab5c2485b3a2509cc1720937a88e244a6462e61c51d0538cf588f49f"
+    }
+  },
+  {
+    "id": "s12-platform-12",
+    "title": "Rolling–flying vehicle in the lab",
+    "type": "image",
+    "path": "media/platforms/platform-12.webp",
+    "poster": null,
+    "width": 420,
+    "height": 384,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A bimodal aerial vehicle supported by two large passive wheels in the laboratory.",
+    "caption": "Rolling–flying vehicle in the lab.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image13.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "9ad6cba34f8e922c21d55ebfd164ac81aa9d87c64691cc0db1e502cef2e13bd1",
+      "originalWidth": 420,
+      "originalHeight": 384,
+      "framingBox": [
+        0,
+        0,
+        420,
+        384
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-12.webp": "a7a187f7d57c1876c2b4791942f3d8321a0bc716973f4ae75f23abfeb57f3db9"
+    }
+  },
+  {
+    "id": "s12-platform-13",
+    "title": "Surface-mobility aerial platform",
+    "type": "image",
+    "path": "media/platforms/platform-13.webp",
+    "poster": null,
+    "width": 241,
+    "height": 188,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A compact aerial platform with passive wheels on an open rectangular frame.",
+    "caption": "Surface-mobility aerial platform.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image14.png",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "e5ed17c8ac3b9b0fc37b9787c206ebb63f8b4d05ffc1224946ca5acb00e73d28",
+      "originalWidth": 241,
+      "originalHeight": 188,
+      "framingBox": [
+        0,
+        0,
+        241,
+        188
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-13.webp": "bd366507ab1add2a00593f51b945eafd0fe7811ebe3a5d3e6ae2b1e032b13b56"
+    }
+  },
+  {
+    "id": "s12-platform-14",
+    "title": "Compact quadrotor airframe",
+    "type": "image",
+    "path": "media/platforms/platform-14.webp",
+    "poster": null,
+    "width": 447,
+    "height": 447,
+    "durationSeconds": null,
+    "experimentType": "research platform image",
+    "alt": "A compact quadrotor airframe with red propellers, shown in the supplied slide.",
+    "caption": "Compact quadrotor airframe.",
+    "credit": "Included in the platform presentation supplied by Meysam Basiri for the group website.",
+    "source": {
+      "id": "S12",
+      "presentation": "platforms.pptx",
+      "file": "image15.jpeg",
+      "slides": [
+        1
+      ],
+      "suppliedOn": "2026-11-10",
+      "authorization": "User supplied this presentation and requested all platform images for the website’s custom aerial platforms page.",
+      "originalSha256": "8ae4e55a2cff6f89bc1d626d79701442151e99e16c72b5840d6c00d3a2f122cb",
+      "originalWidth": 447,
+      "originalHeight": 447,
+      "framingBox": [
+        0,
+        0,
+        447,
+        447
+      ],
+      "derivation": "Extracted only from the newly supplied one-slide presentation, framed around the supplied view with extra context, and resized to WebP at quality 90. No generated or retouched hardware."
+    },
+    "sourceHashes": {
+      "media/platforms/platform-14.webp": "370f81c0275b9fde3ac481104dd3b5b03326141cda989ce78446dfb7bae8da43"
+    }
   }
 ]

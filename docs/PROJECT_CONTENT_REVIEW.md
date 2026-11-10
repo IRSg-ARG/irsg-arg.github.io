@@ -88,3 +88,10 @@ All 23 catalogue projects are represented. Published records use the current cit
 
 - Completed 10 November 2026: the user supplied the composite UAV/UGV platform photograph and two real-world UAV-following-UGV recordings for Rafaela Chaffilla’s work. The warehouse page and research-index card now use these assets. External and onboard views are labelled separately; the clips are evidence of following rather than shelf imaging or landing. These assets are not assigned to the separate moving-platform landing study.
 - Publisher source confirms simulation and physical following/landing; do not turn the image-capture result into a claim of demonstrated automated end-to-end inventory counting.
+
+## Custom aerial platforms showcase
+
+- All 14 platform picture objects from the new one-slide S12 deck are included on /platforms/. The institutional slide header is excluded from the photo gallery. These are images/configurations rather than a verified count of different original airframe designs.
+- Captions use visible hardware descriptions, with existing research links where the platform association is supported. No payload, endurance, availability or autonomy-performance claims are inferred from the photographs.
+- Two embedded alternative-text fields refer to F450 and QAV250 airframes; preferred custom-integration descriptions were requested. Current copy speaks of custom builds and research integrations, without claiming every base airframe is an original group design. Preferred names can be refined after the user reviews the gallery.
+- The original S11 deck was not re-extracted. The new S12 inventory, original image hashes and framing/resampling metadata are recorded separately. WebP assets retain the real hardware; no generated or retouched platform features are used.

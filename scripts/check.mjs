@@ -62,7 +62,7 @@ for(const m of media){
   for(const file of [m.path,m.poster].filter(Boolean))assert(fs.existsSync(path.join(directory,file)),'Missing media: '+file);
   for(const [file,digest] of Object.entries(m.sourceHashes||{})){
     const target=path.join(directory,file);
-    if(fs.existsSync(target))assert(crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex')===digest,'Media changed from supplied review derivative: '+file);
+    if(fs.existsSync(target))assert(crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex')===digest,'Registered media bytes changed: '+file);
   }
 }
 const unique=new Set();
@@ -90,6 +90,17 @@ for(const route of ['publications/','students/'])assert(sitemap.includes(origin+
 const research=read('content/research.json');
 const projects=fs.readdirSync(path.join(root,'content/projects')).filter(f=>f.endsWith('.json')).map(f=>read('content/projects/'+f));
 const researchHtml=fs.readFileSync(path.join(directory,'research/index.html'),'utf8');
+const platforms=read('content/platforms.json');
+const platformsHtml=fs.readFileSync(path.join(directory,'platforms/index.html'),'utf8');
+const platformSource=sourceIndex.additionalSources.find(s=>s.id==='S12');
+const platformMedia=media.filter(m=>m.source?.id==='S12');
+assert(platforms.images.length===platformSource?.platformImages,'Platforms page does not cover the supplied platform images');
+assert(new Set(platforms.images.map(item=>item.mediaId)).size===platforms.images.length,'Duplicate platform image');
+assert(platformMedia.every(m=>platforms.images.some(item=>item.mediaId===m.id))&&platformMedia.length===platforms.images.length,'Supplied platform media omitted or unrelated image added');
+assert((platformsHtml.match(/data-platform-image=/g)||[]).length===platformMedia.length,'Platform gallery omitted an image');
+assert(sitemap.includes(origin+base+'/platforms/'),'Platforms page missing from sitemap');
+for(const item of platforms.images)assert(!item.projectSlug||projects.some(p=>p.slug===item.projectSlug),'Unknown platform research link: '+item.projectSlug);
+for(const slug of platforms.relatedProjects)assert(projects.some(p=>p.slug===slug),'Unknown platform related project: '+slug);
 assert((researchHtml.match(/data-directory-item/g)||[]).length===projects.length,'Research index omits or duplicates a project');
 for(const p of projects){
   assert(research.themes.some(t=>t.id===p.themeId),'Project has no valid research theme: '+p.slug);

@@ -1,0 +1,88 @@
+{
+  "title": "Custom aerial platforms",
+  "description": "Custom aerial platforms designed, built and integrated by the group for sensing, exploration, deployment and multimodal robotics research.",
+  "introduction": "Alongside algorithms and methods, we have built considerable experience designing, building and integrating aerial platforms for research.",
+  "context": "Our work spans rolling and trimodal vehicles, deployment platforms and sensing systems. It brings together airframe and mechanism design, sensor integration, onboard computing and flight testing.",
+  "galleryHeading": "Selected platforms and configurations",
+  "galleryIntroduction": "A collection of our custom builds, research integrations and flight-test configurations.",
+  "images": [
+    {
+      "mediaId": "s12-platform-01",
+      "title": "RGB-D sensing platform",
+      "projectSlug": "kinodynamic-exploration"
+    },
+    {
+      "mediaId": "s12-platform-02",
+      "title": "Sensor-equipped quadrotor"
+    },
+    {
+      "mediaId": "s12-platform-03",
+      "title": "3D LiDAR exploration platform",
+      "projectSlug": "probabilistic-frontier-prioritization"
+    },
+    {
+      "mediaId": "s12-platform-04",
+      "title": "Rolling–flying vehicle in flight",
+      "projectSlug": "bimodal-rolling-flying"
+    },
+    {
+      "mediaId": "s12-platform-05",
+      "title": "Quadrotor flight-test configuration"
+    },
+    {
+      "mediaId": "s12-platform-06",
+      "title": "Compact quadrotor configuration"
+    },
+    {
+      "mediaId": "s12-platform-07",
+      "title": "Quadrotor flight test"
+    },
+    {
+      "mediaId": "s12-platform-08",
+      "title": "Wing-equipped aerial platform"
+    },
+    {
+      "mediaId": "s12-platform-09",
+      "title": "Trimodal UAV in flight",
+      "projectSlug": "trimodal-uav"
+    },
+    {
+      "mediaId": "s12-platform-10",
+      "title": "Quadrotor flight configurations"
+    },
+    {
+      "mediaId": "s12-platform-11",
+      "title": "Platforms for cooperative sensing"
+    },
+    {
+      "mediaId": "s12-platform-12",
+      "title": "Rolling–flying vehicle in the lab",
+      "projectSlug": "bimodal-rolling-flying"
+    },
+    {
+      "mediaId": "s12-platform-13",
+      "title": "Surface-mobility aerial platform",
+      "projectSlug": "bogiecopter"
+    },
+    {
+      "mediaId": "s12-platform-14",
+      "title": "Compact quadrotor airframe"
+    }
+  ],
+  "relatedProjects": [
+    "bimodal-rolling-flying",
+    "bogiecopter",
+    "trimodal-uav",
+    "deployment-recovery",
+    "probabilistic-frontier-prioritization"
+  ],
+  "collaboration": {
+    "heading": "A platform for your next experiment",
+    "text": "We welcome collaborations on aerial platforms, custom sensing configurations and joint experiments. Get in touch to discuss what your research needs."
+  },
+  "sourceReference": "S12: the platform images and accompanying narrative supplied by Meysam Basiri on 10 November 2026.",
+  "editorQuestions": [
+    "Confirm preferred names for the unnamed platform configurations. Current captions describe the visible hardware without inferring performance, availability or a unique platform count.",
+    "The embedded alternative text references F450 and QAV250 commercial airframes for two images. Confirm preferred attribution and custom-integration descriptions; do not imply every base airframe is an original group design."
+  ]
+}

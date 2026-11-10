@@ -55,11 +55,21 @@ Later that day, U03–U05 added Rafaela Chaffilla’s UAV/UGV platform composite
 
 Use native video controls and an accurate visual description. Keep preload at none. The provided review derivatives are silent except the acoustic recordings; if later using audio, describe/caption the actual soundtrack and keep playback under visitor control. Label conceptual, explanatory, simulation and hardware material according to the manifest.
 
+## Maintain the platforms page
+
+The /platforms/ gallery is driven by content/platforms.json and media records with source S12. All 14 platform images from the user-supplied one-slide deck are represented once. The slide’s institutional header is excluded because it is branding, not a platform photograph. The gallery count refers to images/configurations, not verified distinct original airframe designs. Keep captions descriptive until preferred platform names and integration details are confirmed.
+
+To add a platform view, register its image and source in content/media.json, then add mediaId and title to platforms.images. An optional projectSlug links the caption to an existing research project. relatedProjects controls the short research list below the gallery. Keep native image links usable without JavaScript, preserve aspect ratios and avoid clipping the platform. Small images should retain their native resolution; do not invent higher-resolution details.
+
+S12 assets were extracted only from the newly supplied platforms.pptx. The original S11 inventory was not re-extracted. WebP derivatives use quality 90 with a maximum 1600 × 1200 image size; source digests, original dimensions and framing boxes are retained per media record. The 14 public images total about 1 MB. Original deck files remain outside deployable output.
+
 ## Add a project without changing layout
 
 For an ordinary project, copy a type **catalogue** record in **content/projects/**, such as **tilting-wings.json** or **frontier-shepherding.json**. Supply its unique slug, title, themeId, summary/introduction, status, people names, exact publicationIds, problem, approach, evidence and selected media. Every media entry has its own scientific label, caption and visual description. The primaryMediaId must refer to one of those entries. Use relatedSlugs to connect existing project pages.
 
 The builder discovers all project JSON files, creates **/research/SLUG/**, includes them in the research index and sitemap, and links homepage themes using projectSlugs. **content/research.json** controls research groups; use a valid themeId. Add a project to the relevant homepage theme if appropriate.
+
+Stylesheet and enhancement-script URLs include a content hash query. The builder updates it automatically when either file changes, so returning visitors receive the matching assets after a GitHub Pages release.
 
 Published research needs a verified publication record. A project in progress can have an empty publicationIds array; the page then offers research contact rather than a fabricated paper link. It can use a genuine prototype video or explanatory figure. A project without supplied media can be a text-led case study; leave primaryMediaId null and media empty rather than borrowing an unrelated experiment.
 

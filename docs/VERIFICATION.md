@@ -1,4 +1,4 @@
-# Verification of the project expansion and warehouse media update
+# Verification of the research website and platforms page
 
 Date: 10 November 2026. Runtime: Node.js v24.22.1. Target: IRSg-ARG/irsg-arg.github.io, organization root https://irsg-arg.github.io/ with base path /.
 
@@ -6,16 +6,16 @@ Date: 10 November 2026. Runtime: Node.js v24.22.1. Target: IRSg-ARG/irsg-arg.git
 
 Run node scripts/build.mjs and node scripts/check.mjs. Repeat with --base-path /path-check --out-dir .qa/subpath. Both builds pass.
 
-- 27 content pages plus the custom 404: homepage, 23 project pages, research index, students and publications.
-- 1,317 internal links, anchors and assets resolve in both configurations.
+- 28 content pages plus the custom 404: homepage, 23 project pages, research index, platforms, students and publications.
+- 1,399 internal links, anchors and assets resolve in both configurations.
 - All 23 project records are linked from the research index and included in the sitemap; every project has a valid research group.
 - The 65 publication records retain their existing metadata, with 59 matching citation exports and six linked archive records.
 - 47 supervision records for 46 people retain the user’s corrections.
-- 80 selected media records: 42 playable videos/animations and 38 images, all with source provenance and matching SHA-256 hashes.
+- 94 selected media records: 42 playable videos/animations and 52 images, all with source provenance and matching SHA-256 hashes.
 - Videos have native controls, no autoplay and preload none. Research-index cards load still images/posters, not video files.
 - Simulation and concept media require explicit labels. Every generic project includes source references, evidence context and captions/descriptions for selected media.
 - The original probabilistic-prioritization simulation categories, ordered citation and separate outdoor trial values remain unchanged.
-- Source PPTX, original CV, research-paper PDF and ZIP files remain outside the deployable output. Static output is approximately 103.43 MiB.
+- Source PPTX, original CV, research-paper PDF and ZIP files remain outside the deployable output. Static output is approximately 104.44 MiB.
 
 ## Browser checks
 
@@ -35,8 +35,16 @@ The research-index card and warehouse project now use the platform photograph. B
 
 Local browser checks passed at desktop width 1280 and mobile width 390. The photograph and captions fit without horizontal overflow or broken loaded images. Both 20-second clips reached readyState 4 with no media error; observed playback exceeded 11 seconds for the external view and 13 seconds for the onboard view. Native controls, preload none and the original audio remain under visitor control. The normal viewport was restored after testing.
 
+## Custom aerial platforms page
+
+The new /platforms/ page represents all 14 platform picture objects from the user-supplied one-slide platforms.pptx (S12). The institutional header image is excluded from the gallery because it is branding. The page describes design, build, integration and flight-test experience, with short descriptive captions, native image links, related research and a collaboration contact. It is linked from the main navigation and homepage introduction.
+
+The source deck is 20,873,465 bytes with SHA-256 b213ab33c846d3d50a773728ddb02df4e97d49b46f63e34cbac36f40112730ec. The source inventory records original image digests, dimensions, source-slide crops and output framing. The 14 WebP images total 1,034,776 bytes. No generated or retouched platform features were added. Only this new deck was extracted; the original S11 presentation was not re-extracted.
+
+Local browser checks inspected all 14 pictures at desktop width 1280 and the gallery at mobile widths 390 and 320. The photos and captions fit without visible horizontal overflow. The full-image link opened the correct WebP, the mobile Platforms menu link opened the page and collapsed the menu, and the homepage’s “See our aerial platforms” link opened the complete gallery. The normal viewport was restored after testing. Preferred names and commercial-airframe integration details remain optional editorial questions; no unverified performance or distinct-platform count is claimed.
+
 ## Limits and release evidence
 
-These checks assess the implementation and the supplied source mapping. They are not an independent re-review of every original research paper, identity check or accessibility certification. docs/PROJECT_CONTENT_REVIEW.md records source decisions and remaining scientific/content questions. No deck extraction was run.
+These checks assess the implementation and the supplied source mapping. They are not an independent re-review of every original research paper, identity check or accessibility certification. docs/PROJECT_CONTENT_REVIEW.md records source decisions and remaining scientific/content questions. Only the newly supplied S12 platform deck was extracted; the original S11 extraction was reused.
 
 The GitHub Actions run and hosted release checks are recorded in the separate delivery report after publication. Temporary viewport overrides are reset, and the owned preview process is stopped during delivery cleanup.

@@ -8,7 +8,7 @@
     "sourceVideos": 50,
     "embeddedAssets": 211
   },
-  "extraction": "Used complete supplied extraction. No new extraction script executed.",
+  "extraction": "Used the complete supplied S11 inventory without re-extracting its deck. Extracted the 14 platform images only from the newly supplied one-slide S12 platforms.pptx on 10 November 2026.",
   "selectedPublicationIds": [
     "devassy2026frontier",
     "mendes2026kinodynamic",
@@ -103,7 +103,21 @@
     "s11-media50",
     "u03-warehouse-platforms",
     "u04-warehouse-following-external",
-    "u05-warehouse-following-onboard"
+    "u05-warehouse-following-onboard",
+    "s12-platform-01",
+    "s12-platform-02",
+    "s12-platform-03",
+    "s12-platform-04",
+    "s12-platform-05",
+    "s12-platform-06",
+    "s12-platform-07",
+    "s12-platform-08",
+    "s12-platform-09",
+    "s12-platform-10",
+    "s12-platform-11",
+    "s12-platform-12",
+    "s12-platform-13",
+    "s12-platform-14"
   ],
   "catalogueScope": {
     "projects": 23,
@@ -254,6 +268,17 @@
       "date": "2026-11-10",
       "filename": "Following drone camera view.mp4",
       "scope": "Rafaela Chaffilla’s collaborative aerial–ground warehouse-inspection project"
+    },
+    {
+      "id": "S12",
+      "type": "User-supplied platform presentation",
+      "file": "platforms.pptx",
+      "date": "2026-11-10",
+      "bytes": 20873465,
+      "sha256": "b213ab33c846d3d50a773728ddb02df4e97d49b46f63e34cbac36f40112730ec",
+      "slides": 1,
+      "platformImages": 14,
+      "scope": "All 14 platform images, excluding the institutional slide header, for the custom aerial platforms page."
     }
   ],
   "websiteCounts": {
@@ -262,9 +287,10 @@
     "archiveListings": 6,
     "supervisionRecords": 47,
     "peopleInSupervisionDirectory": 46,
-    "media": 80,
+    "media": 94,
     "projects": 23,
-    "contentPages": 27
+    "contentPages": 28,
+    "platformImages": 14
   },
   "projectIds": [
     "acoustic-relative-positioning",
@@ -312,5 +338,14 @@
     "originalBytesRetained": true,
     "posterFrameSeconds": 2,
     "scope": "Following hardware experiment; platform photograph and external/onboard recordings. No landing or inventory-recognition claim from these clips."
+  },
+  "platformPage": {
+    "date": "2026-11-10",
+    "route": "/platforms/",
+    "sourceId": "S12",
+    "platformImages": 14,
+    "excludes": "Slide branding image1.png",
+    "coverage": "All 14 platform picture objects from the supplied slide. These are views/configurations, not a verified count of distinct custom airframe designs.",
+    "originalDeckReextracted": false
   }
 }

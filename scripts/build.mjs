@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
@@ -10,6 +11,7 @@ const publications=read('content/publications.json');
 const media=read('content/media.json');
 const students=read('content/students.json');
 const research=read('content/research.json');
+const platforms=read('content/platforms.json');
 const projects=fs.readdirSync(path.join(root,'content/projects')).filter(f=>f.endsWith('.json')).sort().map(filename=>read('content/projects/'+filename));
 const argument=(name,fallback)=>{const i=process.argv.indexOf(name);if(i<0)return fallback;if(!process.argv[i+1]||process.argv[i+1].startsWith('--'))throw Error('Missing value for '+name);return process.argv[i+1];};
 const base=argument('--base-path',process.env.SITE_BASE_PATH??site.basePath).replace(/\/+$/,'');
@@ -29,6 +31,8 @@ fs.cpSync(path.join(root,'public'),output,{recursive:true});
 fs.mkdirSync(path.join(output,'assets'),{recursive:true});
 fs.copyFileSync(path.join(root,'src/styles.css'),path.join(output,'assets/styles.css'));
 fs.copyFileSync(path.join(root,'src/site.js'),path.join(output,'assets/site.js'));
+const assetVersion=file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'src',file))).digest('hex').slice(0,12);
+const stylesVersion=assetVersion('styles.css'),scriptVersion=assetVersion('site.js');
 const h=value=>String(value??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#39;");
 function template(name,values){
   return fs.readFileSync(path.join(root,'src/templates',name+'.html'),'utf8').replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>{
@@ -91,7 +95,7 @@ function page(route,title,description,body,options={}){
   return template('layout',{
     LANG:h(site.language),TITLE:h(title),DESCRIPTION:h(description),ROBOTS:options.noindex||!site.indexable?'noindex, nofollow':'index, follow',
     CANONICAL:h(absolute(route)),OGTYPE:options.article?'article':'website',OGIMAGE:h(absolute(og.poster||og.path)),OGALT:h(og.alt),
-    FAVICON:h(link(route,'favicon.svg')),STYLES:h(link(route,'assets/styles.css')),SCRIPT:h(link(route,'assets/site.js')),
+    FAVICON:h(link(route,'favicon.svg')),STYLES:h(link(route,'assets/styles.css')+'?v='+stylesVersion),SCRIPT:h(link(route,'assets/site.js')+'?v='+scriptVersion),
     HEADER:header(route),MAIN:body,FOOTER:footer(route),BODYCLASS:options.article?'project-page':'home-page',
     JSONLD:JSON.stringify(schema).replaceAll('<','\\u003c')
   });
@@ -145,7 +149,7 @@ const homeBody=template('home',{
   PROJECT_LINK:h(link('',projectRoute)),FEATURED_VIDEO:video(home.featured.mediaId,'','Outdoor court exploration followed by a simulation comparison'),
   THEMES:home.themes.map((t,i)=>'<details class="theme-item" id="theme-'+h(t.id)+'"><summary><span class="theme-number">'+String(i+1).padStart(2,'0')+'</span><span><span class="theme-title">'+h(t.title)+'</span><span class="theme-summary">'+h(t.summary)+'</span></span><span class="theme-toggle" aria-hidden="true">+</span></summary><div class="theme-body"><p>'+h(t.example)+'</p><ul>'+t.projectSlugs.map(slug=>'<li><a href="'+h(link('','research/'+slug+'/'))+'">'+h(projectBySlug(slug).title)+'</a></li>').join('')+'</ul>'+(t.id==='multimodal'?'<a class="text-link" href="'+h(link('',mediaById(home.fieldFilmId).path))+'" data-open-dialog="flight-film">Watch trimodal field tests ↗</a>':'')+'</div></details>').join(''),
   PUBLICATIONS:home.publicationIds.map(id=>publication(pubById(id),'')).join(''),SELECTED_BIB:h(link('','citations/selected-publications.bib')),
-  PEOPLE_HEADING:h(home.people.heading),PEOPLE_TEXT:h(home.people.text),STUDENTS_LINK:h(link('','students/')),PUBLICATIONS_LINK:h(link('','publications/')),RESEARCH_LINK:h(link('','research/')),
+  PEOPLE_HEADING:h(home.people.heading),PEOPLE_TEXT:h(home.people.text),STUDENTS_LINK:h(link('','students/')),PUBLICATIONS_LINK:h(link('','publications/')),RESEARCH_LINK:h(link('','research/')),PLATFORMS_LINK:h(link('','platforms/')),
   LEAD:'<article class="lead-card">'+image(lead.portrait,'',{alt:'Portrait of Meysam Basiri'})+'<h3>'+h(lead.name)+'</h3><p class="lead-role">Research lead</p><p>'+h(lead.interest)+'<br>'+h(site.institute)+'</p><a class="text-link" href="'+h(lead.profile)+'">Profile on ORCID ↗</a><a class="text-link" href="'+h(link('','students/'))+'">Students & alumni →</a></article>',
   PEOPLE:home.contributorIds.filter(id=>!personById(id).displayContext.toLowerCase().endsWith('collaborator')).map(id=>personCard(id,'')).join(''),
   COLLABORATORS:home.contributorIds.filter(id=>personById(id).displayContext.toLowerCase().endsWith('collaborator')).map(id=>personCard(id,'')).join(''),JOIN:join(),FLIGHT_VIDEO:video(home.fieldFilmId,'','Real field tests of the trimodal UAV')
@@ -206,6 +210,13 @@ writeDirectory(researchRoute,'Research projects',research.description,template('
   PROJECT_GROUPS:research.themes.map(t=>'<section class="research-theme-group" id="theme-'+h(t.id)+'" data-directory-section><div class="research-theme-heading"><h2>'+h(t.title)+'</h2><p>'+h(t.summary)+'</p></div><div class="project-card-grid">'+projects.filter(p=>p.themeId===t.id).map(p=>projectCard(p,researchRoute,true)).join('')+'</div></section>').join(''),JOIN:join()
 }));
 const publicationRoute='publications/';
+const platformsRoute='platforms/';
+writeDirectory(platformsRoute,platforms.title,platforms.description,template('platforms',{
+  HOME:h(link(platformsRoute,'')),TITLE:h(platforms.title),INTRODUCTION:h(platforms.introduction),CONTEXT:h(platforms.context),GALLERY_HEADING:h(platforms.galleryHeading),GALLERY_INTRODUCTION:h(platforms.galleryIntroduction),
+  GALLERY:platforms.images.map((item,i)=>{const m=mediaById(item.mediaId);return '<figure class="platform-figure" data-platform-image="'+h(item.mediaId)+'"><a class="platform-photo" href="'+h(link(platformsRoute,m.path))+'" aria-label="Open image: '+h(item.title)+'">'+image(item.mediaId,platformsRoute,{eager:i===0})+'</a><figcaption><span class="platform-image-number" aria-hidden="true">'+String(i+1).padStart(2,'0')+'</span><span>'+h(item.title)+(item.projectSlug?'<a href="'+h(link(platformsRoute,'research/'+item.projectSlug+'/'))+'">Related research ↗</a>':'')+'</span></figcaption></figure>';}).join(''),
+  PROJECTS:platforms.relatedProjects.map(slug=>'<li><a href="'+h(link(platformsRoute,'research/'+slug+'/'))+'">'+h(projectBySlug(slug).title)+' <span aria-hidden="true">↗</span></a></li>').join(''),
+  COLLABORATION_HEADING:h(platforms.collaboration.heading),COLLABORATION_TEXT:h(platforms.collaboration.text),EMAIL:'mailto:'+h(site.email)
+}));
 const years=[...new Set(publications.map(p=>p.year))].sort((a,b)=>b-a);
 const kinds=['Journal article','Conference paper','Book chapter','Report & rulebook','Preprint','Thesis','Poster'];
 writeDirectory(publicationRoute,'Publications','Publications by Meysam Basiri and collaborators: journal articles, conference papers, book chapters and other research outputs.',template('publications',{
